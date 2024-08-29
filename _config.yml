@@ -30,6 +30,7 @@ social:
   email: admin@itdraft.ru # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - http://docs.itdraft.ru
     - https://vk.com/it.draft
     - https://t.me/itdraft
     - https://github.com/bullvinkl
