@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Решено] Netbox – backup, restore, upgrade"
-description: "[Решено] Netbox – backup, restore, upgrade"
+description: "> *Netbox* — веб приложение с открытым исходным кодом, разработанное для управления и документирования компьютерных сетей. Изначально Netbox придуман командой сетевых инженеров DigitalOcean специально для системных администраторов."
 categories:
   - Linux
   - Netbox
@@ -13,8 +13,6 @@ tags:
   - postgresql
 date: 2019-08-20T 21:36 +0300
 ---
-
-> *Netbox* — веб приложение с открытым исходным кодом, разработанное для управления и документирования компьютерных сетей. Изначально Netbox придуман командой сетевых инженеров DigitalOcean специально для системных администраторов.
 
 ## Buckup and Restore Netbox
 
