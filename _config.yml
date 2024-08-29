@@ -223,3 +223,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# ------------ Мои настройки ------------------
+
+permalink: /:year/:month/:day/:title/ # Переопределяю формат URL
