@@ -5,9 +5,11 @@
 
 - type: vk
   icon: "fab fa-vk"
+  url: "https://vk.com/it.draft"
 
 - type: telegram
   icon: "fab fa-telegram"
+  url: "https://t.me/itdraft"
 
 # - type: email
 #   icon: "fas fa-envelope"
