@@ -101,7 +101,7 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: utterances # [disqus | utterances | giscus]
+  provider: # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
     shortname: itdraft # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -170,9 +170,8 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true # true # Enable comments in posts.
+      comments: # true # Enable comments in posts.
       toc: true # Display TOC column in posts.
-      related: false
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /:year/:month/:day/:title/
