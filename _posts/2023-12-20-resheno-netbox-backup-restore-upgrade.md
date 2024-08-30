@@ -2,6 +2,7 @@
 layout: post
 title: "[Решено] Netbox – backup, restore, upgrade"
 # description: ""
+date: 2023-08-20 21:36 +0300
 categories:
   - Linux
   - Netbox
@@ -11,7 +12,9 @@ tags:
   - restore
   - linux
   - postgresql
-date: 2023-08-20 21:36 +0300
+image:
+  path: /commons/penguins.png
+  alt: "Настройка LDAP и OIDC авторизации в Harbor для KeyCloak"
 ---
 
 > *Netbox* — веб приложение с открытым исходным кодом, разработанное для управления и документирования компьютерных сетей. Изначально Netbox придуман командой сетевых инженеров DigitalOcean специально для системных администраторов.
