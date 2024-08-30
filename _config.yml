@@ -219,7 +219,7 @@ jekyll-archives:
 
 # ------------ Мои настройки ------------------
 
-plugins:
-  - jekyll-relative-links
+#plugins:
+#  - jekyll-relative-links
 
 # permalink: /:year/:month/:day/:title/ # Переопределяю формат URL
