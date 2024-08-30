@@ -9,30 +9,20 @@ tags:
   - netbox
   - python
   - rocky-linux
----
----
-title: "[Решено] Обновить Netbox 3.7 до 4.0 в Rocky Linux 9"
-date: "2024-05-15"
-categories: 
-  - "rocky-linux"
-  - "blog"
-tags: 
-  - "netbox"
-  - "python"
-  - "rocky-linux"
-coverImage: "transformers-min.png"
-
+image:
+  path: /commons/transformers-min.png
+  alt: "Обновить Netbox 3.7 до 4.0 в Rocky Linux 9"
 ---
 
 > **Netbox** — веб приложение с открытым исходным кодом, разработанное для управления и документирования компьютерных сетей. Изначально Netbox придуман командой сетевых инженеров DigitalOcean специально для системных администраторов.
 
 В операционной системе Rocky Linux по умолчанию установлен Python 3.9. Для установки Netbox v.4 требует Python 3.10
 
-В одной из прошлых статей я рассмотрел вариант установки [Python 3.12 в Rocky Linux 9](/2024/01/18/resheno-ustanovka-python-3-12-v-rocky-linux-9-almalinux-i-naznachaem-ego-dlja-ispolzovanija-po-umolchaniju/)
+В одной из прошлых статей я рассмотрел вариант установки [Python 3.12 в Rocky Linux 9](https://docs.itdraft.ru/2024/01/18/resheno-ustanovka-python-3-12-v-rocky-linux-9-almalinux-i-naznachaem-ego-dlja-ispolzovanija-po-umolchaniju/)
 
 ## Подготовка к обновления
 
-Перед обновление обязательно делаем [бэкап](/2023/12/20/resheno-netbox-backup-restore-upgrade/)
+Перед обновление обязательно делаем [бэкап](https://docs.itdraft.ru/2023/12/20/resheno-netbox-backup-restore-upgrade/)
 
 Обновляем ОС до релиза и перезагружаемся
 
