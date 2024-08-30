@@ -108,7 +108,7 @@ comments:
   # utterances settings › https://utteranc.es/
   utterances:
     repo: bullvinkl/itdraft-docs.github.io # <gh-username>/<repo>
-    issue_term: bullvinkl/itdraft-docs.github.io # < url | pathname | title | ...>
+    issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
