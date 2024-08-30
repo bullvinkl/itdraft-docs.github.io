@@ -18,21 +18,19 @@ image:
 
 В операционной системе Rocky Linux по умолчанию установлен Python 3.9. Для установки Netbox v.4 требует Python 3.10
 
-В одной из прошлых статей я рассмотрел вариант установки [Python 3.12 в Rocky Linux 9](https://docs.itdraft.ru/2024/01/18/resheno-ustanovka-python-3-12-v-rocky-linux-9-almalinux-i-naznachaem-ego-dlja-ispolzovanija-po-umolchaniju/)
+В одной из прошлых статей я рассмотрел вариант установки [Python 3.12 в Rocky Linux 9]({% post_url 2024-01-18-resheno-ustanovka-python-3-12-v-rocky-linux-9-almalinux-i-naznachaem-ego-dlja-ispolzovanija-po-umolchaniju %})
 
 ## Подготовка к обновления
 
-Перед обновление обязательно делаем [бэкап](https://docs.itdraft.ru/2023/12/20/resheno-netbox-backup-restore-upgrade/)
+Перед обновление обязательно делаем [бэкап]({% post_url 2023-12-20-resheno-netbox-backup-restore-upgrade %})
 
 Обновляем ОС до релиза и перезагружаемся
-
 ```sh
 $ sudo dnf -y update
 $ sudo reboot
 ```
 
 Скачиваем архив, распаковываем его, меняем владельца
-
 ```sh
 $ cd /opt
 $ sudo wget https://github.com/netbox-community/netbox/archive/refs/tags/v4.0.1.tar.gz
@@ -41,7 +39,6 @@ $ sudo chown -R netbox:netbox netbox-4.0.1
 ```
 
 Переносим конфиги
-
 ```sh
 $ sudo cp /opt/netbox-3.7.7/netbox/netbox/configuration.py /opt/netbox-4.0.1/netbox/netbox/configuration.py
 $ sudo cp /opt/netbox-3.7.7/local_requirements.txt /opt/netbox-4.0.1/local_requirements.txt
@@ -49,7 +46,6 @@ $ sudo -u netbox cp /opt/netbox-4.0.1/contrib/gunicorn.py /opt/netbox-4.0.1/guni
 ```
 
 Пересоздаем симлинк
-
 ```sh
 $ sudo rm netbox
 $ sudo ln -s netbox-4.0.1 netbox
@@ -59,7 +55,6 @@ $ sudo chown -h netbox:netbox netbox
 ## Установка необходимых пакетов
 
 Без установки необходимых пакетов Netbox не запустится, т.к. некоторые компоненты python требуют дополнительных библиотек
-
 ```sh
 $ sudo dnf --enablerepo=crb install perl-IPC-Run
 $ sudo dnf install libpq
@@ -72,7 +67,6 @@ $ sudo dnf install postgresql15-devel
 ## Ошибка обновления
 
 Во время обновления Netbox появлялась следующая ошибка
-
 ```
 Collecting psycopg-c==3.1.18 (from psycopg[c,pool]==3.1.18->-r requirements.txt (line 28))
   Using cached psycopg-c-3.1.18.tar.gz (561 kB)
@@ -96,7 +90,6 @@ Collecting psycopg-c==3.1.18 (from psycopg[c,pool]==3.1.18->-r requirements.txt 
 ```
 
 Решение ошибки
-
 ```sh
 $ sudo PATH=$PATH:/usr/pgsql-15/bin/ pip install psycopg-c==3.1.18
 ```
@@ -104,7 +97,6 @@ $ sudo PATH=$PATH:/usr/pgsql-15/bin/ pip install psycopg-c==3.1.18
 ## Обновление
 
 Переходим в каталог, запускаем обновление, перезапускаем сервисы
-
 ```sh
 $ cd /opt/netbox
 $ sudo ./upgrade.sh

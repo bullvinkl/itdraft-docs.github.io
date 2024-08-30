@@ -23,7 +23,7 @@ image:
 
 ## Установка Harbor
 
-Установка Harbor достаточно легкая. Для начал [устанавливаем Docker](https://docs.itdraft.ru/2022/11/15/svyazka-wordpress-v-docker-subd-lokalno-v-debian-11/)
+Установка Harbor достаточно легкая. Для начал [устанавливаем Docker]({% post_url 2022-11-15-svyazka-wordpress-v-docker-subd-lokalno-v-debian-11 %})
 
 Скачиваем дистрибутив Harbor и распаковываем его
 ```sh
@@ -54,7 +54,6 @@ $ sudo ./install.sh
 В качестве LDAP-сервера будем использовать IDM (FreeIPA). Для настройки LDAP-авторизации авторизуемся в web-интерфейсе Harbor (Administration > Configuration)
 
 Параметры:
-
 ```
 LDAP URL: ldap://freeipa.itdraft.ru
 LDAP Search DN: uid=10.harbor_s,cn=users,cn=accounts,dc=itdraft,dc=ru
