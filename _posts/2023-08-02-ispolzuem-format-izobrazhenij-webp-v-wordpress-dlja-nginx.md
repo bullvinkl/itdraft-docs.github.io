@@ -78,6 +78,6 @@ $ sudo nginx -s reload
 
 ![Результат 1](/assets/img/posts/2023/08/02/webpexp5-1024x425.png)
 
-![Результат 2](/assets/img/posts/2023/08/02/webpexp6-1024x425.png)
+![Результат 2](/assets/img/posts/2023/08/02/webpexp6-1024x425.png "Text"){: .shadow }
 
 Как видно по второму скриншоту, теперь nginx подменяет jpg/png картинки на webp
