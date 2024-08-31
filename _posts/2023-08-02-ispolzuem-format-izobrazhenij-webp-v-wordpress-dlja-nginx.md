@@ -21,21 +21,21 @@ image:
 
 Настройки плагина оставляем дефолтные, включив только конвертацию при загрузке
 
-![](/assets/img/posts/2023/08/02/webpexp2.png)
+![Настройки плагина 1](/assets/img/posts/2023/08/02/webpexp2.png)
 
-![](/assets/img/posts/2023/08/02/webpexp3.png)
+![Настройки плагина 2](/assets/img/posts/2023/08/02/webpexp3.png)
 
-![](/assets/img/posts/2023/08/02/webpexp4.png)
+![Настройки плагина 3](/assets/img/posts/2023/08/02/webpexp4.png)
 
 Запускаем конвертацию картинок
 
-![](/assets/img/posts/2023/08/02/webpexp1.png)
+![Запускаем конвертацию картинок](/assets/img/posts/2023/08/02/webpexp1.png)
 
 Таким образом, плагин WebP Express используется только для первоначальной конвертации картинок в webp формат и для авто конвертации при загрузки новых картинок.
 
 Результат конвертации: картинки весят в 6 раз меньше
 
-![](/assets/img/posts/2023/08/02/image-1.png)
+![Результат конвертации](/assets/img/posts/2023/08/02/image-1.png)
 
 ## Настройка Nginx
 
@@ -76,8 +76,8 @@ $ sudo nginx -s reload
 
 Смотрим на результат
 
-![](/assets/img/posts/2023/08/02/webpexp5-1024x425.png)
+![Результат 1](/assets/img/posts/2023/08/02/webpexp5-1024x425.png)
 
-![](/assets/img/posts/2023/08/02/webpexp6-1024x425.png)
+![Результат 2](/assets/img/posts/2023/08/02/webpexp6-1024x425.png)
 
 Как видно по второму скриншоту, теперь nginx подменяет jpg/png картинки на webp
