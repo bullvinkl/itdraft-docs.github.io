@@ -140,8 +140,8 @@ Username Claim: preferred_username   # какое поле будет подст
 
 Для получения токена авторизации в Harbor через Docker, авторизуемся в web-интерфейсе Harbor, usename > User Profile, копируем CLI secret
 
-![](/assets/img/posts/2024/07/15/image-9.png){: w="50%" h="50%" }
+![](/assets/img/posts/2024/07/15/image-9.png){: h="300" }
 _User Profile_
 
-![](/assets/img/posts/2024/07/15/image-10.png){: w="50%" h="50%" }
+![](/assets/img/posts/2024/07/15/image-10.png){: h="300" }
 _CLI secret_
