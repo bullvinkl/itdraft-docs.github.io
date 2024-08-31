@@ -78,20 +78,20 @@ $ docker composer restart nginx
 ```
 
 Устанавливаем плагин ElasticPress, активируем его, производим первичную настройку и синхронизацию
-![](/assets/img/posts/2024/07/20/image-5.png)
+![](/assets/img/posts/2024/07/20/image-5.png){: w="300" }
 _Активируем ElasticPress_
 
 Переходим в пункт меню Features, подключаем поиск Elasticsearch в разделе Post Search
-![](/assets/img/posts/2024/07/20/image-6.png)
+![](/assets/img/posts/2024/07/20/image-6.png){: w="300" }
 _Подключаем поиск Elasticsearch_
 
 Раскрываем раздел Autosuggest и прописываем настройки:
 - Autosuggest Selector: `input[type="search"]`
 - Endpoint URL: `https://itdraft.ru/ep-autosuggest` - добавляли в Nginx
 
-![](/assets/img/posts/2024/07/20/image-7.png)
+![](/assets/img/posts/2024/07/20/image-7.png){: w="300" }
 _Прописываем настройки в Autosuggest_
 
 Пример работы:
-![](/assets/img/posts/2024/07/20/image-9-1024x394.png)
+![](/assets/img/posts/2024/07/20/image-9-1024x394.png){: w="300" }
 _Пример работы_

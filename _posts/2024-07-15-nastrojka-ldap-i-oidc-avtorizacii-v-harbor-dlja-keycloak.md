@@ -53,7 +53,7 @@ $ sudo ./install.sh
 
 В качестве LDAP-сервера будем использовать IDM (FreeIPA). Для настройки LDAP-авторизации авторизуемся в web-интерфейсе Harbor (Administration > Configuration)
 
-![](/assets/img/posts/2024/07/15/image-3.png)
+![](/assets/img/posts/2024/07/15/image-3.png){: w="300" }
 _-_Administration > Configuration_
 
 Параметры:
@@ -72,10 +72,10 @@ LDAP UID: uid
 
 На стороне Keycloak выбираем нужный Realm, создаем клиент со следующими параметрами
 
-![](/assets/img/posts/2024/07/15/image-1.png)
+![](/assets/img/posts/2024/07/15/image-1.png){: w="300" }
 _Settings 1_
 
-![](/assets/img/posts/2024/07/15/image-2.png)
+![](/assets/img/posts/2024/07/15/image-2.png){: w="300" }
 _Settings 2_
 
 Во вкладке Settings нам понадобится `ClientID`
@@ -83,13 +83,13 @@ _Settings 2_
 
 Переходим во вкладку Client scopes > harbor2-dedicated и создаем новый Mapper
 
-![](/assets/img/posts/2024/07/15/image-4.png)
+![](/assets/img/posts/2024/07/15/image-4.png){: w="300" }
 _Client scopes_
 
-![](/assets/img/posts/2024/07/15/image-5.png)
+![](/assets/img/posts/2024/07/15/image-5.png){: w="300" }
 _Mapper_
 
-![](/assets/img/posts/2024/07/15/image-6.png)
+![](/assets/img/posts/2024/07/15/image-6.png){: w="300" }
 _Group Membership_
 
 Параметры:
@@ -107,7 +107,7 @@ Add to userinfo: On
 
 Переходим в пункт меню Groups, создаем группу админов (harbor-admin и группу для доступа к проекту (у меня - express), добавляем в эти группы пользователей
 
-![](/assets/img/posts/2024/07/15/image-7.png)
+![](/assets/img/posts/2024/07/15/image-7.png){: w="300" }
 _создаем группу админов_
 
 На этом настройки на стороне Keycloak закончены
@@ -118,7 +118,7 @@ _создаем группу админов_
 
 Если выпадающее меню для переключения типа авторизации неактивно, удаляем всех добавленных пользователей
 
-![](/assets/img/posts/2024/07/15/image-8.png)
+![](/assets/img/posts/2024/07/15/image-8.png){: w="300" }
 _Auth Mode: OIDC_
 
 Параметры:
@@ -140,8 +140,8 @@ Username Claim: preferred_username   # какое поле будет подст
 
 Для получения токена авторизации в Harbor через Docker, авторизуемся в web-интерфейсе Harbor, usename > User Profile, копируем CLI secret
 
-![](/assets/img/posts/2024/07/15/image-9.png){: w="250" }
+![](/assets/img/posts/2024/07/15/image-9.png){: w="300" }
 _User Profile_
 
-![](/assets/img/posts/2024/07/15/image-10.png){: w="250" }
+![](/assets/img/posts/2024/07/15/image-10.png){: w="300" }
 _CLI secret_
