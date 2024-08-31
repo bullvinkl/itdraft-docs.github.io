@@ -170,7 +170,7 @@ Client type: OpenID Connector
 Client ID: oauth2proxy # Понадобится при настройке OAuth2 Proxy
 ```
 
-![](/assets/img/posts/2023/04/11/image-25-1024x725.png){: w="300" }
+![](/assets/img/posts/2023/04/11/image-25.png){: w="300" }
 
 ```
 Capability config:
@@ -178,7 +178,7 @@ Client authentication: On
 Authentication flow: Standard flow, Direct access grants, OAuth 2.0 Device Authorization Grant, OIDC CIBA Grant
 ```
 
-![](/assets/img/posts/2023/04/11/image-26-1024x742.png){: w="300" }
+![](/assets/img/posts/2023/04/11/image-26.png){: w="300" }
 
 ```
 Login settins:
