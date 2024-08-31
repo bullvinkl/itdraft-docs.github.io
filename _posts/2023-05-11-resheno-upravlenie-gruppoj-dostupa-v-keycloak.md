@@ -22,9 +22,9 @@ image:
 
 ## В настройках клиента (во вкладке "Roles") создаем роль
 
-![](/assets/img/posts/2023/05/11/image-49.png)
+![](/assets/img/posts/2023/05/11/image-49.png){: w="300" }
 
-![](/assets/img/posts/2023/05/11/image-38.png)
+![](/assets/img/posts/2023/05/11/image-38.png){: w="300" }
 
 ```
 Clients > myclient > Tab "Roles" > Button "Create role":
@@ -44,9 +44,9 @@ Description: Разрешенные пользователи
 
 - Выбираем созданную в первом шаге роль
 
-![](/assets/img/posts/2023/05/11/image-45.png)
+![](/assets/img/posts/2023/05/11/image-45.png){: w="300" }
 
-![](/assets/img/posts/2023/05/11/image-46.png)
+![](/assets/img/posts/2023/05/11/image-46.png){: w="300" }
 
 ```
 Client scopes > email > Tab "Scope" > Assign role > Filter by client > access
@@ -54,7 +54,7 @@ Client scopes > email > Tab "Scope" > Assign role > Filter by client > access
 
 ## Создаем группу доступа "mygroup"
 
-![](/assets/img/posts/2023/05/11/image-41.png)
+![](/assets/img/posts/2023/05/11/image-41.png){: w="300" }
 
 ```
 Groups > Create group > mygroup
@@ -62,7 +62,7 @@ Groups > Create group > mygroup
 
 ## Настраиваем группу доступа. Добавляем пользователей
 
-![](/assets/img/posts/2023/05/11/image-42.png)
+![](/assets/img/posts/2023/05/11/image-42.png){: w="300" }
 
 ```
 Groups > mygroup > Tab "Members" > Add member
@@ -78,9 +78,9 @@ Groups > mygroup > Tab "Members" > Add member
 
 - Выбираем созданную в первом шаге роль
 
-![](/assets/img/posts/2023/05/11/image-47.png)
+![](/assets/img/posts/2023/05/11/image-47.png){: w="300" }
 
-![](/assets/img/posts/2023/05/11/image-48.png)
+![](/assets/img/posts/2023/05/11/image-48.png){: w="300" }
 
 ```
 Groups > mygroup > Tab "Role mapping" > Assign role > add "it_access"
