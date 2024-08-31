@@ -28,11 +28,11 @@ image:
 
 Настроим клиента в Keycloak: переходим в раздел Clients и создаем нового клиента (Create client)
 
-![](/assets/img/posts/2023/05/17/image-50-1024x583.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-50.png){: w="300" }
 
-![](/assets/img/posts/2023/05/17/image-51-1024x583.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-51.png){: w="300" }
 
-![](/assets/img/posts/2023/05/17/image-52-1024x642.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-52.png){: w="300" }
 
 ```
 General Settings
@@ -51,7 +51,7 @@ Valid redirect URIs: https://netbox.itdraft.ru/*
 
 Сохраняем, переходим в настройки клиента, копируем "секрет"
 
-![](/assets/img/posts/2023/05/17/image-53-1024x642.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-53.png){: w="300" }
 
 ```
 Tab "Credentials"
@@ -61,7 +61,7 @@ Client secret: xxx # Понадобится для дальнейшей наст
 
 Переходим во вкладку "Advanced", устанавливаем параметры в 2-х полях
 
-![](/assets/img/posts/2023/05/17/image-54-1024x749.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-54.png){: w="300" }
 
 ```
 Tab "Advanced"
@@ -71,9 +71,9 @@ Request object signature algorithm: RS256
 
 Добавляем mapper, для этого переходим во вкладку Client scopes и в активную ссылку "netbox-dedicated"
 
-![](/assets/img/posts/2023/05/17/image-57-1024x503.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-57.png){: w="300" }
 
-![](/assets/img/posts/2023/05/17/image-55-1024x652.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-55.png){: w="300" }
 
 ```
 Add mapper
@@ -86,7 +86,7 @@ Add to access token: Yes
 
 Осталось скопировать публичный ключ
 
-![](/assets/img/posts/2023/05/17/image-56-1024x539.png){: w="300" }
+![](/assets/img/posts/2023/05/17/image-56.png){: w="300" }
 
 ```
 Realm settins > Keys > RS256 > Public key
