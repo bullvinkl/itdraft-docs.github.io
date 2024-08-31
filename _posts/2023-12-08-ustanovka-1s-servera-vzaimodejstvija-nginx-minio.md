@@ -7,7 +7,7 @@ categories:
   - Minio
   - 1C
 tags:
-  - 1s
+  - 1c
   - centos
   - debian
   - java
