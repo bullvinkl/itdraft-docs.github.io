@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Настройка LDAP и OIDC авторизации в Harbor для KeyCloak"
+title: "Настройка LDAP и OIDC авторизации в Harbor для Keycloak"
 date: "2024-07-15"
 categories:
   - Linux
@@ -15,7 +15,7 @@ tags:
   - rocky-linux
 image:
   path: /commons/pexels-christina-morillo-1181244-scaled.jpg
-  alt: "Настройка LDAP и OIDC авторизации в Harbor для KeyCloak"
+  alt: "Настройка LDAP и OIDC авторизации в Harbor для Keycloak"
 ---
 
 > **Харбор** — искусственный остров в Сиэтле, на котором расположена судостроительная верфь.  
@@ -65,9 +65,9 @@ LDAP UID: uid
 
 Настаиваем сетевую связанность с LDAP-сервером, проверяем авторизацию
 
-## OIDC авторизация. Настройка KeyCloak
+## OIDC авторизация. Настройка Keycloak
 
-На стороне KeyCloak выбираем нужный Realm, создаем клиент со следующими параметрами
+На стороне Keycloak выбираем нужный Realm, создаем клиент со следующими параметрами
 
 Во вкладке Settings нам понадобится `ClientID`
 Во вкладке Credentials понадобится `Client secret`
@@ -89,7 +89,7 @@ Add to userinfo: On
 
 Переходим в пункт меню Groups, создаем группу админов (harbor-admin и группу для доступа к проекту (у меня - express), добавляем в эти группы пользователей
 
-На этом настройки на стороне KeyCloak закончены
+На этом настройки на стороне Keycloak закончены
 
 ## OIDC авторизация. Настройка Harbor
 

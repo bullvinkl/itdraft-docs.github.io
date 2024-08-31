@@ -11,7 +11,7 @@ tags:
   - almalinux
   - centos
   - linux
-  - rocky linux
+  - rocky-linux
 image:
   path: /commons/scale_2400.png
   alt: "Установка Python 3.12"

@@ -2,22 +2,15 @@
 title: "Настройка отказоустойчивого кластера PostgreSQL в Linux"
 date: "2023-08-14"
 categories: 
-  - "centos"
-  - "debian"
-  - "rocky-linux"
-  - "ubuntu"
-  - "blog"
+  - Linux
+  - PostgreSQL
 tags: 
-  - "centos"
-  - "debian"
-  - "etcd"
-  - "haproxy"
-  - "keepalive"
-  - "linux"
-  - "patroni"
-  - "postgresql"
-  - "rocky-linux"
-coverImage: "ai_images-min.png"
+  - etcd
+  - haproxy
+  - keepalive
+  - linux
+  - patroni
+  - postgresql
 image:
   path: /commons/ai_images-min.png
   alt: "Защита от брутфорса админки Wordpress в Docker с помощью Fail2Ban"
