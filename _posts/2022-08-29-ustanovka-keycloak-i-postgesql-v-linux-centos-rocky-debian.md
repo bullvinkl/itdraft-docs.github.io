@@ -8,8 +8,8 @@ categories:
 tags:
   - almalinux
   - centos
-  - debia
-  - firewalld
+  - debian
+  - firewall
   - keycloak
   - linux
   - postgresql
