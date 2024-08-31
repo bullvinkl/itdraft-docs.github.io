@@ -1,0 +1,9 @@
+#topbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--main-bg);
+}
+.access {
+    top: 3rem;
+}
