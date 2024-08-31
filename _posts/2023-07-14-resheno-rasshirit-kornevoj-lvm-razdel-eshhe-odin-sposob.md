@@ -53,6 +53,7 @@ Syncing disks.
 ```
 
 Смотрим результат
+
 ![](/assets/img/posts/2024/07/14/image-3.png){: w="300" }
 _Результат_
 
@@ -69,6 +70,7 @@ $ sudo resize2fs /dev/mapper/debian-root  # для ext4
 $ sudo xfs_growfs  /dev/mapper/debian-root  # для xfs
 ```
 
-Результат:
+Результат
+
 ![](/assets/img/posts/2024/07/14/image-4.png){: w="300" }
 _Результат_
