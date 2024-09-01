@@ -72,7 +72,7 @@ LDAP Attribute: givenname
 
 ![](/assets/img/posts/2023/03/01/doku-key-create-1-1.png){: w="300" }
 
-![](/assets/img/posts/2023/03/01/doku-key-create-2-1.png){: w="300" }
+![](/assets/img/posts/2023/03/01/doku-key-create-2.png){: w="300" }
 
 ```
 General Settings
