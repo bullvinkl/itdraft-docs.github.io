@@ -11,7 +11,6 @@ tags:
   - "freeipa"
   - "linux"
   - "rocky-linux"
-coverImage: "mining_price_down-1-min.png"
 image:
   path: /commons/mining_price_down-1-min.png
   alt: "Настройка oAuth авторизации через Keycloak+FreeIPA в DokuWiki"
