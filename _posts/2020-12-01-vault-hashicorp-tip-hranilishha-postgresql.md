@@ -11,9 +11,8 @@ tags:
   - "journalctl"
   - "pgpass"
   - "pg_dump"
-coverImage: "1.png"
 image:
-  path: /commons/1.jpg
+  path: /commons/1.png
   alt: "HashiCorp Vault"
 ---
 
