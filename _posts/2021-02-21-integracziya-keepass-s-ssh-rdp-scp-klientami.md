@@ -28,6 +28,7 @@ image:
 ```
 
 ![](/assets/img/posts/2021/02/21/kee1.png){: w="300" }
+
 ![](/assets/img/posts/2021/02/21/kee2.png){: w="300" }
 
 Добавляем новую схему:
@@ -131,6 +132,7 @@ ssh://%ip%:%port%
 Так же появится запрос об использовании SSH-Ключа, а после подключения - уведомление от KeeAgent.
 
 ![](/assets/img/posts/2021/02/21/kee11.png){: w="300" }
+
 ![](/assets/img/posts/2021/02/21/kee12.png){: w="300" }
 
 Причем теперь можно подключаться по SSH с использованием SSH-ключа из сторонних SSH-клиентов (Windows OpenSSH, Putty, Kitty, mRemoteNG) и SSH-ключ будет подтягиваться из KeePass.
