@@ -18,7 +18,7 @@ image:
 
 > **HashiCorp Vault** — это утилита командной строки, которая отвечает за управление секретами — логинами, паролями, ключами, сертификатами. «Управление» включает в себя как хранение, так и выдачу секретов конкретным приложениям с пометкой у себя в журнале, кому и когда это произошло.
 
-В прошлых сатьях мы рассмотрели [установку HashiCorp Vault]({% post_url 2020-11-27-ustanovka-hashicorp-vault-v-centos-8 %}) и [установку PostgreSQL 13]({% post_url 2020-11-30-ustanovka-postgresql-13-v-centos-8 %}) в Centos 8.
+В прошлых статьях мы рассмотрели [установку HashiCorp Vault]({% post_url 2020-11-27-ustanovka-hashicorp-vault-v-centos-8 %}) и [установку PostgreSQL 13]({% post_url 2020-11-30-ustanovka-postgresql-13-v-centos-8 %}) в Centos 8.
 
 ## Настройки PostgreSQL
 
@@ -120,7 +120,7 @@ storage "postgresql" {
 […]
 ```
 
-Переводим SELinux в режим работы premissive, иначе сервис Vault не будет стартовать
+Переводим SELinux в режим работы `premissive`, иначе сервис Vault не будет стартовать
 
 ```sh
 $ sudo setenforce 0
