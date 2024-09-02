@@ -21,7 +21,7 @@ image:
 
 ## Подготовка
 
-- Ранее, в одной из статей, мы рассматривали [автоматическую установку Debian при помощи preseed]({% post_url 2019-12-17-avtomaticheskaya-ustanovka-debian-pri-pomoshhi-preseed/ %})
+- Ранее, в одной из статей, мы рассматривали [автоматическую установку Debian при помощи preseed]({% post_url 2019-12-17-avtomaticheskaya-ustanovka-debian-pri-pomoshhi-preseed %})
 
 Для того, чтобы таблица разделов была в формате GPT, при создании конфигурационного preseed-файла надо добавить следующие строки:
 
