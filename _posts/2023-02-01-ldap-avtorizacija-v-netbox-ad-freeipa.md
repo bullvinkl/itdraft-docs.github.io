@@ -13,7 +13,7 @@ tags:
   - "ldap"
   - "netbox"
 image:
-  path: /commons/stress-min.png
+  path: /commons/stress-min-1.png
   alt: "LDAP-авторизация в Netbox"
 ---
 
