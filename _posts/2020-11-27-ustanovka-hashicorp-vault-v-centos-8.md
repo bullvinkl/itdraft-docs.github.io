@@ -168,9 +168,9 @@ disable_sealwrap     = true
 disable_printable_check = true
 ```
 
-## Настройка SeLinux
+## Настройка SELinux
 
-Добавляем порт Vault в исключения
+Добавляем порт HashiCorp Vault в исключения
 
 ```sh
 $ cd /tmp
@@ -209,7 +209,7 @@ $ sudo firewall-cmd --reload
 
 ## Инициализация HashiCorp Vault Server
 
-Добавляем переменные, что б в дальнейшем не вводить ее каждый раз в -address=http://vault.example.com:8200
+Добавляем переменные, что б в дальнейшем не вводить ее каждый раз `VAULT_ADDR==http://vault.example.com:8200`
 
 ```sh
 $ export PATH=$PATH:/usr/local/bin
@@ -218,7 +218,7 @@ $ export VAULT_ADDR=http://vault.example.com:8200
 $ echo "export VAULT_ADDR=http://vault.example.com:8200" >> ~/.bashrc
 ```
 
-Инициализируем сервис с сохранением ключей в файл /etc/vault.d/init.file (не безопасно)
+Инициализируем сервис с сохранением ключей в файл `/etc/vault.d/init.file` (не безопасно)
 
 ```sh
 $ vault operator init -n 5 -t 3 | sudo tee /etc/vault.d/init.file
@@ -243,13 +243,13 @@ Key                Value
 --- -----
 Seal Type          shamir
 Initialized        true
-Sealed             true <--- vault запечатан, надо расечатывать (вводить 3 разных Unseal Key)
-Total Shares       5 <--- всего ключей
-Threshold          3 <--- ключей, для распечатывания
+Sealed             true    # vault запечатан, надо распечатывать (вводить 3 разных Unseal Key)
+Total Shares       5       # всего ключей
+Threshold          3       # ключей, для распечатывания
 Unseal Progress    0/3
 Unseal Nonce       n/a
 Version            1.6.0
-Storage Type       file <--- тип хранилища файловое
+Storage Type       file    # тип хранилища файловое
 HA Enabled         false
 ```
 
@@ -289,7 +289,11 @@ $ vault login
 Token (will be hidden): s.2xxinhG13tTgpHrxb8EyAgL5
 ```
 
-Распечатывать хранилище и авторизоваться можно так же через [web-интерфейс](http://vault.example.com:8200)
+Распечатывать хранилище и авторизоваться можно так же через web-интерфейс:
+
+```
+http://vault.example.com:8200
+```
 
 Если надо удалить базу (файловую)
 
