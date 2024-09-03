@@ -340,7 +340,7 @@ $ sudo systemctl restart php-fpm
 $ sudo systemctl restart nginx
 ```
 
-Открываем браузер и переходим по адресу [http://glpi.example.com](http://glpi.example.com)
+Открываем браузер и переходим по адресу `http://glpi.example.com`
 
 По умолчанию логины / пароли:
 
