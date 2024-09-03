@@ -3,6 +3,7 @@ title: "Redmine: бэкапирование и восстановление"
 date: "2020-01-21"
 categories: 
   - Linux
+  - Redmine
 tags: 
   - "backup"
   - "redmine"

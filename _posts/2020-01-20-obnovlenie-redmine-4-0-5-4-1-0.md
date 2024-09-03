@@ -2,8 +2,8 @@
 title: "Обновление Redmine 4.0.5 - 4.1.0"
 date: "2020-01-20"
 categories: 
-  - "centos"
-  - "blog"
+  - Linux
+  - Redmine
 tags: 
   - "centos"
   - "nginx"
@@ -19,7 +19,7 @@ image:
 
 > **Redmine** — открытое серверное веб-приложение для управления проектами и задачами (в том числе для отслеживания ошибок). Redmine написан на Ruby и представляет собой приложение на основе широко известного веб-фреймворка Ruby on Rails
 
-В предыдущей статье мы рассмотрели [установку Redmine 4.0.5 + Nginx + PostgreSQL]({% post_url 2019-12-10-ustanovka-redmine-4-0-5-nginx-postgresql-v-centos-7 %})  
+В предыдущей статье мы рассмотрели установку [Redmine 4.0.5 + Nginx + PostgreSQL]({% post_url 2019-12-10-ustanovka-redmine-4-0-5-nginx-postgresql-v-centos-7 %})  
 
 ## Подготовка
 
