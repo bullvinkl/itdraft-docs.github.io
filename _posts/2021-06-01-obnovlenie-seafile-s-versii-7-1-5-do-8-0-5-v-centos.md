@@ -1,19 +1,19 @@
 ---
-title: "Обновление Seafile с версии 7.1.5 до 8.0.5 в Centos"
+title: "Обновление SeaFile с версии 7.1.5 до 8.0.5 в Centos"
 date: "2021-06-01"
 categories: 
   - Linux
-  - Seafile
+  - SeaFile
 tags: 
   - "centos"
   - "seafile"
   - "upgrade"
 image:
   path: /commons/template-1599665_1280.png
-  alt: "Обновление Seafile"
+  alt: "Обновление SeaFile"
 ---
 
-> **Seafile** — это кроссплатформенная система программного обеспечения для размещения файлов с открытым исходным кодом. Файлы хранятся на центральном сервере и могут быть синхронизированы с персональными компьютерами и мобильными устройствами через приложения.
+> **SeaFile** — это кроссплатформенная система программного обеспечения для размещения файлов с открытым исходным кодом. Файлы хранятся на центральном сервере и могут быть синхронизированы с персональными компьютерами и мобильными устройствами через приложения.
 
 Устанавливаем новые библиотеки Python
 
@@ -46,25 +46,25 @@ $ yum install python3-devel mysql-devel gcc gcc-c++ -y
 $ sudo pip3 install future mysqlclient sqlalchemy==1.4.3
 ```
 
-Останавливаем сервисы seafile и seahub
+Останавливаем сервисы `seafile` и `seahub`
 
 ```sh
 $ sudo systemctl stop seafile seahub
 ```
 
-Переключаемся на пользователя Seafile
+Переключаемся на пользователя `seafile`
 
 ```sh
 $ sudo su - seafile
 ```
 
-Скачиваем дистрибутив Seafile 8.0.5 (финальный релиз на сегодняшний день)
+Скачиваем дистрибутив SeaFile 8.0.5 (финальный релиз на сегодняшний день)
 
 ```sh
 $ curl -OL https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seafile-server_8.0.5_x86-64.tar.gz
 ```
 
-Распаковываем его и перемещаем архив в каталог installed
+Распаковываем его и перемещаем архив в каталог `installed`
 
 ```sh
 $ tar xzf seafile-server_8.0.5_x86-64.tar.gz
@@ -84,7 +84,7 @@ $ ./upgrade_7.1_8.0.sh
 $ exit
 ```
 
-Запускаем Seafile 8.0.5 server
+Запускаем SeaFile 8.0.5 server
 
 ```sh
 $ sudo systemctl start seafile seahub
