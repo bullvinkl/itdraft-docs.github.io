@@ -100,7 +100,8 @@ host all all 192.168.11.0/24 md5
 
 ```sh
 $ sudo su - postgres
-$ psql=# ALTER USER postgres WITH ENCRYPTED PASSWORD 'vTH886v4g2TqcD';
+$ psql
+=# ALTER USER postgres WITH ENCRYPTED PASSWORD 'vTH886v4g2TqcD';
 =# \q
 $ exit
 ```
@@ -215,16 +216,17 @@ $ sudo firewall-cmd --reload
 $ sudo firewall-cmd --list-all
 ```
 
-## Создание базы 1с (на windows-машине через консоль администрирования серверов 1С Предприятия)
+## Создание базы 1C
 
-Запускаем консоль администрирования серверов 1С Предприятия  
+На Windows-машине запускаем консоль администрирования серверов 1С Предприятия  
 Правой кнопкой мыши (ПКМ):
 
 ```
 Central 1C:Enterprise 8.3 servers - Создать - Центральный сервер 1С:Предприятие 8.3
 ```
 
-![](/assets/img/posts/2020/10/08/1c-step1.png)
+![](/assets/img/posts/2020/10/08/1c-step1.png){: w="300" }
+_Создать - Центральный сервер 1С_
 
 ```
 Протокол: TCP
@@ -232,11 +234,13 @@ Central 1C:Enterprise 8.3 servers - Создать - Центральный се
 IP порт: 1540
 ```
 
-![](/assets/img/posts/2020/10/08/1c-step2.png)
+![](/assets/img/posts/2020/10/08/1c-step2.png){: w="300" }
+_Параметры центрального сервера_
 
 Кластер `Local cluster` при этом будет создан автоматически
 
-![](/assets/img/posts/2020/10/08/1c-step3.png)
+![](/assets/img/posts/2020/10/08/1c-step3.png){: w="300" }
+_Параметры кластера_
 
 Теперь создаем информационную базу
 
@@ -244,7 +248,8 @@ IP порт: 1540
 Выбираем "Local cluster" - Информационные базы - ПКМ - Создать - Информационная база
 ```
 
-![](/assets/img/posts/2020/10/08/1c-step4.png)
+![](/assets/img/posts/2020/10/08/1c-step4.png){: w="300" }
+_Создать информационную база_
 
 ```
 Имя: base1c
@@ -257,7 +262,8 @@ IP порт: 1540
 Создать базу данных в случае ее отсутствия: +
 ```
 
-![](/assets/img/posts/2020/10/08/1c-step5-2.png)
+![](/assets/img/posts/2020/10/08/1c-step5-2.png){: w="300" }
+_Параметры информационной базы_
 
 ## Установка шрифтов для подготовки к публикации web-сервера
 
@@ -562,11 +568,12 @@ $ sudo systemctl status usbhaspemul
 
 Сервер разворачивался в VirtualBox, параметры:
 
-> OS: Centos 8.2 dvd iso
-> сеть: сетевой мост
-> $ cat /etc/hosts
-> 192.168.11.235 server1c
-> 
-> В винде в drivers/etc/hosts
-> 192.168.11.235 server1c
-{: .prompt-info }
+```
+OS: Centos 8.2 dvd iso
+сеть: сетевой мост
+$ cat /etc/hosts
+192.168.11.235 server1c
+
+В винде в drivers/etc/hosts
+192.168.11.235 server1c
+```{: .prompt-info }```
