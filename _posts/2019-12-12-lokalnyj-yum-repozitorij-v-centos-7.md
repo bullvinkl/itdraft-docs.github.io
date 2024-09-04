@@ -10,7 +10,7 @@ tags:
   - "rsync"
   - "yum"
 image:
-  path: /commons/0_HICLyAdNSIyT0ODU.jpg
+  path: /commons/0_HICLyAdNSIyT0ODU-1.jpg
   alt: "Локальный YUM репозиторий"
 ---
 
