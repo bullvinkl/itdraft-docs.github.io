@@ -7,7 +7,7 @@ tags:
   - "centos"
   - "nfs"
 image:
-  path: /commons/987847_cbc9_2-1.jpg
+  path: /commons/987847_cbc9_2.jpg
   alt: "Настройка NFS сервера"
 ---
 
