@@ -6,9 +6,9 @@ body {
     font-family: PTRootUI-Regular, sans-serif;
 }
 
-h5, h4, h3, h2, h1 {
-    scroll-margin: 50px;
-}
+#h5, h4, h3, h2, h1 {
+#    scroll-margin: 50px;
+#}
 
 #topbar-wrapper {
     position: sticky;
