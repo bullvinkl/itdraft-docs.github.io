@@ -2,17 +2,16 @@
 title: "Установка OPCache для повышения производительности PHP в CentOS 7"
 date: "2019-08-06"
 categories: 
-  - "centos"
-  - "blog"
+  - Linux
 tags: 
   - "apache"
   - "centos"
   - "nginx"
   - "php"
-\
+  - "opcache"
 image:
   path: /commons/1387342_082d_2.jpg
-  alt: ""
+  alt: "Установка OPCache для повышения производительности PHP"
 ---
 
 > **OPCache** - это расширение PHP, созданное для повышения производительности PHP и повышения общей производительности приложений.
