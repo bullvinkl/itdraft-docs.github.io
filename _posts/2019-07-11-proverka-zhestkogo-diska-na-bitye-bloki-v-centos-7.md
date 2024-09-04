@@ -7,7 +7,7 @@ tags:
   - "badblocks"
   - "centos"
 image:
-  path: /commons/0_HICLyAdNSIyT0ODU.jpg
+  path: /commons/0_HICLyAdNSIyT0ODU-1.jpg
   alt: "Проверка жесткого диска на битые блоки"
 ---
 

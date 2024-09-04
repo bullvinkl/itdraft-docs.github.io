@@ -11,7 +11,7 @@ tags:
   - "mount"
   - "ubuntu"
 image:
-  path: /commons/629418_a5b0.jpg
+  path: /commons/629418_a5b0-1.jpg
   alt: "Получить доступ к зашифрованному BitLocker разделу Windows из Ubuntu"
 ---
 

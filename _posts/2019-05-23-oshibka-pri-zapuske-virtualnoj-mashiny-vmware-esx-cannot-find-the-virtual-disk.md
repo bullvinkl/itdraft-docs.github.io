@@ -150,5 +150,5 @@ RW 167772160 VMFSSPARSE "srv-virtual-010-000002-delta.vmdk"
 После всех этих манипуляций моя виртуальная машина запустилась
 
 При составлении материала были использованы следующие статьи:  
-[http://geckich.blogspot.com/2011/12/cannot-open-disk-or-vmware-esx-cannot.html](http://geckich.blogspot.com/2011/12/cannot-open-disk-or-vmware-esx-cannot.html)  
+[http://geckich.blogspot.com/2011/12/cannot-open-disk-or-vmware-esx-cannot.html](https://geckich.blogspot.com/2011/12/cannot-open-disk-or-vmware-esx-cannot.html)  
 [https://kb.vmware.com/s/article/1026353](https://kb.vmware.com/s/article/1026353)

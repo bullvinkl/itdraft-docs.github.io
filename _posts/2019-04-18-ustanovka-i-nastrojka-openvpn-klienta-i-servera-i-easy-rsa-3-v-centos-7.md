@@ -329,7 +329,7 @@ $ sudo netstat -plntu
 $ sudo systemctl status openvpn@server
 ```
 
-![Проверяем, запущен ли OpenVPN](/assets/img/posts/2019/04/18/wp_openvpn_9-1024x348.png){: w="300" }
+![Проверяем, запущен ли OpenVPN](/assets/img/posts/2019/04/18/wp_openvpn_9.png){: w="300" }
 _Проверяем, запущен ли OpenVPN_
 
 ## Настройка OpenVPN клиента
@@ -382,5 +382,5 @@ $ sudo zip client/client-01.zip client/*
 $ sudo tail -f /var/log/openvpn.log
 ```
 
-![Смотрим log-файл OpenVPN сервера](/assets/img/posts/2019/04/18/wp_openvpn_10-1024x171.png){: w="300" }
+![Смотрим log-файл OpenVPN сервера](/assets/img/posts/2019/04/18/wp_openvpn_10.png){: w="300" }
 _Смотрим log-файл OpenVPN сервера_
