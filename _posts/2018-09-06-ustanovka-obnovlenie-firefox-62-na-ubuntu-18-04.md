@@ -7,7 +7,7 @@ tags:
   - "firefox"
   - "ubuntu"
 image:
-  path: /commons/c629418_a5b0-1.jpg
+  path: /commons/1051548_1085_2.jpg
   alt: "Установка / обновление Firefox"
 ---
 
