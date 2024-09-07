@@ -13,16 +13,12 @@ image:
 ---
 
 > **Debian 11** кодовое имя "bullseye". Дата релиза 15.08.2021.
-> 
 > Основные изменения:
-> 
 > - Ядро Linux обновлено до версии 5.10 (в Debian 10 поставлялось ядро 4.19);
-> 
 > - Обновлены серверные приложения, в том числе Apache httpd 2.4.48, BIND 9.16, Dovecot 2.3.13, Exim 4.94, Postfix 3.5, MariaDB 10.5, nginx 1.18, PostgreSQL 13, Samba 4.13, OpenSSH 8.4;
-> 
 > - Обновлены серверные приложения, в том числе Apache httpd 2.4.48, BIND 9.16, Dovecot 2.3.13, Exim 4.94, Postfix 3.5, MariaDB 10.5, nginx 1.18, PostgreSQL 13, Samba 4.13, OpenSSH 8.4;
-> 
 > - Изменён формат строк в файле /etc/apt/sources.list, связанных с устранением проблем с безопасностью. Строки {dist}-updates переименованы в {dist}-security. В sources.list разрешено отделение блоков "[]" несколькими пробелами;
+{: .prompt-tip }
 
 Для начала обновим текущую систему
 

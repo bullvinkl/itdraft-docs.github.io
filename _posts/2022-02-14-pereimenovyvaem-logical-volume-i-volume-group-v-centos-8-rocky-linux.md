@@ -23,6 +23,7 @@ image:
 > PV (Physical Volume) — физические тома  
 > VG (Volume Group) — группа томов  
 > LV (Logical Volume) — логические разделы
+{: .prompt-tip }
 
 ## Переименовываем Logical Volume
 

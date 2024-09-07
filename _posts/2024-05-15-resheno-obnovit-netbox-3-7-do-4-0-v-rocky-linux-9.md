@@ -15,8 +15,9 @@ image:
 ---
 
 > **Netbox** — веб приложение с открытым исходным кодом, разработанное для управления и документирования компьютерных сетей. Изначально Netbox придуман командой сетевых инженеров DigitalOcean специально для системных администраторов.
+{: .prompt-tip }
 
-В операционной системе Rocky Linux по умолчанию установлен Python 3.9. Для установки Netbox v.4 требует Python 3.10
+В операционной системе Rocky Linux по умолчанию установлен `Python 3.9`. Для установки `Netbox v.4` требует `Python 3.10`
 
 В одной из прошлых статей я рассмотрел вариант установки [Python 3.12 в Rocky Linux 9]({% post_url 2024-01-18-resheno-ustanovka-python-3-12-v-rocky-linux-9-almalinux-i-naznachaem-ego-dlja-ispolzovanija-po-umolchaniju %})
 

@@ -14,6 +14,7 @@ image:
 ---
 
 > **Blackbox exporter** — экспортер для Prometheus, который реализует сбор метрик внешних сервисов через HTTP, HTTPS, DNS, TCP, ICMP. Основное предназначение - проверять SSL-сертификаты и уведомлять (с помощью Alertmanager) о том, что срок действия сертификата завершается. 
+{: .prompt-tip }
 
 - [Установка Prometheus]({% post_url 2020-10-28-ustanovka-prometheus-na-centos-8-nginx-basic-auth %}) была рассмотрена в одной из предыдущих статей
 

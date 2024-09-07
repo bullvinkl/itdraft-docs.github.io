@@ -12,6 +12,7 @@ image:
 ---
 
 > **nmcli** (network manager command-line interface) - утилита для настройки сети, которая позволяет использовать Network Manager в консоли
+{: .prompt-tip }
 
 Запустим NetworkManager, проверяем статус
 

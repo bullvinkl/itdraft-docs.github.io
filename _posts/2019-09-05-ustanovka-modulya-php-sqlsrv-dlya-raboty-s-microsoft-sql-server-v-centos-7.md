@@ -12,6 +12,7 @@ image:
 ---
 
 > **PDO_SQLSRV** - это драйвер, реализующий интерфейс PHP Data Objects (PDO) для получения доступа из PHP к базам данных MS SQL Server (начиная с версии SQL Server 2005) и SQL Azure.
+{: .prompt-tip }
 
 [Установка PHP 7.x]({% post_url 2018-07-27-ustanovka-php-7-na-centos-7 %}) в Centos 7 была рассмотрена раньше
 

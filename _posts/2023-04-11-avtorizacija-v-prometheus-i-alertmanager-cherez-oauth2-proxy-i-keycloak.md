@@ -20,6 +20,7 @@ image:
 ---
 
 > **OAuth2 Proxy** — это обратный прокси-сервер, который находится перед вашим приложением и обеспечивает аутентификацию OpenID Connect / OAuth 2.0 с использованием провайдеров идентификации (Google, GitHub, Keycloak и других).
+{: .prompt-tip }
 
 - Установка Keycloak была рассмотрена в [одной из предыдущей статей]({% post_url 2022-08-29-ustanovka-keycloak-i-postgesql-v-linux-centos-rocky-debian %})
 

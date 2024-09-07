@@ -12,6 +12,7 @@ image:
 ---
 
 > **Keycloak** – программное обеспечение с открытым исходным кодом, для реализации single sign-on с управлением идентификацией и управлением доступом для современных приложений и сервисов. Это программное обеспечение написано на Java и по умолчанию поддерживает протоколы федерации удостоверений SAML и OpenID Connect (OIDC)
+{: .prompt-tip }
 
 **Дано:** [Keycloak сервер]({% post_url 2022-08-29-ustanovka-keycloak-i-postgesql-v-linux-centos-rocky-debian %}) с настроенной [федерацией с MS Active Directory]({% post_url 2023-03-06-resheno-nastrojka-user-federation-s-ms-active-directory-v-keycloak %}) и [SSO Kerberos авторизацией]({% post_url 2023-04-13-resheno-sso-kerberos-avtorizacija-v-keycloak %}).
 В Keycloak добавлен client. В Web-приложение добавлены настройки Keycloak клиента для авторизации по протоколу OpenID или SAML.

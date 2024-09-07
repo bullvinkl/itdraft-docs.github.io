@@ -18,10 +18,11 @@ image:
 ---
 
 > *Netbox* — веб приложение с открытым исходным кодом, разработанное для управления и документирования компьютерных сетей. Изначально Netbox придуман командой сетевых инженеров DigitalOcean специально для системных администраторов.
+{: .prompt-tip }
 
 ## Buckup and Restore Netbox
 
-Создаем дамп базы данных через pg_dump
+Создаем дамп базы данных через `pg_dump`
 ```sh
 $ pg_dump -Fc -v --host=localhost --username=netbox --dbname=netboxdb -f netboxdb.dump
 Password: passwdnetbox
@@ -38,7 +39,7 @@ $ psql
 $ exit
 ```
 
-Восстанавливаем дамп базы данных через pg_restore
+Восстанавливаем дамп базы данных через `pg_restore`
 ```sh
 $ pg_restore -v --no-owner --host=localhost --username=netbox --dbname=netboxdb netboxdb.dump
 Password: passwdnetbox
@@ -46,7 +47,7 @@ Password: passwdnetbox
 
 ## Upgrade Netbox
 
-В данном случае я восстанавливал дамп с боевого сервера (Netbox v3.4.2) на локальном тесте (Netbox v3.6.7). По этому пришлось сделать downgrade Netbox. В каталоге /opt у меня уже лежали 2 версии Netbox
+В данном случае я восстанавливал дамп с боевого сервера `Netbox v3.4.2` на локальном тесте `Netbox v3.6.7`. По этому пришлось сделать downgrade Netbox. В каталоге `/opt` у меня уже лежали 2 версии Netbox
 ```sh
 $ cd /opt
 $ sudo mv netbox netbox-3.6.7

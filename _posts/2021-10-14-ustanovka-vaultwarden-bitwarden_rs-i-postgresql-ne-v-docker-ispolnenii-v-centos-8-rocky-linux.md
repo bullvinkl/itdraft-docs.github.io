@@ -23,7 +23,8 @@ image:
   alt: "Установка Vaultwarden"
 ---
 
-> Vaultwarden (Bitwarden_RS) - менеджер паролей с открытым кодом. Легковесный форк широко известного Bitwarden, написан на Rust. В качестве БД используется SQLite, MariaDB, PostgreSQL
+> **Vaultwarden** (Bitwarden_RS) - менеджер паролей с открытым кодом. Легковесный форк широко известного Bitwarden, написан на Rust. В качестве БД используется SQLite, MariaDB, PostgreSQL
+{: .prompt-tip }
 
 ## Подготовка
 

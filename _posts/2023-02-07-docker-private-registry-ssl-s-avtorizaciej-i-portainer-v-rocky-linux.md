@@ -18,6 +18,7 @@ image:
 
 > **Portainer** — UI для управления Docker контейнерами из браузера. Проект с открытым исходным кодом.  
 > **Docker Private Registry** - приватный репозиторий для docker-контейнеров.
+{: .prompt-tip }
 
 ## Установка Docker
 

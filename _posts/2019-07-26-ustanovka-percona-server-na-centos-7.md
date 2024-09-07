@@ -14,6 +14,7 @@ image:
 ---
 
 > **Percona server** — это сборка MySQL с включенным по умолчанию XtraDB storage engine. Отличается от MySQL+InnoDB plugin лучшей производительностью/масштабируемостью, особенно на современных многоядерных серверах.
+{: .prompt-tip }
 
 ## Установка Percona Server
 

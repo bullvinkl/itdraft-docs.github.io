@@ -13,6 +13,9 @@ image:
   alt: "missing packages: authselect-compat"
 ---
 
+> Ошибка “missing packages: authselect-compat” возникает потому, что пакет authselect-compat находится в репозитории AppStream, а в минимальном образе дистрибутива (например, CentOS 8 или Rocky Linux) репозиторий AppStream не подключен. Для решения этой проблемы необходимо добавить репозиторий AppStream в kickstart-файл или настроить его вручную.
+{: .prompt-tip }
+
 ## Ошибка
 
 При установке Centos 8 / Rocky linux 8 при помощи kickstart из минимального образа (`CentOS-8.3.2011-x86_64-minimal.iso`, `Rocky-8.4-x86_64-minimal.iso`) появляется ошибка:

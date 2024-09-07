@@ -21,6 +21,7 @@ image:
 ---
 
 > **Ansible Semaphore** — это веб-интерфейс для запуска Ansible-плейбуков с расширенными возможностями. Альтернатива Ansible Tower с открытым исходным кодом. Он позволяет запускать и управлять Ansible Tasks из веб-интерфейса.
+{: .prompt-tip }
 
 Для работы Ansible Semaphore требуется СУБД: MariaDB, BoltDB либо PostgreSQL.
 
