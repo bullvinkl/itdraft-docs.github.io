@@ -2,7 +2,7 @@
 title: "Обновление Redmine 4.0.5 - 4.1.0"
 date: "2020-01-20"
 categories: 
-  - Project Management
+  - Project-Management
 tags: 
   - "centos"
   - "nginx"

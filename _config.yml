@@ -14,7 +14,7 @@ description: >- # used by seo meta and the atom feed
 author: Максим Макаров
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://docs.itdraft.ru"
+url: "https://itdraft.ru"
 
 github:
   username: bullvinkl
@@ -30,11 +30,10 @@ social:
   email: admin@itdraft.ru # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://docs.itdraft.ru
+    - https://itdraft.ru
     - https://vk.com/it.draft
     - https://t.me/itdraft
     - https://github.com/bullvinkl
-
 
 # Site Verification Settings
 webmaster_verifications:
@@ -216,7 +215,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
 # ------------ Мои настройки ------------------
 
 #plugins:

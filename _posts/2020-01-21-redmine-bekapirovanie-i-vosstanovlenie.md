@@ -2,7 +2,7 @@
 title: "Redmine: бэкапирование и восстановление"
 date: "2020-01-21"
 categories: 
-  - Project Management
+  - Project-Management
 tags: 
   - "backup"
   - "redmine"
