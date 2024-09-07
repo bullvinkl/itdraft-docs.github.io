@@ -25,7 +25,7 @@ REG ADD "HKLM/System/CurrentControlSet/Control/Storage/DevicePolicies" /v "Write
 
 - Пользователи и компьютеры - правой конпкой клик на объект групповой политики (в моем случае Office)
 
-![](/assets/img/posts/2012/01/23/gpo1.jpg){: w="300" }
+![](/assets/img/posts/2012/01/23/gpo-1.jpg){: w="300" }
 
 
 Вкладка `Групповая политика` - создать.
@@ -47,7 +47,7 @@ REG ADD "HKLM/System/CurrentControlSet/Control/Storage/DevicePolicies" /v "Write
 
 Добавляем наш  `flash_block.bat`  (должен лежать в общем сетевом хранилище)
 
-![](/assets/img/posts/2012/01/23/gpo2.jpg){: w="300" }
+![](/assets/img/posts/2012/01/23/gpo-2.jpg){: w="300" }
 
 Далее все закрываем, запускаем коммандную строку и выполняем в ней `gpupdate/force`, чтоб применились групповые политикик
 
