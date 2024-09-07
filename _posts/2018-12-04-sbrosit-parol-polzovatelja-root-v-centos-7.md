@@ -2,7 +2,7 @@
 title: "Сбросить пароль пользователя Root в Centos 7"
 date: "2018-12-04"
 categories: 
-  - Linux
+  - Security-System
 tags: 
   - "centos"
   - "grub"

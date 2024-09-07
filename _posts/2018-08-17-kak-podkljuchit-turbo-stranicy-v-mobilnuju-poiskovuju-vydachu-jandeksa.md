@@ -2,7 +2,7 @@
 title: "Как подключить Турбо-страницы в мобильную поисковую выдачу Яндекса"
 date: "2018-08-17"
 categories: 
-  - Wordpress
+  - Manuals
 tags: 
   - "wordpress"
   - "turbo-stranicy"

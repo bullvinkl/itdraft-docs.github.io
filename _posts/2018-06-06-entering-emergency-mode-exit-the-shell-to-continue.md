@@ -2,7 +2,7 @@
 title: "Entering emergency mode. Exit the shell to continue"
 date: "2018-06-06"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "xfs_mdrestore"

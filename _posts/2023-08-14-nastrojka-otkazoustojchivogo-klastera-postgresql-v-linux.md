@@ -2,8 +2,7 @@
 title: "Настройка отказоустойчивого кластера PostgreSQL в Linux"
 date: "2023-08-14"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - etcd
   - haproxy

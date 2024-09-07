@@ -2,8 +2,7 @@
 title: "Обновление SeaFile с версии 7.1.5 до 8.0.5 в Centos"
 date: "2021-06-01"
 categories: 
-  - Linux
-  - SeaFile
+  - Storage-System
 tags: 
   - "centos"
   - "seafile"

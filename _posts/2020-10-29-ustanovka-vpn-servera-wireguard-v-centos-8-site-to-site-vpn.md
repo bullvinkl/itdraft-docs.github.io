@@ -2,8 +2,7 @@
 title: "Установка VPN сервера Wireguard в Centos 8. Site-to-site VPN"
 date: "2020-10-29"
 categories: 
-  - Linux
-  - WireGuard
+  - Security-System
 tags: 
   - "centos"
   - "vpn"

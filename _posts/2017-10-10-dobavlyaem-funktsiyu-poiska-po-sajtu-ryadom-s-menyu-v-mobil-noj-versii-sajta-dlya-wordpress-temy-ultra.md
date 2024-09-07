@@ -2,7 +2,7 @@
 title: "Добавляем функцию поиска по сайту рядом с меню в мобильной версии сайта для Wordpress темы Ultra"
 date: "2017-10-10"
 categories: 
-  - Wordpress
+  - Content-Management
 tags: 
   - "mobile"
   - "ultra"

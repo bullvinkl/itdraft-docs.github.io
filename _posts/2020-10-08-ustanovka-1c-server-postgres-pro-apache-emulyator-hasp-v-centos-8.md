@@ -2,8 +2,7 @@
 title: "Установка 1C Server + Postgres PRO + Apache + Эмулятор HASP в Centos 8"
 date: "2020-10-08"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
   - 1C
 tags: 
   - "1c"

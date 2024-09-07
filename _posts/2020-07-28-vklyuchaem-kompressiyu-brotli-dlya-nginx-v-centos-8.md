@@ -2,8 +2,7 @@
 title: "Включаем компрессию Brotli для Nginx в CentOS 8"
 date: "2020-07-28"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "brotli"
   - "centos"

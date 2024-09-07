@@ -2,7 +2,7 @@
 title: "Копирования (синхронизация) данных с удаленного сервера на сетевое хранилище (NAS)"
 date: "2018-08-29"
 categories: 
-  - Linux
+  - File-System
 tags: 
   - "rsync"
 coverImage: "wp_rsync.png"

@@ -2,7 +2,7 @@
 title: "Как установить Thunderbird 60 в Ubuntu 18.04"
 date: "2018-09-19"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "thunderbird"
   - "ubuntu"

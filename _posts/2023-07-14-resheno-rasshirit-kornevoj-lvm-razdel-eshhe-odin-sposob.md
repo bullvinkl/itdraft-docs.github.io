@@ -2,8 +2,7 @@
 title: "[Решено] Расширить корневой LVM-раздел. Еще один способ"
 date: "2023-07-14"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - ext4
   - fdisk

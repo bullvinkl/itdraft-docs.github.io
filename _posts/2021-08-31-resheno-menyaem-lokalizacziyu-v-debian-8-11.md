@@ -2,8 +2,7 @@
 title: "[РЕШЕНО] Меняем локализацию в Debian 8 - 11"
 date: "2021-08-31"
 categories: 
-  - Linux
-  - Debian
+  - Manuals
 tags: 
   - "debian"
   - "locale"

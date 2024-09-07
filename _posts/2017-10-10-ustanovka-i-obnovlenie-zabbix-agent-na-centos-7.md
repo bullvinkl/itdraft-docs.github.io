@@ -2,8 +2,7 @@
 title: "Установка и обновление Zabbix-agent в CentOS 7"
 date: "2017-10-10"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
 tags: 
   - "centos"
   - "zabbix"

@@ -2,8 +2,7 @@
 title: "Docker Private Registry SSL с авторизацией и Portainer в Rocky Linux"
 date: "2023-02-07"
 categories: 
-  - Linux
-  - Docker
+  - DevOps
 tags: 
   - "docker"
   - "docker-compose"

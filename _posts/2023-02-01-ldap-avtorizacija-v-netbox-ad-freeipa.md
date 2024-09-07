@@ -2,8 +2,8 @@
 title: "LDAP-авторизация в Netbox (AD, FreeIPA)"
 date: "2023-02-01"
 categories: 
-  - Linux
-  - Netbox
+  - Directory-Service
+  - Asset-Management
 tags: 
   - "active-directory"
   - "assetmanager"

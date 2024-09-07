@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 2. Боремся со спамом"
 date: "2019-02-07"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "centos"
   - "dovecot"

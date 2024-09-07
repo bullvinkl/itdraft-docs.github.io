@@ -2,9 +2,8 @@
 title: "Поднимаем web-сервер с Wordpress в Docker для разработки"
 date: "2020-12-07"
 categories: 
-  - Linux
-  - Docker
-  - Wordpress
+  - Content-Management
+  - DevOps
 tags: 
   - "docker"
   - "docker-compose"

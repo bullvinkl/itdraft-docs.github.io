@@ -2,8 +2,7 @@
 title: "Обновление PostgreSQL в Linux"
 date: "2022-11-22"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - "pg_upgrade"
   - "postgresql"

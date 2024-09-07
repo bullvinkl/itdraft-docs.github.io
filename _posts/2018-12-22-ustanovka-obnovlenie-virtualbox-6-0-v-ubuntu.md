@@ -2,7 +2,7 @@
 title: "Установка - обновление Virtualbox 6.0 в Ubuntu"
 date: "2018-12-22"
 categories: 
-  - Linux
+  - Virtualization
 tags: 
   - "ubuntu"
   - "virtualbox"

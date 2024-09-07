@@ -2,9 +2,8 @@
 title: "Настройка HashiCorp Vault для создания динамических учетных данных PostgreSQL"
 date: "2021-03-08"
 categories: 
-  - Linux
-  - HashiCorp-Vault
-  - PostgreSQL
+  - Security-System
+  - Database-System
 tags: 
   - "hashicorp-vault"
   - "postgresql"

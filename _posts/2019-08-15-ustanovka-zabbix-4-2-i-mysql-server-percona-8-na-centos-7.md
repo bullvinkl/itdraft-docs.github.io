@@ -2,8 +2,8 @@
 title: "Установка Zabbix 4.2 и MySQL-сервер Percona 8 на Centos 7"
 date: "2019-08-15"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
+  - Database-System
 tags: 
   - "apache"
   - "centos"

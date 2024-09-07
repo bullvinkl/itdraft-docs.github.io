@@ -2,8 +2,7 @@
 title: "Установка NetBox в Rocky Linux 9"
 date: "2023-01-24"
 categories: 
-  - Linux
-  - Netbox
+  - Asset-Management
 tags: 
   - assetmanager
   - cmdb

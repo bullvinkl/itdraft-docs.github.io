@@ -2,8 +2,7 @@
 title: "Установка Baculum на Centos 7"
 date: "2019-12-05"
 categories: 
-  - Linux
-  - Bacula
+  - Backup-System
 tags: 
   - "backup"
   - "bacula"

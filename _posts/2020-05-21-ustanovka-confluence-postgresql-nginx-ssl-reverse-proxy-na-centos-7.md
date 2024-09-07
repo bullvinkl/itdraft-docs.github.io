@@ -2,8 +2,9 @@
 title: "Установка Confluence + PostgreSQL + Nginx SSL reverse-proxy на Centos 7"
 date: "2020-05-21"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Project-Management
+  - Database-System
+  - Web
 tags: 
   - "atlassian"
   - "confluence"

@@ -2,8 +2,7 @@
 title: "[РЕШЕНО] GPT структура разделов при авто установке (kickstart) Rocky Linux / Centos 8"
 date: "2021-07-22"
 categories: 
-  - Linux
-  - Kickstart
+  - Automation
 tags: 
   - "centos"
   - "kickstart"

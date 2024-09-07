@@ -2,7 +2,7 @@
 title: "Синхронизация времени в Centos 7"
 date: "2018-12-20"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "chroony"

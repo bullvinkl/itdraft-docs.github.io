@@ -2,7 +2,7 @@
 title: "Проверка доступности TCP / UDP портов на удаленной машине"
 date: "2021-05-18"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "netcat"
   - "nmap"

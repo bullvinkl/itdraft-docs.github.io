@@ -2,7 +2,7 @@
 title: "Determining if ip address is already in use for device ethX"
 date: "2017-03-01"
 categories: 
-  - Linux
+  - Network-Service
 tags: 
   - "centos"
 image:

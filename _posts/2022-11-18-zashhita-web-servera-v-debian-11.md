@@ -2,9 +2,7 @@
 title: "Защита Web-сервера с помощью UFW, WireGuard и Dnsmasq в Debian 11"
 date: "2022-11-18"
 categories: 
-  - Linux
-  - UFW
-  - WireGuard
+  - Security-System
 tags: 
   - "debian"
   - "dnsmasq"

@@ -2,8 +2,8 @@
 title: "Установка Grafana в Centos 8"
 date: "2020-10-30"
 categories: 
-  - Linux
-  - Monitoring
+  - Monitoring-System
+  - DevOps
 tags: 
   - "centos"
   - "grafana"

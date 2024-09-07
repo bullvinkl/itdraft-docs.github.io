@@ -2,7 +2,7 @@
 title: "Работаем с crontab"
 date: "2018-11-21"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - cron
   - crontab

@@ -2,7 +2,7 @@
 title: "Добавить Swap в CentOS"
 date: "2018-05-16"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "swap"

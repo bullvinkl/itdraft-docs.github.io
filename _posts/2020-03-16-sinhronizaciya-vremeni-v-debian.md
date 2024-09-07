@@ -2,7 +2,7 @@
 title: "Синхронизация времени в Debian"
 date: "2020-03-16"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "debian"
   - "ntp"

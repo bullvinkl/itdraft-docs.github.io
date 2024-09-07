@@ -2,7 +2,7 @@
 title: "Не удалось получить доступ к файлу блокировки /var/lib/apt/lists/lock"
 date: "2017-06-07"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "ubuntu"
 image:

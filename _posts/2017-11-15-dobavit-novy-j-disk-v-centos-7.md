@@ -2,8 +2,7 @@
 title: "Добавить новый диск в CentOS 7"
 date: "2017-11-15"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "centos"
   - "fdisk"

@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 1. Базовая установка"
 date: "2019-02-05"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "centos"
   - "iredmail"

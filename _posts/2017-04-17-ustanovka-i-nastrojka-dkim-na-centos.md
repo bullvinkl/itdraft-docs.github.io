@@ -2,7 +2,7 @@
 title: "Установка и настройка DKIM на CentOS"
 date: "2017-04-17"
 categories: 
-  - Linux
+  - Communication-System
 tags: 
   - "centos"
   - "dkim"

@@ -2,7 +2,7 @@
 title: "Подключаем YML в Турбо-страницы Яндекса для интернет-магазинов в Wordpress"
 date: "2018-09-24"
 categories: 
-  - Wordpress
+  - Content-Management
 tags: 
   - "woocommerce"
   - "wordpress"

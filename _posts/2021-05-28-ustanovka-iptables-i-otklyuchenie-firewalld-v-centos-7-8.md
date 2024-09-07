@@ -2,7 +2,7 @@
 title: "Установка iptables и отключение firewalld в Centos 7 / 8"
 date: "2021-05-28"
 categories: 
-  - Linux
+  - Security-System
 tags: 
   - "centos"
   - "firewall"

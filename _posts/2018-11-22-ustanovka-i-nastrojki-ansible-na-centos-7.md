@@ -2,8 +2,7 @@
 title: "Установка и настройки Ansible на CentOS 7"
 date: "2018-11-22"
 categories: 
-  - Linux
-  - Ansible
+  - DevOps
 tags: 
   - ansible
   - ssh-copy-id

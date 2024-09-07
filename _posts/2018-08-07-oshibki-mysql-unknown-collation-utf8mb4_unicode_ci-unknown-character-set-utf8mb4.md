@@ -2,7 +2,7 @@
 title: "Ошибки MySQL: Unknown collation 'utf8mb4_unicode_ci', Unknown character set 'utf8mb4'"
 date: "2018-08-07"
 categories: 
-  - Linux
+  - Database-System
 tags: 
   - "centos"
   - "linux"

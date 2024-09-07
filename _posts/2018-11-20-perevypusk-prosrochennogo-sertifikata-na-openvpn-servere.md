@@ -2,7 +2,7 @@
 title: "Перевыпуск просроченного сертификата на OpenVPN-сервере"
 date: "2018-11-20"
 categories: 
-  - Linux
+  - Security-System
 tags: 
   - "centos"
   - "openvpn"

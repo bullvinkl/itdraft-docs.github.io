@@ -2,7 +2,7 @@
 title: "Обновление PHP 7.0 до PHP 7.2 в Centos 7"
 date: "2018-11-08"
 categories: 
-  - Linux
+  - Development
 tags: 
   - "apache"
   - "centos"

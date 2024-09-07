@@ -2,7 +2,7 @@
 title: "Монтируем WebDAV в CentOS 7 на примере Яндекс.Диск"
 date: "2019-03-21"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "davfs"

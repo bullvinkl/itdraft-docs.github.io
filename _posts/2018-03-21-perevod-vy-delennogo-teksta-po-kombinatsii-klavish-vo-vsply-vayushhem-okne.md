@@ -2,7 +2,7 @@
 title: "Перевод выделенного текста по комбинации клавиш во всплывающем окне"
 date: "2018-03-21"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "hotkey"
   - "translate"

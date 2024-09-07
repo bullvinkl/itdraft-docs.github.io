@@ -3,8 +3,7 @@ layout: post
 title: "[Решено] Обновить Netbox 3.7 до 4.0 в Rocky Linux 9"
 date: "2024-05-15 09:55 +0300"
 categories: 
-  - Linux
-  - Netbox
+  - Asset-Management
 tags: 
   - netbox
   - python

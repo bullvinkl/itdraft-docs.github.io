@@ -2,7 +2,7 @@
 title: "Ошибка при запуске виртуальной машины - vmware esx cannot find the virtual disk"
 date: "2019-05-23"
 categories: 
-  - VMware
+  - Virtualization
 tags: 
   - "esxi"
   - "vsphere"

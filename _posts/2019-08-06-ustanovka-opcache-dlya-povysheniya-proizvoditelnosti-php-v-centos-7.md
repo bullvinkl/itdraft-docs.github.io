@@ -2,7 +2,7 @@
 title: "Установка OPCache для повышения производительности PHP в CentOS 7"
 date: "2019-08-06"
 categories: 
-  - Linux
+  - Web
 tags: 
   - "apache"
   - "centos"

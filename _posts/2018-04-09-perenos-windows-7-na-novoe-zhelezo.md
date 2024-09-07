@@ -2,7 +2,7 @@
 title: "Перенос Windows 7 на новое железо"
 date: "2018-04-09"
 categories: 
-  - Windows
+  - Manuals
 tags: 
   - "windows"
 image:

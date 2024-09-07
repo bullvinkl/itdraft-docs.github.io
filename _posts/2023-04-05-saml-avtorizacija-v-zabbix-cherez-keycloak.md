@@ -2,9 +2,8 @@
 title: "SAML-авторизация в Zabbix через Keycloak"
 date: "2023-04-05"
 categories: 
-  - Linux
-  - Zabbix
-  - Keycloak
+  - Monitoring-System
+  - Directory-Service
 tags: 
   - "keycloak"
   - "linux"

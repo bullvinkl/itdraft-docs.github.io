@@ -2,7 +2,7 @@
 title: "Локальный YUM репозиторий в Centos 7"
 date: "2019-12-12"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "nginx"

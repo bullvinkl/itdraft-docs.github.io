@@ -2,7 +2,7 @@
 title: "Установка и настройка NFS сервера / клиента в Centos 7"
 date: "2019-12-09"
 categories: 
-  - Linux
+  - File-System
 tags: 
   - "centos"
   - "nfs"

@@ -2,8 +2,8 @@
 title: "Авторизация в Prometheus и Alertmanager через OAuth2 Proxy и Keycloak"
 date: "2023-04-11"
 categories: 
-  - Linux
-  - Keycloak
+  - Directory-Service
+  - Monitoring-System
 tags: 
   - alertmanager
   - debian

@@ -2,8 +2,7 @@
 title: "Резервное копирование и восстановление базы PostgreSQL. Полезные команды"
 date: "2018-08-17"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - "backup"
   - "postgresql"

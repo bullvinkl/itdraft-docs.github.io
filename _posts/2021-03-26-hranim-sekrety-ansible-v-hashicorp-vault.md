@@ -2,9 +2,8 @@
 title: "Храним секреты Ansible в Hashicorp Vault"
 date: "2021-03-26"
 categories: 
-  - Linux
-  - HashiCorp-Vault
-  - Ansible
+  - DevOps
+  - Security-System
 tags: 
   - "ansible"
   - "hashicorp-vault"

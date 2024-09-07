@@ -2,8 +2,7 @@
 title: "Интеграция SeaFile и OnlyOffice Document Server"
 date: "2020-08-03"
 categories: 
-  - Linux
-  - SeaFile
+  - Storage-System
 tags: 
   - "nginx"
   - "onlyoffice"

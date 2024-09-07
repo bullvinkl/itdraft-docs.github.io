@@ -2,8 +2,8 @@
 title: "Установка Prometheus на Centos 8, Nginx Basic Auth"
 date: "2020-10-28"
 categories: 
-  - Linux
-  - Monitoring
+  - Monitoring-System
+  - DevOps
 tags: 
   - centos
   - nginx

@@ -2,8 +2,7 @@
 title: "Установка и подключение модуля PageSpeed для Nginx в Centos 7"
 date: "2019-09-09"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "centos"
   - "nginx"

@@ -2,9 +2,9 @@
 title: "Настройка SSO в Nginx, интеграция с Zabbix в Centos 8 / Rocky Linux"
 date: "2021-11-19"
 categories: 
-  - Linux
-  - Zabbix
-  - Nginx
+  - Monitoring-System
+  - Web
+  - Directory-Service
 tags: 
   - "centos"
   - "ldap"

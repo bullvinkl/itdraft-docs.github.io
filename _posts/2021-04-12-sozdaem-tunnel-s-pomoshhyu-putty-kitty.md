@@ -2,7 +2,7 @@
 title: "Создаем SSH-туннель с помощью Putty / Kitty"
 date: "2021-04-12"
 categories: 
-  - Windows
+  - Manuals
 tags: 
   - "kitty"
   - "putty"

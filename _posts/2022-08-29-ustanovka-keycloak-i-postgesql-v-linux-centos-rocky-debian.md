@@ -2,9 +2,8 @@
 title: "Установка Keycloak и PostgeSQL в Linux (Centos, Rocky, Debian)"
 date: "2022-08-29"
 categories:
-  - Linux
-  - Keycloak
-  - PostgreSQL
+  - Directory-Service
+  - Database-System
 tags:
   - almalinux
   - centos

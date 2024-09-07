@@ -2,8 +2,7 @@
 title: "Установка PostgreSQL 13 в CentOS 8"
 date: "2020-11-30"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - "centos"
   - "postgresql"

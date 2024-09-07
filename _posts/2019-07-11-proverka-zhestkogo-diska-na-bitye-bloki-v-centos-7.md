@@ -2,7 +2,7 @@
 title: "Проверка жесткого диска на битые блоки в Centos 7"
 date: "2019-07-11"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "badblocks"
   - "centos"

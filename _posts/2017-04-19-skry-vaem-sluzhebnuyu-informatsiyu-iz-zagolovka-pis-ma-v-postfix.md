@@ -2,7 +2,7 @@
 title: "Скрываем служебную информацию из заголовка письма в Postfix"
 date: "2017-04-19"
 categories: 
-  - Linux
+  - Communication-System
 tags: 
   - "postfix"
 image:

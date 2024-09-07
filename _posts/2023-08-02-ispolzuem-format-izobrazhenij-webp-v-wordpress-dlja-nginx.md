@@ -2,7 +2,7 @@
 title: "Используем формат изображений WebP в Wordpress для Nginx"
 date: "2023-08-02"
 categories: 
-  - Wordpress
+  - Content-Management
 tags: 
   - nginx
   - plugins

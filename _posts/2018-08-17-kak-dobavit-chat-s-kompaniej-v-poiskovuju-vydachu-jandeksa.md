@@ -2,7 +2,7 @@
 title: "Как добавить Чат с компанией в поисковую выдачу Яндекса"
 date: "2018-08-17"
 categories: 
-  - Other
+  - Manuals
 tags: 
   - yandex
 image:

@@ -2,9 +2,8 @@
 title: "HashiCorp Vault. Тип хранилища PostgreSQL"
 date: "2020-12-01"
 categories: 
-  - Linux
-  - HashiCorp-Vault
-  - PostgreSQL
+  - Security-System
+  - Database-System
 tags: 
   - "hashicorp-vault"
   - "postgresql"

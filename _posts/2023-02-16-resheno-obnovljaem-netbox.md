@@ -2,8 +2,7 @@
 title: "[Решено] Обновляем Netbox"
 date: "2023-02-16"
 categories: 
-  - Linux
-  - Netbox
+  - Asset-Management
 tags: 
   - "assetmanager"
   - "cmdb"

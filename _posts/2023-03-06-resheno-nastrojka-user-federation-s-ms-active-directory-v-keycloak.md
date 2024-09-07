@@ -2,7 +2,7 @@
 title: "[Решено] Настройка User federation с MS Active Directory в Keycloak"
 date: "2023-03-06"
 categories: 
-  - Keycloak
+  - Directory-Service
 tags: 
   - active-directory
   - keycloak

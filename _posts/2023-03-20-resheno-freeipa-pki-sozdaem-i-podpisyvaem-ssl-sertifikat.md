@@ -2,7 +2,8 @@
 title: "[Решено] FreeIPA PKI - Создаем и подписываем ssl сертификат"
 date: "2023-03-20"
 categories: 
-  - FreeIPA
+  - Directory-Service
+  - PKI
 tags: 
   - "freeipa"
   - "linux"

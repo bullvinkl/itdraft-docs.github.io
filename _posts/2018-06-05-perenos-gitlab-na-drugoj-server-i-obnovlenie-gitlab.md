@@ -2,8 +2,7 @@
 title: "Перенос GitLab на другой сервер и обновление GitLab"
 date: "2018-06-05"
 categories: 
-  - Linux
-  - GitLab
+  - DevOps
 tags: 
   - "centos"
   - "gitlab"

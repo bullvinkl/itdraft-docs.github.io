@@ -2,8 +2,7 @@
 title: "Установка Percona Server на Centos 7"
 date: "2019-07-26"
 categories: 
-  - Linux
-  - MySQL
+  - Database-System
 tags: 
   - "centos"
   - "mysql"

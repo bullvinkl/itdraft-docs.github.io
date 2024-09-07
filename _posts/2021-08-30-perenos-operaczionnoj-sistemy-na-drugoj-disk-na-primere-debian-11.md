@@ -2,8 +2,7 @@
 title: "Перенос операционной системы на другой диск, на примере Debian 11"
 date: "2021-08-30"
 categories: 
-  - Linux
-  - Debian
+  - Manuals
 tags: 
   - dd
   - debian

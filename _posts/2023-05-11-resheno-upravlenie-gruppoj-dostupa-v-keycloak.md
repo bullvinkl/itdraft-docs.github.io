@@ -2,7 +2,7 @@
 title: "[Решено] Управление группой доступа в Keycloak"
 date: "2023-05-11"
 categories: 
-  - Keycloak
+  - Directory-Service
 tags: 
   - "keycloak"
   - "ldap"

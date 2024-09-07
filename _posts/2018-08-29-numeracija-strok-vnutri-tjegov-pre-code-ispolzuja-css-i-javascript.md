@@ -2,7 +2,7 @@
 title: "Нумерация строк внутри тэгов pre,code используя css и javascript"
 date: "2018-08-29"
 categories: 
-  - Wordpress
+  - Content-Management
 tags: 
   - "css"
   - "javascript"

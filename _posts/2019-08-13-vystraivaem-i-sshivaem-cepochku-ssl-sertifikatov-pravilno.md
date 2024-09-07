@@ -2,7 +2,7 @@
 title: "Выстраиваем и сшиваем цепочку SSL-сертификатов правильно"
 date: "2019-08-13"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "apache"
   - "nginx"

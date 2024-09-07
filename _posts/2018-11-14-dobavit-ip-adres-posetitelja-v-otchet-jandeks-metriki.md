@@ -2,7 +2,7 @@
 title: "Добавить IP-адрес посетителя в отчет Яндекс Метрики"
 date: "2018-11-14"
 categories: 
-  - Other
+  - Manuals
 tags: 
   - "metrika"
   - "yandex"

@@ -2,7 +2,7 @@
 title: "Монтируем расшаренный Windows-каталог в CentOS 7"
 date: "2017-10-05"
 categories: 
-  - Linux
+  - File-System
 tags: 
   - "centos"
   - "mount"

@@ -2,8 +2,7 @@
 title: "Настройка Nginx в качестве UDP-балансировщика"
 date: "2022-07-06"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "balancer"
   - "debian"

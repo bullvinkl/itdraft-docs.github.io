@@ -2,7 +2,7 @@
 title: "Тестирование жесткого диска на чтение/запись в Centos 7"
 date: "2018-07-25"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "dd"

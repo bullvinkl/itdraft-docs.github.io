@@ -2,8 +2,8 @@
 title: "[РЕШЕНО] Failed to connect to lvmetad. Falling back to device scanning"
 date: "2021-12-15"
 categories: 
-  - Linux
-  - Disk
+  - Manuals
+  - File-System
 tags: 
   - "debian"
   - "failed"

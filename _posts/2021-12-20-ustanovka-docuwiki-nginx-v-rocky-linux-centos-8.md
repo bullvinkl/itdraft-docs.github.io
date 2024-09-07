@@ -2,8 +2,7 @@
 title: "Установка DokuWiki + Nginx в Rocky Linux / Centos 8"
 date: "2021-12-20"
 categories: 
-  - Linux
-  - DokuWiki
+  - Content-Management
 tags: 
   - centos
   - dokuwiki

@@ -2,7 +2,7 @@
 title: "Установка и настройка FTP-сервера VSFTP на Centos 7. Локальные пользователи"
 date: "2018-07-23"
 categories: 
-  - Linux
+  - Storage-System
 tags: 
   - "bash"
   - "centos"

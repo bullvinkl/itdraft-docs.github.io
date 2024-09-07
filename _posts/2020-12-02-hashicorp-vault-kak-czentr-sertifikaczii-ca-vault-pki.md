@@ -2,8 +2,8 @@
 title: "HashiCorp Vault как центр сертификации (CA) / Vault PKI"
 date: "2020-12-02"
 categories: 
-  - Linux
-  - HashiCorp-Vault
+  - PKI
+  - Security-System
 tags: 
   - "hashicorp-vault"
   - "pki"

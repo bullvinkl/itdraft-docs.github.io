@@ -2,7 +2,7 @@
 title: "Установка и настройка rclone. Бэкапирование в s3 или cloud.mail.ru"
 date: "2019-12-06"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "backup"
   - "rclone"

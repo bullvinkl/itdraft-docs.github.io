@@ -2,7 +2,7 @@
 title: "Установка и настройка PPTP VPN в Centos 7"
 date: "2018-04-24"
 categories: 
-  - Linux
+  - Security-System
 tags: 
   - "centos"
   - "pptp"

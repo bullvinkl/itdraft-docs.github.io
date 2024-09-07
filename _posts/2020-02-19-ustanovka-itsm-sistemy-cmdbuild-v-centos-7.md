@@ -2,8 +2,7 @@
 title: "Установка ITSM-системы CMDBuild в Centos 7"
 date: "2020-02-19"
 categories: 
-  - Linux
-  - ITSM
+  - Asset-Management
 tags: 
   - "assetmanager"
   - "centos"

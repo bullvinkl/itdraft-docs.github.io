@@ -3,8 +3,7 @@ layout: post
 title: "Установка и настройка Fail2Ban в Centos 7"
 date: "2019-04-10"
 categories:
-  - Linux
-  - Fail2Ban
+  - Security-System
 tags:
   - centos
   - fail2ban

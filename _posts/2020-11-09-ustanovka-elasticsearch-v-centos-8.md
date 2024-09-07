@@ -2,7 +2,9 @@
 title: "Установка ElasticSearch в Centos 8"
 date: "2020-11-09"
 categories: 
-  - Linux
+  - Logging-System
+  - Database-System
+  - DevOps
 tags: 
   - "centos"
   - "elasticsearch"

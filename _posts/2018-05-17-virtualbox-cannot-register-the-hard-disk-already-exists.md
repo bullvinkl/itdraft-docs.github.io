@@ -2,7 +2,7 @@
 title: "VirtualBox: cannot register the hard disk already exists"
 date: "2018-05-17"
 categories: 
-  - Virtualisation
+  - Virtualization
 tags: 
   - "linux"
   - "uuid"

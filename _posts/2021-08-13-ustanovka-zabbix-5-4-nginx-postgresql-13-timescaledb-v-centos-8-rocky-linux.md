@@ -2,9 +2,8 @@
 title: "Установка Zabbix 5.4, Nginx, PostgreSQL 13 + TimescaleDB в Centos 8 / Rocky Linux"
 date: "2021-08-13"
 categories: 
-  - Linux
-  - Zabbix
-  - PostgreSQL
+  - Monitoring-System
+  - Database-System
 tags: 
   - "centos"
   - "linux"

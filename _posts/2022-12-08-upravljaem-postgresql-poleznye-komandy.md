@@ -2,8 +2,7 @@
 title: "Управляем PostgreSQL, полезные команды"
 date: "2022-12-08"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - "linux"
   - "postgresql"

@@ -2,7 +2,7 @@
 title: "Device eth0 does not seem to be present, delaying initialization"
 date: "2017-03-01"
 categories: 
-  - Linux
+  - Network-Service
 tags: 
   - "centos"
 image:

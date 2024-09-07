@@ -2,7 +2,7 @@
 title: "Установка Web-сервера Apache в Centos 7"
 date: "2018-07-27"
 categories: 
-  - Linux
+  - Web
 tags: 
   - "apache"
   - "centos"

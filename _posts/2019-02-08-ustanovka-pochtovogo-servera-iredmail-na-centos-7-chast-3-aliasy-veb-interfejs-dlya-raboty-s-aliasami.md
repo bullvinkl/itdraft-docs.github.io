@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 3. Алиасы, вэб-интерфейс для работы с алиасами"
 date: "2019-02-08"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "alias"
   - "centos"

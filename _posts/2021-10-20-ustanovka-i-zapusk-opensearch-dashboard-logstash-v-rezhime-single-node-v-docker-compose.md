@@ -2,8 +2,7 @@
 title: "Установка и запуск Opensearch / Dashboard / Logstash в режиме single-node в docker compose"
 date: "2021-10-20"
 categories: 
-  - Linux
-  - Opensearch
+  - Logging-System
 tags: 
   - "docker"
   - "docker-compose"

@@ -2,7 +2,7 @@
 title: "Монтирование общего каталога из Ubuntu 18.04"
 date: "2018-08-29"
 categories: 
-  - Linux
+  - File-System
 tags: 
   - "cifs-utils"
   - "mount"

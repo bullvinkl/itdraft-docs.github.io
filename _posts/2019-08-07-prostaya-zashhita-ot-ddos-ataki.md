@@ -2,7 +2,8 @@
 title: "Простая защита от DDoS-атаки"
 date: "2019-08-07"
 categories: 
-  - Linux
+  - Security-System
+  - Automation
 tags: 
   - "ddos"
   - "iptables"

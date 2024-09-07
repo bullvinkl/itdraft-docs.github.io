@@ -2,7 +2,6 @@
 title: "Установка PKI-системы EJBCA на Centos 7"
 date: "2020-05-20"
 categories: 
-  - Linux
   - PKI
 tags: 
   - "centos"

@@ -2,7 +2,9 @@
 title: "Установка Kibana + Nginx Reverse Proxy в Centos 8"
 date: "2020-11-10"
 categories: 
-  - Linux
+  - Logging-System
+  - DevOps
+  - Web
 tags: 
   - "centos"
   - "elk"

@@ -2,8 +2,7 @@
 title: "Установка Ansible Semaphore в Rocky Linux"
 date: "2023-02-02"
 categories: 
-  - Linux
-  - Ansible
+  - DevOps
 tags: 
   - "ansible"
   - "ansible-tower"

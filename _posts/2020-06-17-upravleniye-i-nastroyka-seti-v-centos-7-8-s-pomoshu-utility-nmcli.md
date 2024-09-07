@@ -2,7 +2,7 @@
 title: "Управление и настройка сети в Centos 7/8 с помощью утилиты nmcli"
 date: "2020-06-17"
 categories: 
-  - Linux
+  - Network-Service
 tags: 
   - "centos"
   - "nmcli"

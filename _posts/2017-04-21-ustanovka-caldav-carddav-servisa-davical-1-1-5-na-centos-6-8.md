@@ -2,7 +2,7 @@
 title: "Установка CalDAV / CardDAV сервиса Davical 1.1.5 + LDAP на CentOS 6.8"
 date: "2017-04-21"
 categories: 
-  - Linux
+  - Communication-System
 tags: 
   - "caldav"
   - "carddav"

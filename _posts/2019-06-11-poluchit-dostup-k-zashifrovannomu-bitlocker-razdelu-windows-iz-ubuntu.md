@@ -2,8 +2,8 @@
 title: "Получить доступ к зашифрованному BitLocker разделу Windows из Ubuntu"
 date: "2019-06-11"
 categories: 
-  - Windows
-  - Linux
+  - Security-System
+  - Manuals
 tags: 
   - "bitlocker"
   - "dislocker"

@@ -2,8 +2,7 @@
 title: "Как в CentOS 7 удалить раздел /home и расширить корневой раздел"
 date: "2018-06-14"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "centos"
   - "lvextend"

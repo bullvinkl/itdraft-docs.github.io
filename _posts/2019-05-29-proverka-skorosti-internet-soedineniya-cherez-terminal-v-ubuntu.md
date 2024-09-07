@@ -2,7 +2,7 @@
 title: "Проверка скорости интернет соединения через терминал в Ubuntu"
 date: "2019-05-29"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "speedtest"
   - "ubuntu"

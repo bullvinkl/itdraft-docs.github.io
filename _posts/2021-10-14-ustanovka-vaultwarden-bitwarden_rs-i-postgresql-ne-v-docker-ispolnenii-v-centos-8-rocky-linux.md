@@ -2,9 +2,8 @@
 title: "Установка Vaultwarden (Bitwarden_RS) и PostgreSQL не в docker-исполнении в Centos 8 / Rocky Linux"
 date: "2021-10-14"
 categories: 
-  - Linux
-  - Vaultwarden
-  - PostgreSQL
+  - Security-System
+  - Database-System
 tags: 
   - "bitwarden"
   - "bitwarden_rs"

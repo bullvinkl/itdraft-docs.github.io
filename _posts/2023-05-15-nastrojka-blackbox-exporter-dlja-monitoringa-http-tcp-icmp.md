@@ -2,8 +2,7 @@
 title: "Настройка Blackbox Exporter для мониторинга HTTP, TCP, ICMP"
 date: "2023-05-15"
 categories:
-  - Linux
-  - Monitoring
+  - Monitoring-System
 tags: 
   - blackbox-exporter
   - linux

@@ -2,7 +2,7 @@
 title: "Настройка VPN-клиента в Centos. L2TP + IPSec"
 date: "2021-01-27"
 categories: 
-  - Linux
+  - Security-System
 tags: 
   - "ipsec"
   - "l2tp"

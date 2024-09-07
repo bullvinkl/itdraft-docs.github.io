@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 4. Настройка Postfix, авторизация без ввода домена"
 date: "2019-02-09"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "centos"
   - "dovecot"

@@ -2,8 +2,8 @@
 title: "Установка Alertmanager с авторизацией и подключение к Prometheus в Centos 8"
 date: "2020-11-03"
 categories: 
-  - Linux
-  - Monitoring
+  - Monitoring-System
+  - DevOps
 tags: 
   - "alertmanager"
   - "basic-auth"

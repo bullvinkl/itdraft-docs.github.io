@@ -2,8 +2,7 @@
 title: "Обновление Keycloak"
 date: "2023-03-14"
 categories: 
-  - Linux
-  - Keycloak
+  - Directory-Service
 tags: 
   - "keycloak"
   - "linux"

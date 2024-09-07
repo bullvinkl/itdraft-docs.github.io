@@ -2,7 +2,7 @@
 title: "Изменить локализацию в CentOS 7"
 date: "2019-09-26"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "locale"

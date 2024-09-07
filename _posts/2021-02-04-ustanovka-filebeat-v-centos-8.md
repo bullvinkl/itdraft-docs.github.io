@@ -2,7 +2,8 @@
 title: "Установка Filebeat в Centos 8"
 date: "2021-02-04"
 categories: 
-  - Linux
+  - Logging-System
+  - DevOps
 tags: 
   - "filebeat"
   - "kibana"

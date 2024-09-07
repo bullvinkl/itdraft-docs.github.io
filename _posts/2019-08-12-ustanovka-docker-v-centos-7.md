@@ -2,8 +2,7 @@
 title: "Установка Docker в Centos 7"
 date: "2019-08-12"
 categories: 
-  - Linux
-  - Docker
+  - DevOps
 tags: 
   - "centos"
   - "docker"

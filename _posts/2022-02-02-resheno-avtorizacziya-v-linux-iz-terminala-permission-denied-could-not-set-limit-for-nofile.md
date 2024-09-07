@@ -2,7 +2,7 @@
 title: "[Решено] Авторизация в Linux из терминала - Permission denied. Could not set limit for 'nofile'"
 date: "2022-02-02"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "limits"

@@ -2,9 +2,8 @@
 title: "SSO авторизация в Netbox через Keycloak"
 date: "2023-05-17"
 categories: 
-  - Linux
-  - Netbox
-  - Keycloak
+  - Asset-Management
+  - Directory-Service
 tags: 
   - keycloak
   - linux

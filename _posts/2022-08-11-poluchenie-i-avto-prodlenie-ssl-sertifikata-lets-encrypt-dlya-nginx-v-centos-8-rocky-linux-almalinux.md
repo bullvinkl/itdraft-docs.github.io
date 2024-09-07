@@ -2,7 +2,8 @@
 title: "Получение и авто продление SSL-сертификата Let's Encrypt для Nginx в Centos 8 / Rocky Linux / AlmaLinux"
 date: "2022-08-11"
 categories: 
-  - Linux
+  - Web
+  - Automation
 tags: 
   - "almalinux"
   - "centos"

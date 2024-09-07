@@ -2,7 +2,8 @@
 title: "Устанавливаем Loki в CentOS / Debian"
 date: "2021-02-11"
 categories: 
-  - Linux
+  - Logging-System
+  - DevOps
 tags: 
   - "grafana"
   - "loki"

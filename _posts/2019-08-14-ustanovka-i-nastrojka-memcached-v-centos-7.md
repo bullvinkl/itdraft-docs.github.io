@@ -2,7 +2,7 @@
 title: "Установка и настройка Memcached в CentOS 7"
 date: "2019-08-14"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "memcached"

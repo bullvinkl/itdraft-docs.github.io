@@ -1,9 +1,9 @@
 ---
 title: "Настройка LDAP-авторизации (FreeIPA) в Vaultwarden (Bitwarden_RS)"
 date: "2021-10-18"
-categories: 
-  - Linux
-  - Vaultwarden
+categories:
+  - Directory-Service
+  - Security-System
 tags: 
   - "bitwarden"
   - "bitwarden_rs"

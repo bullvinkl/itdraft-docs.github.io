@@ -2,7 +2,8 @@
 title: "Авторизация по SSH в Centos 7 для группы доменных пользователей"
 date: "2018-10-16"
 categories: 
-  - Linux
+  - Security-System
+  - Directory-Service
 tags: 
   - "active-directory"
   - "centos"

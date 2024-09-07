@@ -2,7 +2,7 @@
 title: "Установка ImageMagick для PHP в CentOS 7"
 date: "2019-08-01"
 categories: 
-  - Linux
+  - Web
 tags: 
   - "centos"
   - "imagemagic"

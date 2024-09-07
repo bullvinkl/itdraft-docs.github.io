@@ -2,8 +2,7 @@
 title: "Отказоустойчивость, настройка репликации FreeIPA на Centos 7"
 date: "2019-11-12"
 categories: 
-  - Linux
-  - FreeIPA
+  - Directory-Service
 tags: 
   - "centos"
   - "freeipa"

@@ -2,7 +2,7 @@
 title: "Установка iTop ITSM & CMDB в Centos 8 или Rocky Linux"
 date: "2021-07-16"
 categories: 
-  - Linux
+  - Asset-Management
 tags: 
   - "centos"
   - "cmdb"

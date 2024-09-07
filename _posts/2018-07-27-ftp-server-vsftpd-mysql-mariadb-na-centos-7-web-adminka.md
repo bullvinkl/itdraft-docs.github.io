@@ -2,7 +2,8 @@
 title: "FTP-сервер VSFTP и virtual users MySQL на CentOS 7, Web-админка для VSFTP"
 date: "2018-07-27"
 categories: 
-  - Linux
+  - Storage-System
+  - Database-System
 tags: 
   - "centos"
   - "mysql"

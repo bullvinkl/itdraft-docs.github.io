@@ -2,8 +2,7 @@
 title: "Обновление Debian 10 (buster) до Debian 11 (bullseye)"
 date: "2021-10-22"
 categories: 
-  - Linux
-  - Debian
+  - Manuals
 tags: 
   - "debian"
   - "upgrade"

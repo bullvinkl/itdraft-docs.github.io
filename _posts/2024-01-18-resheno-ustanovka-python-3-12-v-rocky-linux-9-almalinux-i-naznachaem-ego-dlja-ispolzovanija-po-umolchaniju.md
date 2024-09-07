@@ -4,8 +4,7 @@ title: "[Решено] Установка Python 3.12 в Rocky Linux 9 / AlmaLin
 # description: ""
 date: 2024-01-18 18:40 +0300
 categories:
-  - Linux
-  - Python
+  - Development
 tags:
   - python
   - almalinux

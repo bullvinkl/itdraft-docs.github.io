@@ -2,10 +2,8 @@
 title: "Настройка oAuth авторизации через Keycloak+FreeIPA в DokuWiki"
 date: "2023-03-01"
 categories: 
-  - Linux
-  - Keycloak
-  - FreeIPA
-  - DokuWiki
+  - Directory-Service
+  - Content-Management
 tags: 
   - centos
   - debian

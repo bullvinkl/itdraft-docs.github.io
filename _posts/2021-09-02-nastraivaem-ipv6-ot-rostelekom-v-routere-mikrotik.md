@@ -2,7 +2,8 @@
 title: "Настраиваем IPv6 от Ростелеком в роутере Mikrotik"
 date: "2021-09-02"
 categories: 
-  - Mikrotik
+  - Network-Service
+  - Network-Equipment
 tags: 
   - "ipv6"
   - "mikrotik"

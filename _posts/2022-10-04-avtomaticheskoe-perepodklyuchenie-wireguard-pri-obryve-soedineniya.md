@@ -2,8 +2,8 @@
 title: "Автоматическое переподключение WireGuard при обрыве соединения"
 date: "2022-10-04"
 categories: 
-  - Linux
-  - WireGuard
+  - Security-System
+  - Automation
 tags: 
   - "python"
   - "reconnect"

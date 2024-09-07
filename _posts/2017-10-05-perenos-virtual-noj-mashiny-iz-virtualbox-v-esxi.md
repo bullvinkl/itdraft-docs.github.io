@@ -2,7 +2,7 @@
 title: "Перенос виртуальной машины из VirtualBox в ESXi"
 date: "2017-10-05"
 categories: 
-  - Linux
+  - Virtualization
 tags: 
   - "esxi"
   - "ovftool"

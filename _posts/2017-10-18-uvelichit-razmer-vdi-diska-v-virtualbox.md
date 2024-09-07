@@ -2,7 +2,7 @@
 title: "Увеличить размер VDI диска в VirtualBox"
 date: "2017-10-18"
 categories: 
-  - Virtualisation
+  - Virtualization
 tags: 
   - "linux"
   - "vdi"

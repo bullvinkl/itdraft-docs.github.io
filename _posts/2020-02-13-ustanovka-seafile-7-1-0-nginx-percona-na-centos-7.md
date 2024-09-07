@@ -2,8 +2,7 @@
 title: "Установка SeaFile 7.1.0 + Nginx + Percona на Centos 7"
 date: "2020-02-13"
 categories: 
-  - Linux
-  - SeaFile
+  - Storage-System
 tags: 
   - "centos"
   - "nginx"

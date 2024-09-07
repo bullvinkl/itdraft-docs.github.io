@@ -2,7 +2,7 @@
 title: "Установка Apache Tomcat 9 и GeoServer на Сentos 7"
 date: "2018-12-03"
 categories: 
-  - Linux
+  - Web
 tags: 
   - "centos"
   - "geoserver"

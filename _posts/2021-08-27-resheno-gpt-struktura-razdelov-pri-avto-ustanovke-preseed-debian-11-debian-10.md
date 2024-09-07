@@ -1,9 +1,8 @@
 ---
 title: "[РЕШЕНО] GPT структура разделов при автоматической установке  Debian 11 / Debian 10"
 date: "2021-08-27"
-categories: 
-  - Linux
-  - Preseed
+categories:
+  - Automation
 tags: 
   - "debian"
   - "preseed"

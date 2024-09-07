@@ -2,8 +2,8 @@
 title: "Установка ITSM-системы GLPI + NGINX + PHP 7.4 + Percona в Centos 7"
 date: "2020-02-14"
 categories: 
-  - Linux
-  - ITSM
+  - Asset-Management
+  - Database-System
 tags: 
   - "centos"
   - "glpi"

@@ -2,7 +2,7 @@
 title: "Автоматический бэкап файлов при подключении съемного носителя"
 date: "2018-12-26"
 categories: 
-  - Linux
+  - Automation
 tags: 
   - "backup"
   - "bash"

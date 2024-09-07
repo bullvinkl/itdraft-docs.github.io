@@ -2,8 +2,8 @@
 title: "Установка web-сервера Nginx для работы с виртуальными хостами, PHP-FPM в режиме работы Sock, Mysql-сервер MariaDB на Centos 7"
 date: "2019-07-15"
 categories: 
-  - Linux
-  - Nginx
+  - Web
+  - Database-System
 tags: 
   - "centos"
   - "mariadb"

@@ -2,8 +2,7 @@
 title: "Автоматическая установка Debian при помощи preseed"
 date: "2019-12-17"
 categories: 
-  - Debian
-  - Preseed
+  - Automation
 tags: 
   - "debian"
   - "preseed"

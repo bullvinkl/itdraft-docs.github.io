@@ -2,8 +2,7 @@
 title: "Перенос файлового хранилища SeaFile со всеми данными на другой сервер"
 date: "2018-08-21"
 categories: 
-  - Linux
-  - SeaFile
+  - Storage-System
 tags: 
   - "backup"
   - "centos"

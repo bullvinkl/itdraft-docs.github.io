@@ -2,7 +2,7 @@
 title: "Оформление Е-ОСАГО на мотоцикл в Москве на 2019 год"
 date: "2019-04-16"
 categories: 
-  - Other
+  - Manuals
 tags: 
   - "eosago"
   - "moto"

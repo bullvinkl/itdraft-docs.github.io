@@ -2,9 +2,8 @@
 title: "Установка DokuWiki + Nginx + PHP-FPM в Debian 11 Bullseye"
 date: "2022-08-09"
 categories: 
-  - Linux
-  - Debian
-  - DokuWiki
+  - Content-Management
+  - Web
 tags: 
   - "debian"
   - "dokuwiki"

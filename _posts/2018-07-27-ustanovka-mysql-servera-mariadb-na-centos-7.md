@@ -2,7 +2,7 @@
 title: "Установка MySQL-сервера (MariaDB) в Centos 7"
 date: "2018-07-27"
 categories: 
-  - Linux
+  - Database-System
 tags: 
   - "centos"
   - "mysql"

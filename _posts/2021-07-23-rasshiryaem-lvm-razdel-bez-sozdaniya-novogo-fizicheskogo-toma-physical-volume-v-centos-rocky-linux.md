@@ -2,8 +2,7 @@
 title: "Расширяем LVM-раздел без создания нового физического тома (physical volume) в Centos, Rocky Linux"
 date: "2021-07-23"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - centos
   - growpart

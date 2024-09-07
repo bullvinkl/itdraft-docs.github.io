@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 5. Структура хранения виртуальных ящиков"
 date: "2019-02-10"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "centos"
   - "iredmail"

@@ -2,7 +2,7 @@
 title: "Общий доступ к экрану в Ubuntu 18.04 / 18.10"
 date: "2019-03-28"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "ubuntu"
   - "vnc"

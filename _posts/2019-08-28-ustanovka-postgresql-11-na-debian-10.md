@@ -2,8 +2,7 @@
 title: "Установка PostgreSQL 11 на Debian 10"
 date: "2019-08-28"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - "debian"
   - "postgresql"

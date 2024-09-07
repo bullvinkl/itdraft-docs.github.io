@@ -2,7 +2,7 @@
 title: "Как установить LibreOffice 6.1 в Ubuntu 18.04, 16.04"
 date: "2018-08-16"
 categories: 
-  - Linux
+  - Office-System
 tags: 
   - "libreoffice"
   - "ubuntu"

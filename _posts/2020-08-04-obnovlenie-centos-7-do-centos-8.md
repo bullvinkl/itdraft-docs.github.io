@@ -2,7 +2,7 @@
 title: "Обновление CentOS 7 до CentOS 8"
 date: "2020-08-04"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "upgrade"

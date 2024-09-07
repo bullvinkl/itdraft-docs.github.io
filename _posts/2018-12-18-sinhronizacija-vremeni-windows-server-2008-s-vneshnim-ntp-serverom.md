@@ -2,7 +2,7 @@
 title: "Синхронизация времени Windows Server 2008 с внешним NTP-сервером"
 date: "2018-12-18"
 categories: 
-  - Windows
+  - Manuals
 tags: 
   - "ntp"
   - "windows"

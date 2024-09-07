@@ -2,8 +2,7 @@
 title: "[Решено] Отключаем LDAP авторизацию FreeIPA для пользователей с истекшим сроком действия пароля"
 date: "2023-02-27"
 categories: 
-  - Linux
-  - FreeIPA
+  - Directory-Service
 tags: 
   - "centos"
   - "freeipa"

@@ -3,9 +3,8 @@ layout: post
 title: "Настройка LDAP и OIDC авторизации в Harbor для Keycloak"
 date: "2024-07-15"
 categories:
-  - Linux
-  - Harbor
-  - Keycloak
+  - DevOps
+  - Directory-Service
 tags:
   - debian
   - freeipa

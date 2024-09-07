@@ -2,8 +2,7 @@
 title: "[РЕШЕНО] Сменить в Zabbix тип аутентификации с LDAP на локальную"
 date: "2021-08-16"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
 tags: 
   - "ldap"
   - "mysql"

@@ -2,8 +2,7 @@
 title: "Установка и подключение модуля компрессии Brotli для NGINX в Centos 7"
 date: "2019-09-06"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "brotli"
   - "centos"

@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 6. DKIM, SPF, DMARC"
 date: "2019-02-11"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "centos"
   - "dkim"

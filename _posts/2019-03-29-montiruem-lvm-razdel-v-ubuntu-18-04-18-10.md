@@ -2,8 +2,7 @@
 title: "Монтируем LVM-раздел в Ubuntu 18.04 / 18.10"
 date: "2019-03-29"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "lvm"
   - "mount"

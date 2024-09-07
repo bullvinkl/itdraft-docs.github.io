@@ -2,7 +2,7 @@
 title: "Проверка соответствия ключа и ssl сертификата"
 date: "2018-09-20"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "md5"
   - "ssl"

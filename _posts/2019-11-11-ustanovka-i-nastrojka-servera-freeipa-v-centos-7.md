@@ -2,8 +2,7 @@
 title: "Установка и настройка сервера FreeIPA в Centos 7"
 date: "2019-11-11"
 categories: 
-  - Linux
-  - FreeIPA
+  - Directory-Service
 tags: 
   - "centos"
   - "freeipa"

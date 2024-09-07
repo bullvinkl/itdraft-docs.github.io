@@ -2,9 +2,7 @@
 title: "[Решено] SSO Kerberos авторизация в Keycloak"
 date: "2023-04-13"
 categories: 
-  - Keycloak
-  - Linux
-  - Active-Directory
+  - Directory-Service
 tags: 
   - centos
   - debian

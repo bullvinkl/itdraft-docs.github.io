@@ -2,7 +2,7 @@
 title: "Добавляем рейтинг к записи с помощью плагина WP-PostRatings"
 date: "2017-04-04"
 categories: 
-  - Wordpress
+  - Content-Management
 tags: 
   - "wordpress"
   - "wp-postratings"

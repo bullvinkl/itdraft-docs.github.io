@@ -2,8 +2,7 @@
 title: "Установка ITSM-системы Snipe-IT + NGINX + Percona в Centos 7"
 date: "2020-02-18"
 categories: 
-  - Linux
-  - ITSM
+  - Asset-Management
 tags: 
   - "assetmanager"
   - "centos"

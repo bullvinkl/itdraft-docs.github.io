@@ -2,8 +2,7 @@
 title: "Включаем SSL в Nginx на Centos 7"
 date: "2019-07-27"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "centos"
   - "nginx"

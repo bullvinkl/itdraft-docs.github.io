@@ -2,8 +2,7 @@
 title: "Установка и настройка OpenVPN (клиента и сервера) и Easy-RSA 3 в CentOS 7"
 date: "2019-04-18"
 categories: 
-  - Linux
-  - OpenVPN
+  - Security-System
 tags: 
   - "centos"
   - "openvpn"

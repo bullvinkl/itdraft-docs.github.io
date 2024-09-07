@@ -2,7 +2,7 @@
 title: "Включаем HTTPS в Apache"
 date: "2017-04-19"
 categories: 
-  - Linux
+  - Web
 tags: 
   - "apache"
   - "centos"

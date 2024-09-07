@@ -2,8 +2,7 @@
 title: "Установка Seafile в Rocky Linux 9"
 date: "2023-03-16"
 categories: 
-  - Linux
-  - SeaFile
+  - Storage-System
 tags: 
   - "linux"
   - "mysql"

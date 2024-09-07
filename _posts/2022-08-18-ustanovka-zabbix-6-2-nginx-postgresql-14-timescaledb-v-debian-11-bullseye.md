@@ -2,9 +2,8 @@
 title: "Установка Zabbix 6.2 + Nginx + PostgreSQL 14 + TimescaleDB в Debian 11 Bullseye"
 date: "2022-08-18"
 categories: 
-  - Linux
-  - Zabbix
-  - PostgreSQL
+  - Monitoring-System
+  - Database-System
 tags: 
   - "debian"
   - "nginx"

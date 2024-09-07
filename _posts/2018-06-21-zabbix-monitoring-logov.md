@@ -2,8 +2,7 @@
 title: "Zabbix. Мониторинг логов"
 date: "2018-06-21"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
 tags: 
   - "log"
   - "zabbix"

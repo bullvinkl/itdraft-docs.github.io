@@ -2,7 +2,7 @@
 title: "Обновление ownCloud вручную"
 date: "2020-07-16"
 categories: 
-  - Linux
+  - Storage-System
 tags: 
   - "centos"
   - "debian"

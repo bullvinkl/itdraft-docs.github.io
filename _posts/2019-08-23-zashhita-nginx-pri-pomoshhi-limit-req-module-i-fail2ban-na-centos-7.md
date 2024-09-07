@@ -2,9 +2,8 @@
 title: "Защита Nginx при помощи Limit Req Module и Fail2Ban на Centos 7"
 date: "2019-08-23"
 categories: 
-  - Linux
-  - Nginx
-  - Fail2Ban
+  - Security-System
+  - Web
 tags: 
   - "fail2ban"
   - "limit_req"

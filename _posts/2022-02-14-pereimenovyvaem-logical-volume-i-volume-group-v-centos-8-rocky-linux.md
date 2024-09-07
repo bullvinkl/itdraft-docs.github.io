@@ -2,8 +2,7 @@
 title: "Переименовываем Logical Volume и Volume Group в Centos 8 / Rocky Linux"
 date: "2022-02-14"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "centos"
   - "linux"

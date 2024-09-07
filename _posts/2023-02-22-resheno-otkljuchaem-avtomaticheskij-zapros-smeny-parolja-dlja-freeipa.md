@@ -2,8 +2,7 @@
 title: "[Решено] Отключаем автоматический запрос смены пароля для FreeIPA"
 date: "2023-02-22"
 categories: 
-  - Linux
-  - FreeIPA
+  - Directory-Service
 tags: 
   - "centos"
   - "freeipa"

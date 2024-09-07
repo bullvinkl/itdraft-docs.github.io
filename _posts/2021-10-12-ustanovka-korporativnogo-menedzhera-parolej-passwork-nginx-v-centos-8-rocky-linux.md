@@ -2,7 +2,7 @@
 title: "Установка корпоративного менеджера паролей Passwork + Nginx в Centos 8 / Rocky Linux"
 date: "2021-10-12"
 categories: 
-  - Linux
+  - Security-System
 tags: 
   - "centos"
   - "nginx"

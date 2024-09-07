@@ -2,8 +2,7 @@
 title: "Установка PostgreSQL 10 и pgAdmin4 в Centos 7"
 date: "2018-12-21"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - "centos"
   - "pgadmin"

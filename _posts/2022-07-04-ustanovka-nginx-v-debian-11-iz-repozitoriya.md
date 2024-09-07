@@ -2,8 +2,7 @@
 title: "Установка Nginx в Debian 11 из репозитория"
 date: "2022-07-04"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "debian"
   - "nginx"

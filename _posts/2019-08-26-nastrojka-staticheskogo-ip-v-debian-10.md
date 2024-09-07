@@ -2,7 +2,7 @@
 title: "Настройка статического IP в Debian 10"
 date: "2019-08-26"
 categories: 
-  - Linux
+  - Network-Service
 tags: 
   - "debian"
   - "network"

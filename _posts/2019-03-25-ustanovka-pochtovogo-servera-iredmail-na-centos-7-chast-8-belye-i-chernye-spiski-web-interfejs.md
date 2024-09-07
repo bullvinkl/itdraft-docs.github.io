@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 8. Белые и черные списки. Web-интерфейс"
 date: "2019-03-25"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "amavisd"
   - "centos"

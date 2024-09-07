@@ -2,7 +2,8 @@
 title: "Устанавливаем Promtail в CentOS / Debian"
 date: "2021-02-26"
 categories: 
-  - Linux
+  - Logging-System
+  - DevOps
 tags: 
   - "grafana"
   - "loki"

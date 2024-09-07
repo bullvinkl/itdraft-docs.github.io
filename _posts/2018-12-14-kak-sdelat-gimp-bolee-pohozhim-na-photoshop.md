@@ -2,7 +2,7 @@
 title: "Как сделать GIMP более похожим на Photoshop"
 date: "2018-12-14"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "gimp"
   - "photoshop"

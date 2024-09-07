@@ -2,7 +2,7 @@
 title: "Как установить Notepadqq (аналог Notepad++) в Ubuntu 18.04, 17.10"
 date: "2018-08-16"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "notepadqq"
   - "ubuntu"

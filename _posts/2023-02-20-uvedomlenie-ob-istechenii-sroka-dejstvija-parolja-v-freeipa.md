@@ -2,8 +2,7 @@
 title: "Уведомление об истечении срока действия пароля в FreeIPA"
 date: "2023-02-20"
 categories: 
-  - Linux
-  - FreeIPA
+  - Directory-Service
 tags: 
   - "centos"
   - "freeipa"

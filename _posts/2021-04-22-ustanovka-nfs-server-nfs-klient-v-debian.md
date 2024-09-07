@@ -2,8 +2,7 @@
 title: "Установка NFS-сервер / NFS-клиент в Debian"
 date: "2021-04-22"
 categories: 
-  - Linux
-  - NFS
+  - File-System
 tags: 
   - "nfs"
 image:

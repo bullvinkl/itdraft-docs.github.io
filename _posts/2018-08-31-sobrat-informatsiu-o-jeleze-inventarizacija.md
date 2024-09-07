@@ -2,7 +2,7 @@
 title: "Собрать информацию о железе, инвентаризация"
 date: "2018-08-31"
 categories: 
-  - Windows
+  - Automation
 tags: 
   - "cmd"
   - "psexec"

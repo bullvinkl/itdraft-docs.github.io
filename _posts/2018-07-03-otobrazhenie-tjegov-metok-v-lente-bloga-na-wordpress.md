@@ -2,9 +2,8 @@
 title: "Отображение тэгов (меток) в ленте блога на Wordpress"
 date: "2018-07-03"
 categories: 
-  - Wordpress
+  - Content-Management
 tags: 
-  - "tag"
   - "wordpress"
 image:
   path: /commons/template-1599665_1280.png

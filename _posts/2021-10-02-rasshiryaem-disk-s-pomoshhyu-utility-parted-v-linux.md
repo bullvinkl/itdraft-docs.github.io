@@ -2,8 +2,7 @@
 title: "Расширяем диск с помощью утилиты parted в Linux"
 date: "2021-10-02"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - centos
   - debian

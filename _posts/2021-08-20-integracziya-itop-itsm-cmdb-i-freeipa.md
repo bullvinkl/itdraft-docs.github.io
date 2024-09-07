@@ -2,7 +2,8 @@
 title: "Интеграция iTop ITSM & CMDB и FreeIPA"
 date: "2021-08-20"
 categories: 
-  - Linux
+  - Asset-Management
+  - Directory-Service
 tags: 
   - "centos"
   - "cmdb"

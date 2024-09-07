@@ -2,7 +2,7 @@
 title: "Установка Skype на Ubuntu из официального репозитория"
 date: "2017-04-13"
 categories: 
-  - Linux
+  - Communication-System
 tags: 
   - "skype"
   - "ubuntu"

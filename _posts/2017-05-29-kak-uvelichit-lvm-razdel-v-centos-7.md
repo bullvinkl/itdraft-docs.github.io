@@ -2,8 +2,7 @@
 title: "Как увеличить LVM раздел в CentOS 7"
 date: "2017-05-29"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "centos"
   - "lvm"

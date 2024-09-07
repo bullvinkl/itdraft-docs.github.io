@@ -2,8 +2,7 @@
 title: "Установка Docker Compose в Centos 7"
 date: "2020-04-10"
 categories: 
-  - Linux
-  - Docker
+  - DevOps
 tags: 
   - "centos"
   - "docker"

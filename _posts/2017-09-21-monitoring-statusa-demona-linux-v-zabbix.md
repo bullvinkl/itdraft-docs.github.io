@@ -2,8 +2,7 @@
 title: "Мониторинг статуса демона Linux в Zabbix"
 date: "2017-09-21"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
 tags: 
   - "centos"
   - "zabbix"

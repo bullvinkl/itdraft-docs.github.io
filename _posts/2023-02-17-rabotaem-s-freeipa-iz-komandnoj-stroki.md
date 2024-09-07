@@ -2,8 +2,7 @@
 title: "Работаем с FreeIPA из командной строки"
 date: "2023-02-17"
 categories: 
-  - Linux
-  - FreeIPA
+  - Directory-Service
 tags: 
   - "centos"
   - "cli"

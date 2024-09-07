@@ -2,8 +2,7 @@
 title: "[РЕШЕНО] missing packages: authselect-compat / Centos 8 / Rocky Linux"
 date: "2021-07-14"
 categories: 
-  - Linux
-  - Kickstart
+  - Automation
 tags: 
   - "centos"
   - "kickstart"

@@ -2,7 +2,7 @@
 title: "Установка модуля PHP-SQLSRV для работы с Microsoft SQL Server в Centos 7"
 date: "2019-09-05"
 categories: 
-  - Linux
+  - Web
 tags: 
   - "centos"
   - "php-sqlsrv"

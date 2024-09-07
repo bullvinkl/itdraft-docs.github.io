@@ -2,7 +2,7 @@
 title: "Копировать файлы на удаленный сервер по SSH"
 date: "2019-08-21"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "linux"
   - "scp"

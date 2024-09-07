@@ -2,7 +2,7 @@
 title: "[Решено] Статический маршрут в Rocky Linux 9"
 date: "2022-12-01"
 categories: 
-  - Linux
+  - Network-Service
 tags: 
   - "network"
   - "rocky-linux"

@@ -2,7 +2,7 @@
 title: "Как установить GIMP 2.10.6 на Ubuntu 18.04"
 date: "2018-08-21"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "gimp"
   - "flatpak"

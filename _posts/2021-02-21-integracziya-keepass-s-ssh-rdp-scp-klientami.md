@@ -2,7 +2,7 @@
 title: "Интеграция KeePass с SSH (SSH-Key), RDP, SFTP клиентами"
 date: "2021-02-21"
 categories: 
-  - Windows
+  - Manuals
 tags: 
   - "keepass"
   - "rdp"

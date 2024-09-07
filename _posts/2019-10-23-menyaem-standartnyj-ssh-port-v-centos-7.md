@@ -2,7 +2,7 @@
 title: "Меняем стандартный SSH порт в Centos 7"
 date: "2019-10-23"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "ssh"

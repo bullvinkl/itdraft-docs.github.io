@@ -2,8 +2,7 @@
 title: "Установка Zabbix Proxy + SQLite в Centos 8 / Rocky Linux"
 date: "2021-09-08"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
 tags: 
   - "centos"
   - "rocky-linux"

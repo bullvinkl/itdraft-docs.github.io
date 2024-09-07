@@ -3,8 +3,9 @@ layout: post
 title: "Связка WordPress и Docker, локальная MariaDB в Debian 11"
 date: "2022-11-15"
 categories:
-  - Linux
-  - Docker
+  - DevOps
+  - Database-System
+  - Content-Management
 tags:
   - linux
   - docker

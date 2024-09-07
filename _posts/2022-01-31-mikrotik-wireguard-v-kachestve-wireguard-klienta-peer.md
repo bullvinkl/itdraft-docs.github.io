@@ -2,8 +2,8 @@
 title: "Mikrotik WireGuard в качестве WireGuard клиента (peer)"
 date: "2022-01-31"
 categories: 
-  - WireGuard
-  - Mikrotik
+  - Security-System
+  - Network-Equipment
 tags: 
   - "mikrotik"
   - "routeos"

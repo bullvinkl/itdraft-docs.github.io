@@ -2,8 +2,9 @@
 title: "Установка OnlyOffice Document Server + PostgreSQL + Nginx на CentOS 8"
 date: "2020-07-21"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Office-System
+  - Database-System
+  - web
 tags: 
   - "centos"
   - "nginx"

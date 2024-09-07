@@ -2,8 +2,7 @@
 title: "Установка файлового хранилища SeaFile в Centos 7"
 date: "2018-08-20"
 categories: 
-  - Linux
-  - SeaFile
+  - Storage-System
 tags: 
   - "apache"
   - "centos"

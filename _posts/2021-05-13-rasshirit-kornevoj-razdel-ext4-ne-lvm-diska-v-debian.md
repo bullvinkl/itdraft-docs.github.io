@@ -2,8 +2,7 @@
 title: "Расширить корневой раздел (ext4, не LVM) диска в Debian"
 date: "2021-05-13"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "cfdisk"
   - "debian"

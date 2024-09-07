@@ -2,8 +2,7 @@
 title: "Установка NGINX и PHP-FPM в Debian 10"
 date: "2019-08-27"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "debian"
   - "nginx"

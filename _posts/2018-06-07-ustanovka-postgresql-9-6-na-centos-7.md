@@ -2,8 +2,7 @@
 title: "Установка PostgreSQL 9.6 в CentOS 7"
 date: "2018-06-07"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
   - "centos"
   - "postgresql"

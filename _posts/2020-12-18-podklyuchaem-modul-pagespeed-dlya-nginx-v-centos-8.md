@@ -2,8 +2,7 @@
 title: "Подключаем модуль PageSpeed для Nginx в Centos 8"
 date: "2020-12-18"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "nginx"
   - "pagespeed"

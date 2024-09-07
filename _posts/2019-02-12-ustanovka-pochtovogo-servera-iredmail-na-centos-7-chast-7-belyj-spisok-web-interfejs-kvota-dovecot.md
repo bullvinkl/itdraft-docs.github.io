@@ -2,8 +2,7 @@
 title: "Установка почтового сервера iRedMail на CentOS 7. Часть 7. Белый список Graylisting, WEB-интерфейс, квота Dovecot"
 date: "2019-02-12"
 categories: 
-  - Linux
-  - iRedMail
+  - Communication-System
 tags: 
   - "centos"
   - "dovecot"

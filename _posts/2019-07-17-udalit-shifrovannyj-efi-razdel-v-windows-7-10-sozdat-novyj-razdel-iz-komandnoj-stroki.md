@@ -2,7 +2,7 @@
 title: "Удалить шифрованный EFI раздел в Windows 7/10,  создать новый раздел из командной строки."
 date: "2019-07-17"
 categories: 
-  - Windows
+  - Manuals
 tags: 
   - "diskpart"
   - "windows"

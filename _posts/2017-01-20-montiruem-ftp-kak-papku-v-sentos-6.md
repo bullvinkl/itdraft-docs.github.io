@@ -2,7 +2,8 @@
 title: "Монтируем FTP как папку в Сentos 6"
 date: "2017-01-20"
 categories: 
-  - Linux
+  - Storage-System
+  - File-System
 tags: 
   - "centos"
   - "ftp"

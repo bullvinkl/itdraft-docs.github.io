@@ -2,7 +2,8 @@
 title: "SSL-сертификат Let’s Encrypt с авто продлением для Nginx в Centos"
 date: "2020-07-29"
 categories: 
-  - Linux
+  - Web
+  - Automation
 tags: 
   - "centos"
   - "lets-encrypt"

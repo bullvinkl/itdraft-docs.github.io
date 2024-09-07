@@ -2,7 +2,7 @@
 title: "Подключаем Elasticsearch к Wordpress, настройка плагина ElasticPress (Autosuggest) для Nginx"
 date: "2023-07-20"
 categories: 
-  - Wordpress
+  - Content-Management
 tags: 
   - docker
   - docker-compose

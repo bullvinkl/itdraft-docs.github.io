@@ -2,8 +2,7 @@
 title: "Установка GitLab CE на Centos 7"
 date: "2019-08-22"
 categories: 
-  - Linux
-  - GitLab
+  - DevOps
 tags: 
   - "centos"
   - "git"

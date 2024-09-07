@@ -2,8 +2,7 @@
 title: "Настройка нескольких подключений (peer) к WireGuard серверу"
 date: "2021-05-27"
 categories: 
-  - Linux
-  - WireGuard
+  - Security-System
 tags: 
   - "centos"
   - "debian"

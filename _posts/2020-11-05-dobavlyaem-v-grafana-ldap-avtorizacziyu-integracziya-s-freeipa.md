@@ -2,9 +2,9 @@
 title: "Добавляем в Grafana LDAP-авторизацию, интеграция с FreeIPA"
 date: "2020-11-05"
 categories: 
-  - Linux
-  - Monitoring
-  - FreeIPA
+  - Monitoring-System
+  - Directory-Service
+  - DevOps
 tags: 
   - "freeipa"
   - "grafana"

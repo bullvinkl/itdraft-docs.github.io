@@ -2,7 +2,7 @@
 title: "Локальный APT (Debian / Ubuntu) репозиторий на Centos 7"
 date: "2019-12-16"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "debian"
   - "nginx"

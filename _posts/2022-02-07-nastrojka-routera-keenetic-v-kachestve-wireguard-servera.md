@@ -2,8 +2,8 @@
 title: "Настройка роутера Keenetic в качестве Wireguard сервера"
 date: "2022-02-07"
 categories: 
-  - Linux
-  - WireGuard
+  - Network-Equipment
+  - Security-System
 tags: 
   - "keenetic"
   - "vpn"

@@ -4,8 +4,7 @@ title: "[Решено] Netbox – backup, restore, upgrade"
 # description: ""
 date: 2023-08-20 21:36 +0300
 categories:
-  - Linux
-  - Netbox
+  - Asset-Management
 tags:
   - netbox
   - backup

@@ -2,7 +2,7 @@
 title: "Установка и настройка MRTG + SNMP на CentOS 6"
 date: "2017-10-04"
 categories: 
-  - Linux
+  - Monitoring-System
 tags: 
   - "centos"
   - "mrtg"

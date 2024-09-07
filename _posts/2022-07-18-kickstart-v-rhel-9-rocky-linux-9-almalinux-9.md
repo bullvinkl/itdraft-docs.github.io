@@ -2,8 +2,7 @@
 title: "Kickstart в RHEL 9 / Rocky linux 9 / AlmaLinux 9"
 date: "2022-07-18"
 categories: 
-  - Linux
-  - Kickstart
+  - Automation
 tags: 
   - "almalinux"
   - "centos"

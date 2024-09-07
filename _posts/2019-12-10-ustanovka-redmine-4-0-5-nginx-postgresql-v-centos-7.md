@@ -2,8 +2,7 @@
 title: "Установка Redmine 4.0.5 NGINX PostgreSQL в Centos 7"
 date: "2019-12-10"
 categories: 
-  - Linux
-  - Redmine
+  - Project Management
 tags: 
   - "centos"
   - "nginx"

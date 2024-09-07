@@ -2,7 +2,7 @@
 title: "Установка Adobe Flash Player в Ubuntu 18.04 / 18.10"
 date: "2019-04-03"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "flash"
   - "ubuntu"

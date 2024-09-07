@@ -2,7 +2,7 @@
 title: "Установить VNC-сервер x11vnc в Ubuntu 18.04 и добавить в автозагрузку"
 date: "2018-08-23"
 categories: 
-  - Linux
+  - Security-System
 tags: 
   - "ubuntu"
   - "vnc"

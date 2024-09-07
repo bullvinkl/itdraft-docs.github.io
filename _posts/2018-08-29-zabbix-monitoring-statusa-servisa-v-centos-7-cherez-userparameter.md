@@ -2,8 +2,7 @@
 title: "Zabbix - мониторинг статуса сервиса в Centos 7 через UserParameter"
 date: "2018-08-29"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
 tags: 
   - "centos"
   - "userparameter"

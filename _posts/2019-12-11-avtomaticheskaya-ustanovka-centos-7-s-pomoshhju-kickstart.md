@@ -2,8 +2,7 @@
 title: "Автоматическая установка Centos 7 с помощью kickstart"
 date: "2019-12-11"
 categories: 
-  - Linux
-  - Kickstart
+  - Automation
 tags: 
   - "centos"
   - "kickstart"

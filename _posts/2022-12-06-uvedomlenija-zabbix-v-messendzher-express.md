@@ -2,8 +2,7 @@
 title: "Уведомления Zabbix в мессенджер eXpress"
 date: "2022-12-06"
 categories: 
-  - Linux
-  - Zabbix
+  - Monitoring-System
 tags: 
   - "express"
   - "zabbix"

@@ -2,8 +2,7 @@
 title: "Увеличить диск c GPT-разметкой при помощи cfdisk в Linux"
 date: "2021-05-12"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "cfdisk"
   - "ext4"

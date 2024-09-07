@@ -2,8 +2,7 @@
 title: "Бесплатный Widacard SSL от Let's Encrypt, подключение в Nginx и авто обновление на Centos 7"
 date: "2019-08-02"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "centos"
   - "lets-encrypt"

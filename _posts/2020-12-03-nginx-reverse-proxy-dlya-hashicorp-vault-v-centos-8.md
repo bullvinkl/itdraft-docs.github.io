@@ -2,8 +2,8 @@
 title: "Nginx Reverse Proxy для HashiCorp Vault в Centos 8"
 date: "2020-12-03"
 categories: 
-  - Linux
-  - HashiCorp-Vault
+  - Web
+  - Security-System
 tags: 
   - "hashicorp-vault"
   - "nginx"

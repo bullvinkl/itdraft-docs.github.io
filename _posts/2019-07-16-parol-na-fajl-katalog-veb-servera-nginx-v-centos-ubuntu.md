@@ -2,8 +2,7 @@
 title: "Пароль на файл/каталог вэб-сервера Nginx в Centos/Ubuntu"
 date: "2019-07-16"
 categories: 
-  - Linux
-  - Nginx
+  - Web
 tags: 
   - "centos"
   - "nginx"

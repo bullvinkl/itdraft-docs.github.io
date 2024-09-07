@@ -2,7 +2,8 @@
 title: "Установка PHP 7 на Centos 7"
 date: "2018-07-27"
 categories: 
-  - Linux
+  - Web
+  - Development
 tags: 
   - "centos"
   - "php"

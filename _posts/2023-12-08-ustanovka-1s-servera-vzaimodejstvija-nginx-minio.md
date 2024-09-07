@@ -3,9 +3,9 @@ layout: post
 title: "Установка 1С:Сервера взаимодействия + Nginx + Minio"
 date: "2023-12-08"
 categories:
-  - Linux
-  - Minio
-  - 1C
+  - Storage-System
+  - Web
+  - Communication-System
 tags:
   - 1c
   - centos

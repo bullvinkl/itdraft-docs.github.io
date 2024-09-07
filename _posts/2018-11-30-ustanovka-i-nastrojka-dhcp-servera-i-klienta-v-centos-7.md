@@ -2,7 +2,7 @@
 title: "Установка и настройка DHCP сервера и клиента в Centos 7"
 date: "2018-11-30"
 categories: 
-  - Linux
+  - Network-Service
 tags: 
   - "dhcp"
 image:

@@ -2,10 +2,10 @@
 title: "Установка PostgreSQL из исходников, и запуск двух версий на одном сервере в Centos 8"
 date: "2020-11-12"
 categories: 
-  - Linux
-  - PostgreSQL
+  - Database-System
 tags: 
-  - "postgresql"
+  - postgresql
+  - centos
 image:
   path: /commons/programming-flat-60074276.jpg
   alt: "Установка PostgreSQL из исходников, и запуск двух версий на одном сервере"

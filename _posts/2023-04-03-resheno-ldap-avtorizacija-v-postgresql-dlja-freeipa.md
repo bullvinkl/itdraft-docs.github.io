@@ -2,9 +2,8 @@
 title: "[РЕШЕНО] LDAP-авторизация в PostgreSQL для FreeIPA"
 date: "2023-04-03"
 categories: 
-  - Linux
-  - FreeIPA
-  - PostgreSQL
+  - Directory-Service
+  - Database-System
 tags: 
   - "freeipa"
   - "ldap"

@@ -2,7 +2,7 @@
 title: "Easy Redmine - перенос на Centos 7, обновление, бэкапирование"
 date: "2018-08-15"
 categories: 
-  - Linux
+  - Project Management
 tags: 
   - "apache"
   - "backup"

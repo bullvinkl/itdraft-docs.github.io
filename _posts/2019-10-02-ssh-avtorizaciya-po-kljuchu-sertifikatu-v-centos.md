@@ -2,7 +2,7 @@
 title: "SSH-авторизация по ключу (сертификату) в Centos"
 date: "2019-10-02"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "centos"
   - "ssh"

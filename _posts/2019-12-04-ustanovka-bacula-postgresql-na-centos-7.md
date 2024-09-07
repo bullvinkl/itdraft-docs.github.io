@@ -2,9 +2,8 @@
 title: "Установка Bacula + PostgreSQL на Centos 7"
 date: "2019-12-04"
 categories: 
-  - Linux
-  - Bacula
-  - PostgreSQL
+  - Backup-System
+  - Database-System
 tags: 
   - "backup"
   - "bacula"

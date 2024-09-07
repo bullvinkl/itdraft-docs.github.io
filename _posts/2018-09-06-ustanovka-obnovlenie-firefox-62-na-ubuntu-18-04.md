@@ -2,7 +2,7 @@
 title: "Установка / обновление Firefox 62 на Ubuntu 18.04"
 date: "2018-09-06"
 categories: 
-  - Linux
+  - Manuals
 tags: 
   - "firefox"
   - "ubuntu"

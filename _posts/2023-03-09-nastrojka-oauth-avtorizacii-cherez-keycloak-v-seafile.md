@@ -1,10 +1,9 @@
 ---
 title: "Настройка oAuth авторизации через Keycloak в Seafile"
 date: "2023-03-09"
-categories: 
-  - Linux
-  - Keycloak
-  - SeaFile
+categories:
+  - Directory-Service
+  - Storage-System
 tags: 
   - "centos"
   - "keycloak"

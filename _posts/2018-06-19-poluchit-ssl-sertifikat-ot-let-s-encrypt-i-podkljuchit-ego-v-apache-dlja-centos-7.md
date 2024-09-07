@@ -2,7 +2,8 @@
 title: "Получить SSL-сертификат Let’s Encrypt и подключить его в Apache для Centos 7"
 date: "2018-06-19"
 categories: 
-  - Linux
+  - Web
+  - Automation
 tags: 
   - "apache"
   - "centos"

@@ -2,8 +2,7 @@
 title: "Очистка истории файлов в SeaFile"
 date: "2017-12-28"
 categories:
-  - Linux
-  - SeaFile
+  - Storage-System
 tags: 
   - "centos"
   - "seafile"

@@ -2,8 +2,7 @@
 title: "Установка HashiCorp Vault в Centos 8"
 date: "2020-11-27"
 categories: 
-  - Linux
-  - HashiCorp-Vault
+  - Security-System
 tags: 
   - "centos"
   - "hashicorp-vault"

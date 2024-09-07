@@ -3,9 +3,8 @@ layout: post
 title: "[Решено] Защита от брутфорса админки Wordpress в Docker с помощью Fail2Ban"
 date: "2023-09-04"
 categories:
- - Linux
- - Docker
- - Fail2Ban
+ - Security
+ - Content-Management
 tags:
  - wordpress
  - docker

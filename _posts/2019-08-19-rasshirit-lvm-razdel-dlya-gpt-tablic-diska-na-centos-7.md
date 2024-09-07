@@ -2,8 +2,7 @@
 title: "Расширить LVM-раздел для GPT таблиц диска на Centos 7"
 date: "2019-08-19"
 categories: 
-  - Linux
-  - Disk
+  - File-System
 tags: 
   - "centos"
   - "fdisk"
