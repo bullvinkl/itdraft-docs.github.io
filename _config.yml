@@ -8,9 +8,12 @@ timezone: Europe/Moscow
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 title: IT Draft # the main title
-tagline: Техническая документация # it will display as the subtitle
+tagline: >-
+  Техническая документация
+  и база знаний
 description: >- # used by seo meta and the atom feed
-  Техническая документация и статьи по администрированию Linux систем и программного обеспечения.
+  Техническая документация и база знаний.
+  Статьи по администрированию Linux систем и программного обеспечения.
 author: Максим Макаров
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
