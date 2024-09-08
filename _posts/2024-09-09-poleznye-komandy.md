@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Полезные команды (пополняется)"
-date: "2024-09-09"
+date: "2024-09-08"
 pin: true
 categories:
   - Manuals
