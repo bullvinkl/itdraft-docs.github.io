@@ -9,7 +9,6 @@ tags:
   - "failed"
   - "lvm"
   - "lvmetad"
-  - "resheno"
 image:
   path: /commons/warning02.jpg
   alt: "Failed to connect to lvmetad"

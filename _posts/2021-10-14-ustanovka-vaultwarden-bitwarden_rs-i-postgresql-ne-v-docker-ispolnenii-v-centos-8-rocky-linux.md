@@ -11,7 +11,6 @@ tags:
   - "docker"
   - "nginx"
   - "nodejs"
-  - "password-manager"
   - "postgresql"
   - "rocky-linux"
   - "rust"

@@ -6,7 +6,6 @@ categories:
 tags: 
   - "apache"
   - "centos"
-  - "https"
   - "mod_ssl"
 image:
   path: /commons/computer.jpg

@@ -7,8 +7,8 @@ categories:
 tags: 
   - "apache"
   - "centos"
-  - "cetrbot"
-  - "let-s-encrypt"
+  - "certbot"
+  - "lets-encrypt"
   - "ssl"
 image:
   path: /commons/1382848_75d8_2.jpg

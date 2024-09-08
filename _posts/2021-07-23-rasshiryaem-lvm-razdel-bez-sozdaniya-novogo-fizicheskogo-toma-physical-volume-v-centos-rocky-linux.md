@@ -6,7 +6,7 @@ categories:
 tags: 
   - centos
   - growpart
-  - lvm"
+  - lvm
   - pvresize
   - rocky-linux
   - xfs

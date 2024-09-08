@@ -10,7 +10,6 @@ tags:
   - "realm"
   - "ssh"
   - "sssd"
-  - "sudo"
 image:
   path: /commons/pexels-lukas-574071-scaled.jpg
   alt: "Авторизация по SSH в Centos 7 для группы доменных пользователей"

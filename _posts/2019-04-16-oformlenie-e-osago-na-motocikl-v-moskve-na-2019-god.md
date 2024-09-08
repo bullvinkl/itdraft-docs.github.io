@@ -4,7 +4,7 @@ date: "2019-04-16"
 categories: 
   - Manuals
 tags: 
-  - "eosago"
+  - "e-osago"
   - "moto"
   - "osago"
 image:
