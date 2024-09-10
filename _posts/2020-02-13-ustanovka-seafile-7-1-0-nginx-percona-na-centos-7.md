@@ -576,3 +576,12 @@ $ sudo systemctl enable --now seahub
 ```sh
 $ sudo su - seafile /opt/seafile/seafile-server-latest/reset-admin.sh
 ```
+
+## UPD 2021.06.01
+
+При очередной установке при выполнении команды `sudo pip3 install ...` >появлялась ошибка из-за отсутствия нужных утилит
+
+Решение:
+```sh
+$ sudo yum -y install gcc gcc-c++ python36-devel
+```

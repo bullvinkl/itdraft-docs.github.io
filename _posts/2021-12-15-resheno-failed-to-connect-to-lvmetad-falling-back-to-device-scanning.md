@@ -22,6 +22,8 @@ image:
 ![](/assets/img/posts/2021/12/15/img.png){: w="300" }
 _WARNING : Failed to connect to lvmetad_
 
+## Решение
+
 Что бы ОС загружалась штатно, отредактируем файл `/etc/lvm/lvm.conf`
 
 ```sh
@@ -37,4 +39,13 @@ $ sudo nano /etc/lvm/lvm.conf
 $ sudo su
 # update-initramfs -k $(uname -r) -u; sync
 # reboot
+```
+
+## UPD 2024.03.27
+
+```sh
+$ sudo nano /etc/initramfs-tools/conf.d/resume
+$ sudo update-initramfs -k $(uname -r) -u
+$ sudo sync
+$ sudo reboot
 ```

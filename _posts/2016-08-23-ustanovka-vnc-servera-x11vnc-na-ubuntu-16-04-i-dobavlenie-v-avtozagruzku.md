@@ -66,3 +66,27 @@ $ sudo systemctl start x11vnc.service
 ```sh
 $ sudo systemctl status x11vnc.service
 ```
+
+## UPD 2017.04.07
+
+Systemd unit `/lib/systemd/system/x11vnc.service`
+
+```sh
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -auth /run/user/1000/gdm/Xauthority -forever -loop -noxdamage -repeat -rfbauth /home/user/.vnc/passwd -rfbport 5900 -shared -display :0 -ncache 10 -bg -o /var/log/x11vnc.log
+
+[Install]
+WantedBy=multi-user.target
+```
+
+где
+- `-auth /run/user/1000/gdm/Xauthority`  - это значение получили после выполнения команды: `ps wwwwaux | grep auth`
+- `-bg`  - фоновый режим
+- `-o /var/log/x11vnc.log`  - писать лог в файл
+
+тестировалось на Ubuntu Gnome 16.10

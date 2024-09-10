@@ -328,3 +328,8 @@ tmpfs 7,8G 0 7,8G 0% /sys/fs/cgroup
 tmpfs 1,6G 12K 1,6G 1% /run/user/0
 /dev/sr0 7,3G 7,3G 0 100% /run/media/root/CentOS 7 x86_64
 ```
+
+## UPD 2017.11.02
+
+в команде: `xfs_growfs /dev/mapper/centos-root` значение `/dev/mapper/centos-root` мы берем выполнив команду `df -h`
+Какой раздел расширяем, то значение и пишем

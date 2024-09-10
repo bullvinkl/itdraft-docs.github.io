@@ -39,7 +39,7 @@ mrp                    20480  1 8021q
 $ sudo modprobe 8021q
 ```
 
-Устанавливаем wireguard
+Устанавливаем Wireguard
 
 ```sh
 $ sudo dnf makecache
@@ -54,7 +54,7 @@ $ sudo su
 # wg genkey | tee privatekey | wg pubkey > publickey
 ```
 
-Настраиваем конфигурационный файл для интерфейса wg0 и меняем права доступа
+Настраиваем конфигурационный файл для интерфейса `wg0` и меняем права доступа
 
 ```sh
 $ sudo touch /etc/wireguard/wg0.conf
@@ -70,7 +70,7 @@ $ echo "net.ipv6.conf.all.forwarding=1" | sudo tee -a /etc/sysctl.d/99-sysctl.co
 $ sysctl -p
 ```
 
-Открываем порт (будем использовать порт 41321)
+Открываем порт (будем использовать порт `41321`)
 
 ```sh
 $ sudo firewall-cmd --permanent --zone=public --add-port=41321/udp
@@ -82,11 +82,12 @@ $ sudo firewall-cmd --reload
 ```sh
 $ sudo cat /etc/wireguard/privatekey
 SMWUid073s000000000tvGgeN/Ow4BX9gsLqXFY=
+
 $ sudo cat /etc/wireguard/publickey
 RAalpQDMW000000000M761Vc56ugguVupB8ig=
 ```
 
-Настраиваем интерфейс wg0
+Настраиваем интерфейс `wg0`
 
 ```sh
 $ sudo nano /etc/wireguard/wg0.conf
@@ -108,7 +109,7 @@ PublicKey = vQyGpGrxCog0000h87mFHLt3Nkb4aJcTieq/yIJJ3Y=
 AllowedIPs = 172.16.30.2/32
 ```
 
-Команды для управления wireguard
+Команды для управления Wireguard
 
 ```sh
 $ sudo wg-quick up wg0
@@ -142,11 +143,12 @@ $ ss -nltup
 ```sh
 $ sudo cat /etc/wireguard/privatekey 
 SNtUeP3cn700000000Zc0000pDi4MC1nl8AoR28=
+
 $ sudo cat /etc/wireguard/publickey 
 vQyGpGrx00000000000000000cTieq/yIJJ3Y=
 ```
 
-Настраиваем интерфейс wg0
+Настраиваем интерфейс `wg0`
 
 ```sh
 $ sudo nano /etc/wireguard/wg0.conf
@@ -177,4 +179,12 @@ $ sudo systemctl enable --now wg-quick@wg0
 $ sudo wg-quick up wg0
 $ sudo wg-quick down wg0
 $ sudo wg show wg0
+```
+
+## UPD 2021.05.26
+
+Если команда: wg pubkey не отрабатывает (`wg: Trailing characters found after key`), генерить ключ можно так:
+
+```sh
+$ openssl genpkey -algorithm X25519 -outform der | tail -c 32 | base64"
 ```
