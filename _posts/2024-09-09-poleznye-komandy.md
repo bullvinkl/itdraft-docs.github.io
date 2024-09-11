@@ -61,6 +61,7 @@ image:
 - `ss -nltup | column -t`  - `column -t` выстраивает данные в удобочитаемые таблицы. Еще пример: `mount | column -t`
 - `echo 1 > /sys/block/sda/device/rescan` - перечитать размер диска `/dev/sda`, выполняется от пользователя `root`
 - `growpart /dev/sda 3` - увеличить 3-тью область
+- `openssl pkcs12 -export -in certca.pem -inkey privateky.key -out output.pfx`  - создать `PFX`-сертификат 
 
 Записать строки в файл, включая спецсимволы, не открывая текстовый редактор:
 
