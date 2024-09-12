@@ -117,9 +117,9 @@ comments:
     repo_id: R_kgDOMqHAMw
     category: Announcements
     category_id: DIC_kwDOMqHAM84CiNEg
-    mapping: pathname # optional, default to 'pathname'
+    mapping: og:title # optional, default to 'pathname' | url | title | og:title
     strict: 0 # optional, default to '0'
-    input_position: bottom # optional, default to 'bottom'
+    input_position: bottom # optional, default to 'bottom' | top
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: 1 # optional, default to the value of `1`
   vk:
