@@ -37,7 +37,7 @@ $ sudo chown -R keycloak. /opt/keycloak/keycloak-21.0.0
 $ sudo chmod o+x /opt/keycloak/keycloak-21.0.0/bin/
 ```
 
-Сохраняем дефолтеый конфиг
+Сохраняем дефолтный конфиг
 
 ```sh
 $ sudo mv /opt/keycloak/keycloak-21.0.0/conf/keycloak.conf /opt/keycloak/keycloak-21.0.0/conf/keycloak.conf-origin

@@ -36,6 +36,7 @@ MTU: 1420
 ```
 
 ![](/assets/img/posts/2022/01/31/wg_int.png){: w="300" }
+_создаем новый интерфейс_
 
 После сохранения должны сгенерироваться приватный и публичный ключи
 
@@ -48,19 +49,21 @@ Interface: wireguard1 (из прошлого шага)
 ```
 
 ![](/assets/img/posts/2022/01/31/wg_addr.png){: w="300" }
+_добавляем туннельный ip-адрес_
 
-Возвращаемся в пункт меню Wireguard, вкладка `Peers`. Будем настраивать наш роутер как wireguard peer
+Возвращаемся в пункт меню WireGuard, вкладка `Peers`. Будем настраивать наш роутер как Wireguard Peer
 
 ```
 Interface: wireguard1
-Publiv Key: вставляем публичный ключ wireguard сервера
+Publiv Key: вставляем публичный ключ wireGuard сервера
 Endpoint: публичный ip wireguard сервера
-Endpoint Port: UDP-порт wireguard сервера
-Allowed Address: 172.16.30.1/32 - туннельный ip wireguard сервера
+Endpoint Port: UDP-порт wireGuard сервера
+Allowed Address: 172.16.30.1/32 - туннельный ip wireGuard сервера
    192.168.1.0/24 - сеть предприятия
 ```
 
 ![](/assets/img/posts/2022/01/31/wg_peer.png){: w="300" }
+_Wireguard Peer_
 
 Добавляем маршрутизацию, переходим: `IP -> Routes`
 
@@ -80,6 +83,7 @@ Gateway: wireguard1
 ```
 
 ![](/assets/img/posts/2022/01/31/wg_routes.png){: w="300" }
+_добавляем маршрут_
 
 ## Настройка WireGuard сервера
 
@@ -96,7 +100,7 @@ AllowedIPs = 172.16.30.9/32, 192.168.11.0/24
 
 `AllowedIPs` - список разрешенных ip, в том числе наша домашняя сетка (иначе из нашей сети не будет доступа к удаленной сети)
 
-Перезапускаем wireguard server
+Перезапускаем WireGuard Server
 
 ```sh
 $ sudo systemctl restart wg-quick@wg0

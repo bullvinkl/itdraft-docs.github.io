@@ -29,7 +29,7 @@ image:
 $ sudo su - vaultwarden
 ```
 
-Скачиваем модуль ldap-авторизации для Vaultwarden из репозитория и устанавливаем его
+Скачиваем модуль LDAP-авторизации для Vaultwarden из репозитория и устанавливаем его
 
 ```sh
 $ wget https://github.com/ViViDboarder/vaultwarden_ldap/archive/refs/tags/v0.4.0.tar.gz
@@ -45,7 +45,7 @@ $ cargo build --locked --release
 $ cp /opt/vaultwarden/vaultwarden_ldap-0.4.0/example.config.toml /opt/vaultwarden/vaultwarden_ldap-0.4.0/target/release/config.toml
 ```
 
-Переключаемся на sudo-пользователя
+Переключаемся на `sudo` пользователя
 
 ```sh
 $ exit
@@ -65,7 +65,7 @@ ldap_search_filter = "(&(objectClass=posixAccount)(memberOf=cn=vaultwarden,cn=gr
 ldap_sync_interval_seconds = 10
 ```
 
-В данном конфиге указано, что пользователям из группы vaultwarden будут иметь доступ в Vaultwarden (им будет отправлено письмо при запуске сервиса)
+В данном конфиге указано, что пользователям из группы `vaultwarden` будут иметь доступ в Vaultwarden (им будет отправлено письмо при запуске сервиса)
 
 Создадим Systemd Unit
 

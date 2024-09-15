@@ -22,7 +22,7 @@ image:
 
 ## Подготовка
 
-Устанавливаем репозиторий Epel и необходимый софт
+Устанавливаем репозиторий EPEL и необходимый софт
 
 ```sh
 $ sudo dnf -y install epel-release
@@ -30,13 +30,13 @@ $ sudo dnf -y install python3 python3-setuptools python3-pip python3-ldap python
     curl tar nano pwgen poppler-utils libreoffice-headless libreoffice-pyuno libffi-devel gcc gcc-c++
 ```
 
-Без этих библиотек не установится mysqlclient для python
+Без этих библиотек не установится `mysqlclient` для python
 
 ```sh
 $ sudo dnf -y install mariadb-connector-c-devel mariadb-connector-c
 ```
 
-Устанавливаем утилиты python
+Устанавливаем утилиты Python
 
 ```sh
 $ sudo pip3 install --upgrade pip
@@ -54,7 +54,7 @@ $ sudo pip3 install mysqlclient
 $ sudo dnf -y install memcached
 ```
 
-Запускаем службу memcached и добавляем ее в автозагрузку
+Запускаем службу `memcached` и добавляем ее в автозагрузку
 
 ```sh
 $ sudo systemctl enable --now memcached
@@ -207,14 +207,14 @@ $ sudo systemctl enable --now nginx
 
 ## Настройка SeLinux и Firewall
 
-Отключаем SeLinux. В RHEL9 изменилась процедура отключения SeLinux
+Отключаем SELinux. В RHEL-9 изменилась процедура отключения SELinux
 
 ```sh
 $ sudo setenforce 0
 $ sudo grubby --update-kernel ALL --args selinux=0
 ```
 
-Открываем порты 80,443
+Открываем порты `80`, `443`
 
 ```sh
 $ sudo firewall-cmd --zone=public --add-service={http,https} --permanent
@@ -229,13 +229,13 @@ $ sudo firewall-cmd --reload
 $ sudo dnf -y install mariadb mariadb-server
 ```
 
-Запускаем сервис mariadb и добавляем его в автозагрузку
+Запускаем сервис `mariadb` и добавляем его в автозагрузку
 
 ```sh
 $ sudo systemctl enable --now mariadb
 ```
 
-Запускаем скрипт инициализации БД, устанавливаем mysql root-пароль, отвечаем на вопросы
+Запускаем скрипт инициализации БД, устанавливаем пароль пользователя `root` для MySQL, отвечаем на вопросы
 
 ```sh
 $ sudo mysql_secure_installation
@@ -265,33 +265,33 @@ $ mysql -u root -p
 
 ## Установка Seafile 9
 
-Создаем пользователя seafile
+Создаем пользователя `seafile`
 
 ```sh
 $ sudo useradd -m -U -r -d /opt/seafile seafile
 $ sudo chmod 750 /opt/seafile
 ```
 
-Добавляем пользователя nginx в группу seafile
+Добавляем пользователя `nginx` в группу `seafile`
 
 ```sh
 $ sudo usermod -aG seafile nginx
 ```
 
-Переключаемся на пользователя seafile
+Переключаемся на пользователя `seafile`
 
 ```sh
 $ sudo su - seafile
 ```
 
-Скачиваем архив seafile-server\_9.0.10 (на момент написания статьи это была финальная версия) и распаковываем его
+Скачиваем архив `seafile-server_9.0.10` (на момент написания статьи это была финальная версия) и распаковываем его
 
 ```sh
 $ curl -OL https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seafile-server_9.0.10_x86-64.tar.gz
 $ tar xzf seafile-server_*
 ```
 
-Запускаем установку seafile, отвечаем на вопросы системы
+Запускаем установку Seafile, отвечаем на вопросы системы
 
 ```sh
 $ ./seafile-server-9.0.10/setup-seafile-mysql.sh
@@ -369,13 +369,13 @@ When problems occur, Refer to
 for information.
 ```
 
-Переключаемся на основного пользователя (правами sudo)
+Переключаемся на основного пользователя (правами `sudo`)
 
 ```sh
 $ exit
 ```
 
-Создаем системный юнит `seafile.service`
+Создаем Systemd Unit `seafile.service`
 
 ```sh
 $ sudo nano /etc/systemd/system/seafile.service
@@ -396,7 +396,7 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 ```
 
-Создаем системный юнит `seahub.service`
+Создаем Systemd Unit `seahub.service`
 
 ```sh
 $ sudo nano /etc/systemd/system/seahub.service
@@ -416,7 +416,7 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 ```
 
-Перечитываем системные юниты
+Перечитываем Systemd Unit
 
 ```sh
 $ sudo systemctl daemon-reload
@@ -424,7 +424,7 @@ $ sudo systemctl daemon-reload
 
 ## Настройка Seafile
 
-Отредактируем `seafdav.conf`, для активации webdav
+Отредактируем `seafdav.conf`, для активации WebDav
 
 ```sh
 $ sudo nano /opt/seafile/conf/seafdav.conf
@@ -596,7 +596,7 @@ expire_days = 30
 enable_syslog = true
 ```
 
-Запускаем сервисы вручную, так как в процессе первого запуска сервиса seahub надо будет указать **email** и **пароль администратора**
+Запускаем сервисы вручную, так как в процессе первого запуска сервиса `seahub` надо будет указать **e-mail** и **пароль администратора**
 
 ```sh
 $ sudo su - seafile /opt/seafile/seafile-server-latest/seafile.sh start

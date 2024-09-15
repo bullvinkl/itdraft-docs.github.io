@@ -61,7 +61,7 @@ $ sudo lvs
 > Внимание, если на данном этапе перезагрузить ВМ, она не загрузится
 {: .prompt-danger }
 
-Редактируем файл fstab
+Редактируем файл `fstab`
 
 ```sh
 $ sudo nano /etc/fstab
@@ -69,7 +69,7 @@ $ sudo nano /etc/fstab
 /dev/mapper/centos-rootnew /                       xfs     defaults        0 0
 ```
 
-Редактируем grub для GPT (UEFI-based) систем
+Редактируем `grub` для GPT (UEFI-based) систем
 
 ```sh
 $ sudo nano /etc/default/grub
@@ -94,7 +94,7 @@ $ sudo grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg	# для Centos
 $ sudo grub2-mkconfig -o /boot/efi/EFI/rocky/grub.cfg  # для Rocky Linux
 ```
 
-Теперь можно перезагружаться, запись grub корректна
+Теперь можно перезагружаться, запись `grub` корректна
 
 ```sh
 $ sudo reboot
@@ -135,7 +135,7 @@ $ sudo lvs
 > Внимание, если на данном этапе перезагрузить ВМ, она не загрузится
 {: .prompt-danger }
 
-Редактируем файл fstab
+Редактируем файл `fstab`
 
 ```sh
 $ sudo nano /etc/fstab
@@ -145,7 +145,7 @@ $ sudo nano /etc/fstab
 /dev/mapper/rocky-swap none                    swap    defaults        0 0
 ```
 
-Редактируем grub для GPT (UEFI-based) систем
+Редактируем `grub` для GPT (UEFI-based) систем
 
 ```sh
 $ sudo nano /etc/default/grub
@@ -170,7 +170,7 @@ $ sudo grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg	# для Centos
 $ sudo grub2-mkconfig -o /boot/efi/EFI/rocky/grub.cfg  # для Rocky Linux
 ```
 
-Теперь можно перезагружаться, запись grub корректна
+Теперь можно перезагружаться, запись `grub` корректна
 
 ```sh
 $ sudo reboot

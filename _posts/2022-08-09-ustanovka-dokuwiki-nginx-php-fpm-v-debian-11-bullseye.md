@@ -40,7 +40,7 @@ $ sudo apt -y install nano curl bind9-utils telnet wget net-tools traceroute git
 $ sudo wget https://nginx.org/keys/nginx_signing.key
 ```
 
-Устанавливаем утилиту gnupg2
+Устанавливаем утилиту `gnupg2`
 
 ```sh
 $ sudo apt -y install gnupg2
@@ -76,7 +76,7 @@ $ sudo systemctl start nginx
 $ sudo systemctl enable nginx
 ```
 
-Добавим пользователя nginx в группу www-data
+Добавим пользователя `nginx` в группу `www-data`
 
 ```sh
 $ sudo usermod -aG www-data nginx
@@ -86,13 +86,13 @@ $ sudo usermod -aG www-data nginx
 
 ## Установка и настройка PHP-FPM 7.4
 
-Устанавливаем php-fpm 7.4 и модули php
+Устанавливаем `php-fpm 7.4` и модули PHP
 
 ```sh
 $ sudo apt install php7.4 php7.4-cli php7.4-fpm php7.4-curl php7.4-opcache php7.4-gd php7.4-xml php7.4-zip php7.4-json php7.4-mbstring php7.4-intl php7.4-imagick
 ```
 
-Немного отредактируем конфиг php
+Немного отредактируем конфиг PHP
 
 ```sh
 $ sudo nano /etc/php/7.4/fpm/php.ini
@@ -103,7 +103,7 @@ short_open_tag = On
 date.timezone = Europe/Moscow
 ```
 
-Также отредактируем конфиг пула www для php-fpm
+Также отредактируем конфиг пула `www` для PHP-FPM
 
 ```sh
 $ sudo nano /etc/php/7.4/fpm/pool.d/www.conf
@@ -113,7 +113,7 @@ group = www-data
 listen.mode = 0660
 ```
 
-На этом установка и настройка php-fpm завершена
+На этом установка и настройка PHP-FPM завершена
 
 ## Подготовка к установке DokuWiki
 
@@ -234,7 +234,7 @@ $ sudo systemctl restart php7.4-fpm nginx
 https://%mysite%/install.php?l=ru
 ```
 
-После установки DokuWiki удаляем файл install.php
+После установки DokuWiki удаляем файл `install.php`
 
 ```sh
 $ sudo rm -f /var/www/dokuwiki/install.php

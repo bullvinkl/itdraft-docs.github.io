@@ -226,20 +226,20 @@ $ sudo apt -y install gnupg postgresql-common apt-transport-https lsb-release
 $ wget --quiet -O - https://packagecloud.io/timescale/timescaledb/gpgkey | sudo sh -c "gpg --dearmor > /etc/apt/trusted.gpg.d/timescaledb.gpg"
 ```
 
-Добавляем репозиторий timescaledb
+Добавляем репозиторий TimescaleDB
 
 ```sh
 $ echo "deb https://packagecloud.io/timescale/timescaledb/debian/ $(lsb_release -c -s) main" | sudo tee /etc/apt/sources.list.d/timescaledb.list
 ```
 
-Устанавливаем timescaledb
+Устанавливаем TimescaleDB
 
 ```sh
 $ sudo apt update
 $ sudo apt -y install timescaledb-2-postgresql-14
 ```
 
-Тюним конфиг PostgreSQL
+Модифицируем конфиг PostgreSQL
 
 ```sh
 $ sudo timescaledb-tune --quiet --yes
@@ -263,7 +263,7 @@ $ sudo systemctl restart postgresql
 $ echo "CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;" | sudo -u postgres psql zabbix
 ```
 
-Скачиваем дистрибутив zabbix-6.2.1 и распаковываем его
+Скачиваем дистрибутив `zabbix-6.2.1` и распаковываем его
 
 ```sh
 $ wget https://cdn.zabbix.com/zabbix/sources/stable/6.2/zabbix-6.2.1.tar.gz
@@ -276,7 +276,7 @@ $ tar -zxvf zabbix-6.2.1.tar.gz
 $ cat zabbix-6.2.1/database/postgresql/timescaledb.sql | sudo -u zabbix psql zabbix
 ```
 
-Что б zabbix server не ругался на версию TimescaleDB, добавляем в самом конце конфига `zabbix_server.conf`
+Что б Zabbix Server не ругался на версию TimescaleDB, добавляем в самом конце конфига `zabbix_server.conf`
 
 ```sh
 $ sudo nano /etc/zabbix/zabbix_server.conf

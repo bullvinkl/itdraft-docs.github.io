@@ -33,7 +33,7 @@ $ cd blackbox_exporter-0.23.0.linux-amd64
 $ sudo cp blackbox_exporter /usr/local/bin/
 ```
 
-Создаем системный юнит
+Создаем системный Systemd Unit
 ```sh
 $ sudo nano /etc/systemd/system/blackbox_exporter.service
 [Unit]
@@ -60,7 +60,8 @@ WantedBy=multi-user.target
 
 Параметр `CAP_NET_RAW` добавляется, что б Blackbox Exporter корректно выполнял ICMP-проверку хостов
 
-Перечитывам юниты
+Перечитываем Systemd Unit
+
 ```sh
 $ sudo systemctl daemon-reload
 ```
@@ -110,7 +111,7 @@ $ sudo systemctl status blackbox_exporter
 
 ## Настройка Prometheus
 
-Редактируем конфигурационный файл Prometheus, добавляем проверки: ICMP, tcp-портов, HTTP (в том числе и валидность ssl-сертификатов)
+Редактируем конфигурационный файл `prometheus.yml`, добавляем проверки: ICMP, tcp-портов, HTTP (в том числе и валидность ssl-сертификатов)
 ```sh
 $ sudo nano /etc/prometheus/prometheus.yml 
 ...

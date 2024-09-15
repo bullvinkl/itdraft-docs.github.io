@@ -47,7 +47,7 @@ $ make modules
 
 В каталоге `objs` появится файл `ngx_http_upstream_ntlm_module.so`
 
-Копируем его в каталог со всеми мудулями
+Копируем его в каталог со всеми модулями
 
 ```sh
 $ sudo cp objs/ngx_http_upstream_ntlm_module.so /usr/lib/nginx/modules/

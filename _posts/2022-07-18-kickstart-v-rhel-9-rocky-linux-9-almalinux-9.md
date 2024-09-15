@@ -35,9 +35,9 @@ image:
 /etc/NetworkManager/system-connections/{NAME}.nmconnection
 ```
 
-Удален пакет сетевых скриптов. Для настройки сетевого интерфейса все так же можно использовать псевдо-графическую утилиту `nmtui`, либо консольную утилиту `mncli`
+Удален пакет сетевых скриптов. Для настройки сетевого интерфейса все так же можно использовать псевдографическую утилиту `nmtui`, либо консольную утилиту `mncli`
 
-- Удалена поддержка настройки «SELINUX=disabled» для отключения SELinux в /etc/selinux/config
+- Удалена поддержка настройки «SELINUX=disabled» для отключения SELinux в `/etc/selinux/config`
 
 Для отключения SELinux надо выполнить команды:
 
@@ -48,7 +48,7 @@ $ sudo reboot
 
 Так же были внесены изменения в конфиг авто установщика (kickstart)
 
-- убрали параметр "install" (# Install OS instead of upgrade)
+- убрали параметр `install` (# Install OS instead of upgrade)
 
 - внесли изменения в настройки системного языка (# System language): `lang en_US --addsupport=ru_RU`
 

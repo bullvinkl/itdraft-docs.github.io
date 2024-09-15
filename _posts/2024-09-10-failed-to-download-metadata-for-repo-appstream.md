@@ -19,7 +19,7 @@ image:
 > Error: Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: Curl error (60): SSL peer certificate or SSH remote key was not OK for https://mirrors.almalinux.org/mirrorlist/9/appstream [SSL: no alternative certificate subject name matches target host name 'mirrors.almalinux.org']
 {: .prompt-danger }
 
-Временное решение: комментируем `mirrorlist`, разкомментируем `baseurl`
+Временное решение: комментируем `mirrorlist`, раскомментируем `baseurl`
 
 ```sh
 $ sudo sed -i 's/mirrorlist=/#mirrorlist=/g' /etc/yum.repos.d/almalinux-*

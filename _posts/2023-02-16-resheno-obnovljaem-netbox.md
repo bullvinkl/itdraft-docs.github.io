@@ -27,7 +27,7 @@ $ cd /opt/netbox
 
 ## Обновление Netbox, установленного из github репозитория
 
-Переключаемся на ветку master и выкачиваем изменения из репозитория (в предыдущей статье мы устанавливали netbox из git-репозиторий)
+Переключаемся на ветку master и выкачиваем изменения из репозитория (в предыдущей статье мы устанавливали Netbox из git-репозиторий)
 
 ```sh
 $ sudo git checkout master
@@ -69,7 +69,7 @@ $ sudo mv ./netbox-3.6.7 /opt/netbox
 $ sudo chown -R netbox:netbox /opt/netbox
 ```
 
-Копируем конфиг из старого каталога netbox в новый
+Копируем конфиг из старого каталога Netbox в новый
 
 ```sh
 $ sudo cp /opt/netbox-3.4.2/netbox/netbox/configuration.py /opt/netbox/netbox/netbox/configuration.py

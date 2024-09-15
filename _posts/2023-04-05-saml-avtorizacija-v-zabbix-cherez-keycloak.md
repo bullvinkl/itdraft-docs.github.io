@@ -40,7 +40,7 @@ Name: Zabbix
 
 Сохраняемся, редактируем остальные настройки
 
-**Tab Settings > Access settings**
+- Tab Settings > Access settings
 
 ![](/assets/img/posts/2023/04/05/image-2.png){: w="300" }
 
@@ -53,7 +53,7 @@ IDP-Initiated SSO URL name: zabbix.itdraft.ru   # Ниже появится URL,
 Master SAML Processing URL: https://zabbix.itdraft.ru/index_sso.php?acs
 ```
 
-**Tab Settings > SAML capabilities**
+- Tab Settings > SAML capabilities
 
 ![](/assets/img/posts/2023/04/05/image-3.png){: w="300" }
 
@@ -64,7 +64,7 @@ Force POST binding: On
 Include AuthnStatement: On
 ```
 
-**Tab Settings >** **Signature and Encryption, Login settings, Logout settings**
+- Tab Settings > Signature and Encryption, Login settings, Logout settings
 
 ![](/assets/img/posts/2023/04/05/image-4.png){: w="300" }
 
@@ -82,7 +82,7 @@ Logout settings:
 Front channel logout: On
 ```
 
-**Tab Key > Signing keys config**
+- Tab Key > Signing keys config
 
 ![](/assets/img/posts/2023/04/05/image-5.png){: w="300" }
 
@@ -94,9 +94,9 @@ Encryption keys config:
 Encrypt assertions Off
 ```
 
-**Tab Client Scope > zabbix-dedicate > Tab Mappers**
+ - Tab Client Scope > zabbix-dedicate > Tab Mappers
 
-Add mapper > By configuration > User Property: Name
+- Add mapper > By configuration > User Property: Name
 
 ![](/assets/img/posts/2023/04/05/image-6.png){: w="300" }
 
@@ -109,7 +109,7 @@ SAML Attribute Name: username
 SAML Attribute NameFormat: Basic
 ```
 
-Add mapper > By configuration > User Property: Email
+- Add mapper > By configuration > User Property: Email
 
 ![](/assets/img/posts/2023/04/05/image-7.png){: w="300" }
 
@@ -122,7 +122,7 @@ SAML Attribute email
 SAML Attribute NameFormat: Basic
 ```
 
-Add mapper > By configuration > User Property: First Name
+- Add mapper > By configuration > User Property: First Name
 
 ![](/assets/img/posts/2023/04/05/image-8.png){: w="300" }
 
@@ -135,7 +135,7 @@ SAML Attribute first_name
 SAML Attribute NameFormat: Basic
 ```
 
-Add mapper > By configuration > User Property: Last Name
+- Add mapper > By configuration > User Property: Last Name
 
 ![](/assets/img/posts/2023/04/05/image-9.png){: w="300" }
 
@@ -148,7 +148,7 @@ SAML Attribute last_name
 SAML Attribute NameFormat: Basic
 ```
 
-Add mapper > By configuration > Role list: Role list
+- Add mapper > By configuration > Role list: Role list
 
 ![](/assets/img/posts/2023/04/05/image-21.png){: w="300" }
 
@@ -165,7 +165,7 @@ Single Role Attribute: On
 
 ![](/assets/img/posts/2023/04/05/image-11.png){: w="300" }
 
-**Tab Advanced > Fine Grain SAML Endpoint Configuration**
+- Tab Advanced > Fine Grain SAML Endpoint Configuration
 
 ![](/assets/img/posts/2023/04/05/image-20.png){: w="300" }
 
@@ -176,11 +176,11 @@ Assertion Consumer Service Redirect Binding URL: https://zabbix.itdraft.ru/index
 
 Продолжаем настройки Keycloak
 
-Client scopes > role_list
+- Client scopes > role_list
 
 ![](/assets/img/posts/2023/04/05/image-13.png){: w="300" }
 
-role_list > Mappers > role list
+- role_list > Mappers > role list
 
 ![](/assets/img/posts/2023/04/05/image-14.png){: w="300" }
 
@@ -193,7 +193,7 @@ Single Role Attribute: On
 
 Копируем открытый ключ:
 
-Realm settings > Tab keys > RS256 > Certificate
+- Realm settings > Tab keys > RS256 > Certificate
 
 ![](/assets/img/posts/2023/04/05/image-16.png){: w="300" }
 
@@ -244,9 +244,11 @@ $SSO['IDP_CERT']                = 'conf/certs/idp.crt';
 $SSO['SETTINGS']                = [ 'security' => [ 'requestedAuthnContext' => false ] ];
 ```
 
-## Настройка Zabbix в web-итерфейсе
+## Настройка Zabbix в web-интерфейсе
 
-Переходим в настройки авторизации: Administration> Authentication > SAML settings
+Переходим в настройки авторизации:
+
+- Administration> Authentication > SAML settings
 
 ![](/assets/img/posts/2023/04/05/image-18.png){: w="300" }
 

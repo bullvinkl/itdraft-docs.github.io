@@ -28,7 +28,7 @@ $ sudo apt autoremove -y
 $ sudo apt dist-upgrade -y
 ```
 
-Меняем репозиторий buster на bullseye
+Меняем репозиторий `buster` на `bullseye`
 
 ```sh
 $ sudo nano /etc/apt/sources.list
@@ -65,7 +65,7 @@ $ sudo apt upgrade -y
 $ sudo apt dist-upgrade -y
 ```
 
-Перезгружаемся
+Перезагружаемся
 
 ```sh
 $ sudo reboot

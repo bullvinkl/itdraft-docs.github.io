@@ -27,7 +27,7 @@ image:
 - Pgbouncer
 - Haproxy
 
-Тестовый стенд развернут на системе виртуализации VirtualBox, ip-адрессация дефолтная
+Тестовый стенд развернут на системе виртуализации VirtualBox, ip-адресация по-умолчанию
 
 Кластер будет построен на 3-х нодах. Будет рассмотрена конфигурация 1 master и 1 replica сервер СУДБ PostgreSQL. Но эту конфигурацию без труда можно переделать в 1 master и 2 replicas
 
@@ -62,14 +62,14 @@ $ sudo hostnamectl set-hostname db1-1  # для каждой ноды свой h
 
 ## Установка Etcd (All nodes)
 
-Скачиваем дистрибутив и распаковываем. На момент подготовки стенда, финальная версия etcd была: 3.5.5
+Скачиваем дистрибутив и распаковываем. На момент подготовки стенда, финальная версия `etcd` была: `3.5.5`
 ```sh
 $ cd /tmp
 $ wget https://github.com/etcd-io/etcd/releases/download/v3.5.5/etcd-v3.5.5-linux-amd64.tar.gz
 $ tar xzvf etcd-v3.5.5-linux-amd64.tar.gz
 ```
 
-Перемещаем бинарники в каталог /usr/local/bin
+Перемещаем бинарники в каталог `/usr/local/bin`
 ```sh
 $ sudo mv /tmp/etcd-v3.5.5-linux-amd64/etcd* /usr/local/bin/
 ```
@@ -107,7 +107,7 @@ $ sudo chown -R etcd:etcd /opt/etcd
 $ sudo chmod -R 700 /opt/etcd/
 ```
 
-Создаем конфиги для etcd (для каждой ноды разный)
+Создаем конфиги для `etcd` (для каждой ноды разный)
 
 db1-1:
 ```sh
@@ -216,7 +216,7 @@ $ etcdctl endpoint status --cluster -w table
 $ etcdctl endpoint health --cluster -w table
 ```
 
-Другие команды проверки статуса:
+Другие команды проверки статуса
 ```sh
 $ ETCDCTL_API=2 etcdctl member list
 $ ETCDCTL_API=3 etcdctl -w table --endpoints=db1-1:2379,db1-2:2379,db1-3:2379 endpoint status
@@ -237,13 +237,13 @@ $ sudo apt -y install postgresql-15
 $ sudo ln -s /usr/lib/postgresql/15/bin/* /usr/sbin/
 ```
 
-Добавляем пользователя replicator
+Добавляем пользователя `replicator`
 ```sh
 $ sudo -u postgres psql
 =# create user replicator replication login encrypted password 'passwd';
 ```
 
-Задаем пароль для пользователя postgres
+Задаем пароль для пользователя `postgres`
 ```sh
 =# \password postgres;
 Enter new password for user "postgres": passwd
@@ -256,13 +256,13 @@ Enter it again: passwd
 =# LOAD 'auto_explain';
 ```
 
-Создаем пользователя pgbouncer
+Создаем пользователя `pgbouncer`
 ```sh
 =# create user pgbouncer password '39xYw2KcwV';
 =# \q
 ```
 
-Редактируем pg\_hba.conf
+Редактируем `pg_hba.conf`
 ```sh
 $ sudo nano /etc/postgresql/15/main/pg_hba.conf
 # Database administrative login by Unix domain socket
@@ -286,7 +286,8 @@ host    replication     all             ::1/128                 md5
 host    replication     replicator      10.0.2.0/24             md5
 ```
 
-На второй и ноде удаляем (от пользователей root или postgres) содержимое каталога /var/lib/postgresql/15/main, т.к. этот каталог среплицируется после запуска Patroni
+На второй и ноде удаляем (от пользователей `root` или `postgres`) содержимое каталога `/var/lib/postgresql/15/main`, т.к. этот каталог реплицируется после запуска Patroni
+
 ```sh
 $ sudo su
 # rm -rf /var/lib/postgresql/15/main/*
@@ -370,7 +371,7 @@ vrrp_instance VI_1 {
 }
 ```
 
-В данном конфиге ip 10.0.2.11 - кластерный плавающий ip
+В данном конфиге ip `10.0.2.11` - кластерный (плавающий) ip
 
 Создаем каталог и скрипт проверки HAproxy (до установки и настройки HAproxy не будет отрабатывать)
 ```sh
@@ -406,12 +407,12 @@ $ sudo pip3 install patroni
 $ sudo pip3 install python-etcd
 ```
 
-Создаем каталог /etc/patroni/
+Создаем каталог `/etc/patroni/`
 ```sh
 $ sudo mkdir /etc/patroni/
 ```
 
-Создаем конфиг patroni.yml
+Создаем конфиг `patroni.yml`
 ```sh
 $ sudo nano /etc/patroni/patroni.yml
 ---
@@ -590,7 +591,7 @@ $ sudo chown postgres:postgres /var/lib/pgsql_stats_tmp
 $ sudo -u postgres patroni /etc/patroni/patroni.yml
 ```
 
-Должен создастся файл .pgpass\_patroni, назначаем владельца, права
+Должен создастся файл `.pgpass_patroni`, назначаем владельца, права
 ```sh
 $ sudo chown postgres:postgres /var/lib/postgresql/.pgpass_patroni
 $ sudo chmod 0600 /var/lib/postgresql/.pgpass_patroni
@@ -655,7 +656,7 @@ $ sudo patronictl -c /etc/patroni/patroni.yml list
 > $ sudo systemctl status patroni
 > ```
 
-Создадим файла с настройками по умолчанию, что позволит не указывать настройки подключения для patronictl
+Создадим файла с настройками по умолчанию, что позволит не указывать настройки подключения для `patronictl`
 ```sh
 $ sudo mkdir -p ~/.config/patroni/
 $ sudo nano ~/.config/patroni/patronictl.yaml
@@ -738,7 +739,7 @@ log_disconnections = 1
 # Documentation https://pgbouncer.github.io/config.html
 ```
 
-Создадим файл userlist.txt
+Создадим файл `userlist.txt`
 ```sh
 $ sudo nano /etc/pgbouncer/userlist.txt
 "postgres" "passwd"
@@ -1005,7 +1006,7 @@ sudo patronictl -c /etc/patroni/patroni.yml pause
 sudo patronictl -c /etc/patroni/patroni.yml reinit postgres-cluster
 ```
 
-postgres-cluster - задается в настройках patroni (scope: ...)
+`postgres-cluster` - задается в настройках patroni (`scope: ...`)
 
 Реинициализировать ноду
 ```sh

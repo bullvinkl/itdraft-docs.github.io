@@ -70,7 +70,7 @@ $ sudo dnf -y install https://download.postgresql.org/pub/repos/yum/reporpms/EL-
 $ sudo dnf update -y
 ```
 
-Отключаем модуль postgresql, что не не устанавливался PostgreSQL из дефолтных репозиториев
+Отключаем модуль `postgresql`, что не не устанавливался PostgreSQL из дефолтных репозиториев
 
 ```sh
 $ sudo dnf -qy module disable postgresql
@@ -106,7 +106,7 @@ $ sudo systemctl enable postgresql-15 --now
 $ sudo systemctl status postgresql-15
 ```
 
-Устанавливаем пароль пользователя postgres
+Устанавливаем пароль пользователя `postgres`
 
 ```sh
 $ sudo -u postgres psql
@@ -125,7 +125,7 @@ $ sudo -u postgres psql
 
 ## Установка Git
 
-Устанавливаем git, смотрим версию
+Устанавливаем `git`, смотрим версию
 
 ```sh
 $ sudo dnf -y install git
@@ -208,7 +208,7 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-Создаем каталог и размещаем в нем симлинк на конфиг
+Создаем каталог и размещаем в нем сим линк на конфиг
 
 ```sh
 $ sudo mkdir /etc/semaphore
@@ -221,7 +221,7 @@ $ sudo ln -s /opt/semaphore/config.json /etc/semaphore/config.json
 $ sudo chown -R semaphore:semaphore /etc/semaphore
 ```
 
-Выполняем daemon-reload, что бы systemd нашел новые сервисы
+Выполняем `daemon-reload`, что бы systemd нашел новые сервисы
 
 ```sh
 $ sudo systemctl daemon-reload
@@ -248,7 +248,7 @@ gpgcheck=0
 enabled=1
 ```
 
-Устанавливаем nginx и запускаем его
+Устанавливаем Nginx и запускаем его
 
 ```sh
 $ sudo dnf -y install nginx
@@ -359,7 +359,7 @@ server {
 }
 ```
 
-Отключаем дефолтный конфиг и перезапускаем NGINX
+Отключаем дефолтный конфиг и перезапускаем Nginx
 
 ```sh
 $ sudo rm /etc/nginx/conf.d/default.conf

@@ -124,7 +124,7 @@ $ systemctl status mongod
 $ sudo dnf -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 ```
 
-Устанавливаем php-fpm 7.3 и необходимые модули
+Устанавливаем PHP-FPM 7.3 и необходимые модули
 
 ```sh
 $ sudo dnf module list php
@@ -132,7 +132,7 @@ $ sudo dnf module enable php:remi-7.3
 $ sudo dnf -y install php-fpm php-json php-ldap php-xml php-bcmath php-mbstring
 ```
 
-Настраиваем php-fpm
+Настраиваем PHP-FPM
 
 ```sh
 $ sudo nano /etc/php-fpm.d/www.conf
@@ -159,7 +159,7 @@ short_open_tag = On
 $ sudo chown -R nginx. /var/lib/php/session
 ```
 
-Добавляем php-fpm в автозагрузку, запускаем, проверяем
+Добавляем PHP-FPM в автозагрузку, запускаем, проверяем
 
 ```sh
 $ sudo systemctl enable --now php-fpm
@@ -187,13 +187,13 @@ $ sudo dnf -y install php-devel
 $ sudo pecl install mongodb
 ```
 
-Добавляем его в php
+Добавляем его в PHP
 
 ```sh
 $ echo "extension=mongodb.so" | sudo tee /etc/php.d/20-mongodb.ini
 ```
 
-Перезапускаем сервис php-fpm
+Перезапускаем сервис PHP-FPM
 
 ```sh
 $ sudo systemctl restart php-fpm
@@ -216,19 +216,19 @@ $ cd cphalcon/build
 $ sudo ./install
 ```
 
-Добавляем его в php
+Добавляем его в PHP
 
 ```sh
 $ echo "extension=phalcon.so" | sudo tee /etc/php.d/50-phalcon.ini
 ```
 
-Перезапускаем сервис php-fpm
+Перезапускаем сервис PHP-FPM
 
 ```sh
 $ sudo systemctl restart php-fpm
 ```
 
-Проверяем, подгрузились ли в php модули
+Проверяем, подгрузились ли в PHP модули
 
 ```sh
 $ php -m | egrep 'phalcon|mongodb'
@@ -337,7 +337,7 @@ $ sudo nano /etc/php.ini
 session.cookie_secure = On
 ```
 
-Выключаем параметр `disableSameSiteCookie` в конфигурационном файле passwork `config.ini`
+Выключаем параметр `disableSameSiteCookie` в конфигурационном файле Passwork `config.ini`
 
 ```sh
 $ sudo nano /opt/passwork/app/config/config.ini
@@ -347,7 +347,7 @@ $ sudo nano /opt/passwork/app/config/config.ini
 disableSameSiteCookie = Off
 ```
 
-Перезагружаем сервисы php-fpm и nginx
+Перезагружаем сервисы PHP-FPM и Nginx
 
 ```sh
 $ sudo systemctl restart php-fpm nginx

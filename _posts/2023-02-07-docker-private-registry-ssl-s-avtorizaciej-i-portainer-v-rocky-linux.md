@@ -27,7 +27,7 @@ image:
 $ sudo dnf -y install docker-ce --nobest
 ```
 
-Добавляем нашего пользователя, под которым настраиваем ОС, в группу Docker
+Добавляем нашего пользователя, под которым настраиваем ОС, в группу `docker`
 
 ```sh
 $ sudo usermod -aG docker $(whoami)
@@ -47,13 +47,13 @@ $ sudo systemctl enable --now docker
 
 ## Установка Docker Compose
 
-Скачиваем docker-compose
+Скачиваем Docker Compose
 
 ```sh
 $ sudo curl -L https://github.com/docker/compose/releases/download/v2.15.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 ```
 
-Делаем файл исполняемым и создаем симлинк
+Делаем файл исполняемым и создаем сим линк
 
 ```sh
 $ sudo chmod +x /usr/local/bin/docker-compose
@@ -78,7 +78,7 @@ $ sudo mkdir -p /opt/docker/registry/{certs,data,auth}
 $ sudo chown -R $(whoami):$(whoami) /opt/docker/registry
 ```
 
-Переходим в каталог certs и генерим самоподписанный сертификат
+Переходим в каталог `certs` и генерим самоподписанный сертификат
 
 ```sh
 $ cd /opt/docker/registry/certs
@@ -94,7 +94,7 @@ $ openssl x509 -in registry.csr -out registry.crt -req -signkey registry.key -da
 $ sudo dnf -y install httpd-tools
 ```
 
-Создаем связку логин:пароль
+Создаем связку "логин:пароль"
 
 ```sh
 $ htpasswd -Bbc /opt/docker/registry/auth/.htpasswd admin pass
@@ -102,7 +102,7 @@ $ htpasswd -Bbc /opt/docker/registry/auth/.htpasswd admin pass
 
 ## Настройка Docker Private Registry и запуск через Docker Composer
 
-Создаем docker-compose файл
+Создаем `docker-compose` файл
 
 ```sh
 $ nano /opt/docker/registry/docker-compose.yml 
@@ -162,7 +162,7 @@ $ sudo mkdir /opt/docker/portainer
 $ sudo chown -R $(whoami):$(whoami) /opt/docker/portainer
 ```
 
-Создаем docker-compose файл
+Создаем `docker-compose` файл
 
 ```sh
 $ nano /opt/docker/portainer/docker-compose.yml

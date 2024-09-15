@@ -70,7 +70,7 @@ $ rustc -V
 rustc 1.55.0 (c8dfcfe04 2021-09-06)
 ```
 
-Переключаемся обратно на sudo-пользователя
+Переключаемся обратно на `sudo` пользователя
 
 ```sh
 $ exit
@@ -78,7 +78,7 @@ $ exit
 
 ## Установка Node JS
 
-Создадим каталог для node и установим туда node
+Создадим каталог для Node JS и установим его
 
 ```sh
 $ sudo mkdir /opt/node
@@ -101,7 +101,7 @@ $ cd vaultwarden-1.22.2
 $ cargo build --features postgresql --release
 ```
 
-Устанавливаем web-интерфейс
+Устанавливаем Web-интерфейс
 
 ```sh
 $ cd target/release
@@ -109,7 +109,7 @@ $ wget https://github.com/dani-garcia/bw_web_builds/releases/download/v2.23.0/bw
 $ tar xzvf bw_web_v2.23.0.tar.gz
 ```
 
-Создадим data-директорию, которую позже укажем в настройках
+Создадим директорию `data`, которую позже укажем в настройках
 
 ```sh
 $ cd
@@ -156,7 +156,7 @@ TRASH_AUTO_DELETE_DAYS=7
 
 Все параметры конфигурационного файла описаны в шаблоне, из скаченного архива
 
-Переключаемся на sudo-пользователя
+Переключаемся на `sudo` пользователя
 
 ```sh
 $ exit
@@ -164,14 +164,14 @@ $ exit
 
 ## Установка PostgreSQL
 
-Отключаем postgresql из системного репозитория
+Отключаем PostgreSQL из системного репозитория
 
 ```sh
 $ sudo dnf -qy module disable postgresql
 $ sudo dnf module list postgresql
 ```
 
-Устанавливаем PostgreSQL из репозитория Postgres
+Устанавливаем PostgreSQL из официального репозитория
 
 ```sh
 $ sudo dnf -y install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
@@ -365,7 +365,7 @@ $ sudo systemctl enable --now nginx
 
 ### Настраиваем Firewall, отключаем SELinux
 
-Открываем web-порты
+Открываем Web-порты
 
 ```sh
 $ sudo firewall-cmd --permanent --add-service=http

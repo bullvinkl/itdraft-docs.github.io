@@ -30,11 +30,12 @@ _Структура_
 
 Как видно из разметки, диск SDA увеличили.
 
-При попытке расширить корневой раздел через growpart появлялась ошибка: FAILED: failed to resize
+При попытке расширить корневой раздел через `growpart` появлялась ошибка: `FAILED: failed to resize`
+
 ![](/assets/img/posts/2024/07/14/image-2.png){: w="300" }
 _FAILED: failed to resize_
 
-Будем расширять диск через fdisk
+Будем расширять диск через `fdisk`
 
 Добавляем раздел sda3, меняем тип по LVM
 ```sh
@@ -57,7 +58,7 @@ Syncing disks.
 ![](/assets/img/posts/2024/07/14/image-3.png){: w="300" }
 _Результат_
 
-Инициализируем раздел в качестве LVM, добавляем в группу debian и расширяем пространство
+Инициализируем раздел в качестве LVM, добавляем в группу `debian` и расширяем пространство
 ```sh
 $ sudo pvcreate /dev/sda3
 $ sudo vgextend debian /dev/sda3

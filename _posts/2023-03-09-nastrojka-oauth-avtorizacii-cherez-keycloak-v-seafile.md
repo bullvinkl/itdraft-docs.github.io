@@ -43,7 +43,7 @@ Authentication flow: Standard flow
 , Direct access grants
 ```
 
-Сохраняем, переходим в настройки клиента seafile
+Сохраняем, переходим в настройки клиента Seafile
 
 ![](/assets/img/posts/2023/03/09/image-11.png){: w="300" }
 

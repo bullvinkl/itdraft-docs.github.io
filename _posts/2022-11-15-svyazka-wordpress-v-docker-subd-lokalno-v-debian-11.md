@@ -47,14 +47,14 @@ $ sudo apt update
 $ sudo apt -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-Добавляем нашего пользователя в группу docker
+Добавляем нашего пользователя в группу `docker`
 ```sh
 $ sudo usermod -aG docker $(whoami)$ newgrp docker
 ```
 
 ## Установка Docker Compose
 
-Скачиваем дистрибутив, файл исполняемым и создаем симлинк
+Скачиваем дистрибутив, файл исполняемым и создаем сим линк
 ```sh
 $ sudo curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 

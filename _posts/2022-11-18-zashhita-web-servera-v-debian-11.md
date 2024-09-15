@@ -22,7 +22,7 @@ image:
 
 Принцип действия следующий:
 
-- На сервере открываем входящие web и vpn порты
+- На сервере открываем входящие Web и VPN порты
 
 - Подключение по SSH разрешено при активной VPN сессии
 
@@ -40,7 +40,7 @@ $ umask 077; wg genkey | tee privatekey | wg pubkey > publickey
 $ exit
 ```
 
-Редактируем конфиг wireguard
+Редактируем конфиг Wireguard
 
 ```sh
 $ sudo nano /etc/wireguard/wg0.conf
@@ -67,7 +67,7 @@ $ sudo systemctl enable wg-quick@wg0
 
 ## Настройка WireGuard на клиенте
 
-Приводим конфиг wireguard к виду
+Приводим конфиг Wireguard к виду
 
 ```sh
 [Interface]
@@ -134,7 +134,7 @@ $ sudo ufw default deny incoming
 $ sudo ufw default allow outgoing
 ```
 
-Добавляем правило: разрешаем подключение к ssh только из сети wireguard
+Добавляем правило: разрешаем подключение к SSH только из сети Wireguard
 
 ```sh
 $ sudo ufw allow proto tcp from 172.16.22.0/24 to any port 22
@@ -177,7 +177,7 @@ $ sudo ufw reset
 
 ## Настройка связки UFW + Docker
 
-Скачиваем утилиту ufw-docker, делаем её исполняемой и устанавливаем
+Скачиваем утилиту `ufw-docker`, делаем её исполняемой и устанавливаем
 
 ```sh
 $ sudo wget -O /usr/local/bin/ufw-docker https://github.com/chaifeng/ufw-docker/raw/master/ufw-docker

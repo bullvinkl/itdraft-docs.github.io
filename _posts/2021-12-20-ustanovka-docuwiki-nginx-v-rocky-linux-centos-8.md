@@ -63,7 +63,7 @@ $ sudo dnf -y update
 $ sudo dnf -y install nginx
 ```
 
-Запускаем nginx и добавляем его в автозагрузку
+Запускаем Nginx и добавляем его в автозагрузку
 
 ```sh
 $ sudo systemctl enable --now nginx
@@ -77,7 +77,7 @@ $ sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.disable
 
 ## Настройка Firewall
 
-Открываем порты 80 и 443
+Открываем порты `80` и `443`
 
 ```sh
 $ sudo firewall-cmd --permanent --add-service=http
@@ -107,7 +107,7 @@ $ sudo semanage permissive -a httpd_t
 $ sudo dnf -y install php php-cli php-fpm php-gd php-xml php-zip php-json
 ```
 
-Настраиваем php-fpm
+Настраиваем PHP-FPM
 
 ```sh
 $ sudo nano /etc/php-fpm.d/www.conf
@@ -133,7 +133,7 @@ $ sudo systemctl enable php-fpm
 
 ## Настройка Nginx
 
-Создадим директорию для ssl-сертификата
+Создадим директорию для SSL-сертификата
 
 ```sh
 $ sudo mkdir /etc/nginx/ssl/
@@ -225,4 +225,4 @@ $ sudo mv * /var/www/dokuwiki
 $ sudo chown -R nginx:nginx /var/www/dokuwiki
 ```
 
-Далее переходим в web-интерфейс по ip-адресу нашего сервера и завершаем установку DokuWiki
+Далее переходим в Web-интерфейс по IP-адресу нашего сервера и завершаем установку DokuWiki

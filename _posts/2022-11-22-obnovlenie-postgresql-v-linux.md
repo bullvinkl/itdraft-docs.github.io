@@ -16,9 +16,9 @@ image:
 > **PostgreSQL** — это объектно-реляционная система управления базами данных (ORDBMS), наиболее развитая из открытых СУБД в мире. Она позволяет хранить и управлять крупными объемами данных, обеспечивая высокую надёжность, производительность и масштабируемость.
 {: .prompt-tip }
 
-Допустим на сервере установлена PostgeSQL 9.6, требуется обновить её на более новую версию (например при обновлении Zabbix с 3.2 до 6.2)
+Допустим на сервере установлена PostgreSQL 9.6, требуется обновить её на более новую версию (например при обновлении Zabbix с 3.2 до 6.2)
 
-Установим PostgeSQL 15 из репозитория
+Установим PostgreSQL 15 из репозитория
 
 ```sh
 $ sudo apt -y install gnupg2
@@ -29,13 +29,13 @@ $ sudo apt -y install postgresql-15
 
 ```
 
-Делаем симлинк
+Делаем сим линк
 
 ```sh
 $ sudo ln -s /usr/lib/postgresql/15/bin/* /usr/sbin/
 ```
 
-Смотрим, какие еще версии PostgeSQL есть в системе
+Смотрим, какие еще версии PostgreSQL есть в системе
 
 ```sh
 $ sudo su - postgres
@@ -47,14 +47,14 @@ Ver Cluster Port Status Owner    Data directory                Log file
 13  main    5433 up   postgres /var/lib/postgresql/13/main  /var/log/postgresql/postgresql-13-main.log
 ```
 
-PostgreSQL 9.6 - с данными, не трогаем её, остальные дропаем. Дейстаия выполняются от пользователя postgres
+PostgreSQL 9.6: с данными, не трогаем её, остальные удаляем. Действия выполняются от пользователя `postgres`
 
 ```sh
 $ pg_dropcluster --stop 9.4 main
 $ pg_dropcluster --stop 13 main
 ```
 
-Создаем новую БД - PostgreSQL 15
+Создаем новую БД: PostgreSQL 15
 
 ```sh
 $ pg_createcluster --start 15 main \
@@ -69,7 +69,7 @@ $ pg_createcluster --start 15 main \
 $ pg_createcluster --locale ru_RU.UTF-8 --start 15 main
 ```
 
-Если надо перезагрузить СУБД воспользуемся командой reload
+Если надо перезагрузить СУБД воспользуемся командой `reload`
 
 ```sh
 $ pg_ctlcluster 15 main reload
@@ -103,7 +103,7 @@ $ /usr/lib/postgresql/15/bin/pg_upgrade \
 --check
 ```
 
-Если на этом этапе ошибок не возникло, можно обновлять PostgeSQL
+Если на этом этапе ошибок не возникло, можно обновлять PostgreSQL
 
 ```sh
 $ /usr/lib/postgresql/15/bin/pg_upgrade \
@@ -119,7 +119,7 @@ $ /usr/lib/postgresql/15/bin/pg_upgrade \
 
 Если возникли ошибки, разбираемся как их устранить. У меня они были из-за подключенных расширений
 
-Запускаем PostgreSQL, выполняем команду vacuumdb, смотрим статус
+Запускаем PostgreSQL, выполняем команду `vacuumdb`, смотрим статус
 
 ```sh
 $ pg_ctlcluster 15 main start
@@ -139,7 +139,7 @@ $ pg_ctlcluster 15 main stop
 $ pg_ctlcluster 9.6 main stop
 ```
 
-от пользователя с правами sudo, правим конфиг `postgresql.conf`
+От пользователя с правами `sudo`, правим конфиг `postgresql.conf`
 
 ```sh
 $ sudo nano /etc/postgresql/15/main/postgresql.conf
@@ -147,7 +147,7 @@ $ sudo nano /etc/postgresql/15/main/postgresql.conf
 port = 5432
 ```
 
-правим конфиг `pg_hba.conf`
+Правим конфиг `pg_hba.conf`
 
 ```sh
 $ sudo nano /etc/postgresql/15/main/pg_hba.conf
@@ -176,7 +176,7 @@ host    replication     all             ::1/128                 md5
 $ sudo systemctl start postgresql@15-main
 ```
 
-либо от пользователя postgres
+Либо от пользователя `postgres`
 
 ```sh
 $ sudo su - postges

@@ -40,7 +40,7 @@ $ sudo useradd -M -s /bin/false prometheus
 $ sudo mkdir /opt/prometheus /var/lib/prometheus
 ```
 
-Скачиваем финальную верcию Prometheus, распаковываем её и переходим в каталог
+Скачиваем финальную версию Prometheus, распаковываем её и переходим в каталог
 
 ```sh
 $ wget https://github.com/prometheus/prometheus/releases/download/v2.42.0/prometheus-2.42.0.linux-amd64.tar.gz
@@ -57,7 +57,7 @@ $ sudo chown -R prometheus. /opt/prometheus /var/lib/prometheus
 $ sudo chown prometheus. /usr/local/bin/{prometheus,promtool}
 ```
 
-Создаем системный юнит для Prometheus
+Создаем Systemd Unit для Prometheus
 
 ```sh
 $ sudo nano /etc/systemd/system/prometheus.service
@@ -80,7 +80,7 @@ ExecStart=/usr/local/bin/prometheus \
 WantedBy=multi-user.target
 ```
 
-Перечитываем юниты, добавляем сервис а автозагрузку и запускаем его
+Перечитываем Systemd Unit, добавляем сервис а автозагрузку и запускаем его
 ```sh
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable --now prometheus
@@ -93,7 +93,7 @@ $ sudo firewall-cmd --permanent --zone=public --add-port=9090/tcp
 $ sudo firewall-cmd --reload
 ```
 
-Чуть дальше Prometheus запустим в режиме Reverse proxy, это правило удалим
+Чуть дальше Prometheus запустим в режиме `Reverse proxy`, это правило удалим
 
 ## Установка Alertmanager
 
@@ -103,7 +103,7 @@ $ sudo useradd -M -s /bin/false alertmanager
 $ sudo mkdir /opt/alertmanager /var/lib/alertmanager
 ```
 
-Скачиваем финальную верcию Alertmanager, распаковываем её и переходим в каталог
+Скачиваем финальную версию Alertmanager, распаковываем её и переходим в каталог
 ```sh
 $ wget https://github.com/prometheus/alertmanager/releases/download/v0.25.0/alertmanager-0.25.0.linux-amd64.tar.gz
 $ tar xzf alertmanager-0.25.0.linux-amd64.tar.gz
@@ -118,7 +118,7 @@ $ sudo chown -R alertmanager. /opt/alertmanager /var/lib/alertmanager
 $ sudo chown alertmanager. /usr/local/bin/{alertmanager,amtool}
 ```
 
-Создаем системный юнит для Alertmanager
+Создаем Systemd Unit для Alertmanager
 ```sh
 $ sudo nano /etc/systemd/system/alertmanager.service
 [Unit]
@@ -141,7 +141,7 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-Перечитываем юниты, добавляем сервис а автозагрузку и запускаем его
+Перечитываем Systemd Unit, добавляем сервис а автозагрузку и запускаем его
 ```sh
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable --now alertmanager
@@ -161,7 +161,7 @@ $ sudo firewall-cmd --reload
 
 Версия Keycloak: 21.0.0
 
-Переходим в нужную область (realm). Создаем клиента для OAuth2 Proxy
+Переходим в нужную область (`realm`). Создаем клиента для OAuth2 Proxy
 
 ![](/assets/img/posts/2023/04/11/image-24.png){: w="300" }
 
@@ -228,7 +228,7 @@ $ sudo useradd -M -s /bin/false oauth2proxy
 $ sudo mkdir -p /opt/oauth2-proxy
 ```
 
-Скачиваем финальную верcию OAuth2 Proxy, распаковываем её и переходим в каталог
+Скачиваем финальную версию OAuth2 Proxy, распаковываем её и переходим в каталог
 ```sh
 $ wget https://github.com/oauth2-proxy/oauth2-proxy/releases/download/v7.4.0/oauth2-proxy-v7.4.0.linux-amd64.tar.gz
 $ tar xfz oauth2-proxy-v7.4.0.linux-amd64.tar.gz
@@ -277,7 +277,7 @@ insecure_oidc_allow_unverified_email="true" # Пропустить провер�
 $ sudo chown oauth2proxy. /opt/oauth2-proxy/oauth2-proxy.cfg
 ```
 
-Создаем системный юнит для OAuth2 Proxy
+Создаем Systemd Unit для OAuth2 Proxy
 ```sh
 $ sudo nano /etc/systemd/system/oauth2-proxy.service
 [Unit]
@@ -299,7 +299,7 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-Перечитываем юниты, добавляем сервис а автозагрузку и запускаем его
+Перечитываем Systemd Unit, добавляем сервис а автозагрузку и запускаем его
 ```sh
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable --now oauth2-proxy
@@ -404,7 +404,7 @@ $ sudo firewall-cmd --reload
 
 ## Настройка Prometheus в режиме Reverse Proxy
 
-Редактируем системный юнит
+Редактируем Systemd Unit Prometheus
 ```sh
 $ sudo nano /etc/systemd/system/prometheus.service
 [Unit]
@@ -429,13 +429,13 @@ ExecStart=/usr/local/bin/prometheus \
 WantedBy=multi-user.target
 ```
 
-Перечитываем юниты, перезапускаем сервис
+Перечитываем Systemd Unit, перезапускаем сервис
 ```sh
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart prometheus
 ```
 
-Закрываем в файрволле порт 9090/tcp
+Закрываем в Firewall порт 9090/tcp
 ```sh
 $ sudo firewall-cmd --permanent --zone=public --remove-port=9090/tcp
 $ sudo firewall-cmd --reload
@@ -443,7 +443,7 @@ $ sudo firewall-cmd --reload
 
 ## Настройка Alertmanager в режиме Reverse Proxy
 
-Редактируем системный юнит
+Редактируем Systemd Unit Alertmanager
 ```sh
 $ sudo nano /etc/systemd/system/alertmanager.service
 [Unit]
@@ -469,13 +469,13 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-Перечитываем юниты, перезапускаем сервис
+Перечитываем Systemd Unit, перезапускаем сервис
 ```sh
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart alertmanager
 ```
 
-Закрываем в файрволле порт `9093/tcp`
+Закрываем в Firewall порт `9093/tcp`
 ```sh
 $ sudo firewall-cmd --permanent --zone=public --remove-port=9093/tcp
 $ sudo firewall-cmd --reload

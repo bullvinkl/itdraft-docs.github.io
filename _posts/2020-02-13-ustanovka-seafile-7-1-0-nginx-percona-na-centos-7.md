@@ -72,7 +72,7 @@ $ sudo yum -y install nginx
 $ sudo mkdir /etc/nginx/{sites-available,sites-enabled}
 ```
 
-Отредактируем основной конфиг nginx.conf
+Отредактируем основной конфиг `nginx.conf`
 
 ```sh
 $ sudo nano /etc/nginx/nginx.conf
@@ -188,7 +188,7 @@ server {
 }
 ```
 
-Создаем симлинк, чтобы активировать конфиг `seafile.conf`
+Создаем сим линк, чтобы активировать конфиг `seafile.conf`
 
 ```sh
 $ sudo ln -s /etc/nginx/sites-available/seafile.conf /etc/nginx/sites-enabled/seafile.conf
@@ -261,7 +261,7 @@ $ mysql -u root -p
 
 ## Установка Seafile
 
-Создаем пользователя seafile
+Создаем пользователя `seafile`
 
 ```sh
 $ sudo useradd -m -U -r -d /opt/seafile seafile
@@ -376,7 +376,7 @@ $ mysql -u root -p
 > DROP DATABASE `seahub-db`;
 ```
 
-Переключаемся на предыдущего пользователя (правами sudo)
+Переключаемся на предыдущего пользователя (правами `sudo`)
 
 ```sh
 $ exit
@@ -579,7 +579,7 @@ $ sudo su - seafile /opt/seafile/seafile-server-latest/reset-admin.sh
 
 ## UPD 2021.06.01
 
-При очередной установке при выполнении команды `sudo pip3 install ...` >появлялась ошибка из-за отсутствия нужных утилит
+При очередной установке, при выполнении команды `sudo pip3 install ...` появлялась ошибка связанная с отсутствия нужных утилит
 
 Решение:
 ```sh

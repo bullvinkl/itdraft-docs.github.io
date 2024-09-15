@@ -25,7 +25,7 @@ image:
 $ sudo dnf install certbot python3-certbot-nginx
 ```
 
-Запускаем certbot для получения ssl-сертификата
+Запускаем `certbot` для получения SSL-сертификата
 
 ```sh
 $ sudo certbot --nginx -d itdraft.ru -d www.itdraft.ru
@@ -48,7 +48,7 @@ Key is saved at:         /etc/letsencrypt/live/itdraft.ru/privkey.pem
 $ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 ```
 
-Добавляем скрипт перевыпуска ssl-сертификата в crontab
+Добавляем скрипт перевыпуска SSL-сертификата в `crontab`
 
 ```sh
 $ sudo crontab -e

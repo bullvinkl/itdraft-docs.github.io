@@ -30,7 +30,7 @@ $ sudo dnf -y install https://download.postgresql.org/pub/repos/yum/reporpms/EL-
 $ sudo dnf -y update
 ```
 
-Отключаем модуль postgresql, что бы PostgreSQL не устанавливался из дефолтных репозиториев
+Отключаем модуль `postgresql`, что бы PostgreSQL не устанавливался из дефолтных репозиториев
 ```sh
 $ sudo dnf -qy module disable postgresql
 ```
@@ -68,7 +68,7 @@ $ sudo -u postgres psql
 ALTER USER postgres WITH PASSWORD 'mysuperpass';
 ```
 
-Создаем пользователя netbox и базу
+Создаем пользователя `netbox` и базу
 ```sh
 =# CREATE USER netbox WITH ENCRYPTED PASSWORD 'passwdnetbox';
 =# CREATE DATABASE netboxdb OWNER netbox;
@@ -80,7 +80,7 @@ ALTER USER postgres WITH PASSWORD 'mysuperpass';
 
 > **Redis** - быстрое хранилище данных типа «ключ‑значение» в памяти, с открытым исходным кодом
 
-Устанавливаем Redis из деофолтного репозитория
+Устанавливаем Redis из дефолтного репозитория
 ```sh
 $ sudo dnf -y install redis
 ```
@@ -190,12 +190,12 @@ SECRET_KEY = '#oi*fQIE&jNqFjaJd8l@j^%=*_Kh%P*I8MyjIIVCD^zcd4vHH_'
 $ sudo -u netbox /opt/netbox/upgrade.sh
 ```
 
-Переключаемся на пользователя root
+Переключаемся на пользователя `root`
 ```sh
 $ sudo su
 ```
 
-Активируем виртуальную среду Python и переходим в каталог netbox
+Активируем виртуальную среду Python и переходим в каталог `netbox`
 ```sh
 # source /opt/netbox/venv/bin/activate
 (venv) # /opt/netbox/netbox
@@ -211,24 +211,24 @@ Password (again): admin
 Superuser created successfully.
 ```
 
-Создаем симлинк скрипта netbox-housekeeping.sh в ежедневные задания cron. Сценарий «netbox-housekeeping.sh» используется для очистки среды NetBox, он удаляет просроченные задачи, старые сеансы или записи с истекшим сроком действия.
+Создаем сим линк скрипта `netbox-housekeeping.sh` в ежедневные задания `cron`. Сценарий `netbox-housekeeping.sh` используется для очистки среды Netbox, он удаляет просроченные задачи, старые сеансы или записи с истекшим сроком действия.
 ```sh
 (venv) # sudo ln -s /opt/netbox/contrib/netbox-housekeeping.sh /etc/cron.daily/netbox-housekeeping
 ```
 
-Копируем конфиг gunicorn.py
+Копируем конфиг `gunicorn.py`
 ```sh
 (venv) # sudo -u netbox cp /opt/netbox/contrib/gunicorn.py /opt/netbox/gunicorn.py
 ```
 
-Копируем файлы systemd unit
+Копируем файлы Systemd Unit
 ```sh
 (venv) # sudo cp -v /opt/netbox/contrib/*.service /etc/systemd/system/
 '/opt/netbox/contrib/netbox-rq.service' -> '/etc/systemd/system/netbox-rq.service'
 '/opt/netbox/contrib/netbox.service' -> '/etc/systemd/system/netbox.service'
 ```
 
-Выполняем daemon-reload, что бы systemd нашел новые сервисы
+Выполняем `daemon-reload`, что бы Systemd нашел новые сервисы
 ```sh
 (venv) # sudo systemctl daemon-reload
 ```
@@ -242,7 +242,7 @@ Superuser created successfully.
 (venv) # sudo systemctl status netbox-rq
 ```
 
-Выходим из виртуальной среды Python и переключаемся с пользователя root
+Выходим из виртуальной среды Python и переключаемся с пользователя `root`
 ```sh
 (venv) # deactivate
 # exit
@@ -280,7 +280,7 @@ $ sudo dnf -y install nginx
 $ sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.disable
 ```
 
-Копируем и редактируем конфиг из дистрибутива netbox
+Копируем и редактируем конфиг из дистрибутива Netbox
 ```sh
 $ sudo cp /opt/netbox/contrib/nginx.conf /etc/nginx/conf.d/netbox.conf
 $ sudo nano /etc/nginx/conf.d/netbox.conf
@@ -315,7 +315,7 @@ server {
 }
 ```
 
-Создаем каталог для ssl-сертификата
+Создаем каталог для SSL-сертификата
 ```sh
 $ sudo mkdir /etc/nginx/ssl/
 ```
@@ -338,7 +338,7 @@ $ sudo systemctl enable --now nginx
 
 ## Настройка Firewall
 
-Открываем http, https порты
+Открываем `http` и `https` порты
 ```sh
 $ sudo firewall-cmd --add-servic={http,https} --permanent
 $ sudo firewall-cmd --reload
@@ -346,9 +346,9 @@ $ sudo firewall-cmd --reload
 
 ## Установка плагина для NetBox
 
-Для примера установим плагин netbox-dns
+Для примера установим плагин `netbox-dns`
 
-Переключаемся на пользователя root
+Переключаемся на пользователя `root`
 
 ```sh
 $ sudo su
@@ -381,7 +381,7 @@ PLUGINS = [
 ]
 ```
 
-Запускаем процесс миграции (добавляются необходимые таблицы, устанавливаются недостающие модули python)
+Запускаем процесс миграции (добавляются необходимые таблицы, устанавливаются недостающие модули Python)
 ```sh
 (venv) # cd /opt/netbox/netbox/
 (venv) # python3 manage.py migrate
@@ -400,8 +400,9 @@ PLUGINS = [
 
 ## UPD 19.12.2023 (Ошибка при установка netbox, связанная с Redis)
 
-При установки Netbox столкнулся с ошибкой, связанной с паролем в redis.  
-Убираем его, т.к. по дефолту коннект к redis разрешен только локально
+При установки Netbox столкнулся с ошибкой, связанной с паролем в Redis.  
+Убираем его, т.к. по дефолту коннект к Redis разрешен только локально
+
 ```sh
 $ sudo nano /etc/redis/redis.conf
 ...

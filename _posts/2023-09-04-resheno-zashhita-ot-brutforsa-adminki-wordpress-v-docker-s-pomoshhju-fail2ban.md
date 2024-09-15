@@ -21,7 +21,8 @@ image:
 Установка Fail2Ban была рассмотрена в [одной из предыдущих статей]({% post_url 2019-04-10-ustanovka-i-nastrojka-fail2ban-v-centos-7 %})
 
 Для блокирования ip недоброжелателей от брутфорса админки Wordpress, развернутом в docker исполнении, Fail2Ban парсит `access.log` файл.  
-Можно в переменной logpath указать путь до логов контейнеров:
+Можно в переменной `logpath` указать путь до логов контейнеров
+
 ```sh
 ...
 logpath = /var/lib/docker/containers/*/*-json.log
@@ -31,6 +32,7 @@ logpath = /var/lib/docker/containers/*/*-json.log
 Я вынес этот файл из контейнера и примонтировал к каталогу с проектом.
 
 Редактируем конфигурационный файл Fail2Ban с нашими правилами (либо дефолтный `/etc/fail2ban/jail.local`, либо который мы создали в каталоге `/etc/fail2ban/jail.d`)
+
 ```sh
 $ sudo nano /etc/fail2ban/jail.d/defaults-debian.conf
 ...

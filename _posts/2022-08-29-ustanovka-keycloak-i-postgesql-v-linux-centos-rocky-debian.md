@@ -106,7 +106,7 @@ $ systemctl status postgresql-14
 $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 ```
 
-Устанавливаем утилиту gnupg2 и добавляем ключ репозитория
+Устанавливаем утилиту `gnupg2` и добавляем ключ репозитория
 ```sh
 $ sudo apt -y install gnupg2
 $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
@@ -131,7 +131,7 @@ $ sudo -u postgres psql
 
 ## SSL
 
-Берем готовый ssl-сертификат для вашего домена
+Берем готовый SSL-сертификат для вашего домена
 
 Либо генерим самоподписанный сертификат
 ```sh
@@ -202,7 +202,7 @@ $ sudo firewall-cmd --reload
 $ cd /opt/keycloak/keycloak-19.0.1
 ```
 
-Запускаем keycloak в режиме developer mode
+Запускаем keycloak в режиме `developer mode`
 ```sh
 $ sudo bin/kc.sh start-dev
 ```

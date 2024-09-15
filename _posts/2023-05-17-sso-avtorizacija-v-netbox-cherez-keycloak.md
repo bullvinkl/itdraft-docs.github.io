@@ -69,7 +69,7 @@ User info signed response algorithm: RS256
 Request object signature algorithm: RS256
 ```
 
-Добавляем mapper, для этого переходим во вкладку Client scopes и в активную ссылку "netbox-dedicated"
+Добавляем mapper, для этого переходим во вкладку `Client scopes` и в активную ссылку `netbox-dedicated`
 
 ![](/assets/img/posts/2023/05/17/image-57.png){: w="300" }
 
@@ -95,7 +95,7 @@ MIIBI...AB
 
 ## Настройка Netbox
 
-Переключаемся на root, активируем виртуальную среду python, устанавливаем 2 библиотеки
+Переключаемся на `root`, активируем виртуальную среду `python`, устанавливаем 2 библиотеки
 ```sh
 $ sudo su
 # source /opt/netbox/venv/bin/activate
@@ -152,6 +152,7 @@ $ sudo systemctl status netbox-rq
 ## Update 19.12.2023 (Ошибка после обновления Netbox)
 
 При обновлении Netbox с версии v3.4.2 до v3.6.7 появилась ошибка:
+
 ```
 TypeError: object of type 'map' has no len()
 ```

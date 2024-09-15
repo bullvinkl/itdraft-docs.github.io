@@ -57,7 +57,7 @@ image:
 - `mv /path/to/file.{txt,log}`  - результат: `/path/to/file.log`
 - `>/var/log/daemon.log` - очистить файл
 - `:>/var/log/daemon.log` - очистить файл
-- `grep -vE "^#|^$" /etc/apt-cacher-ng/acng.conf` - просмотр конфигов без закомменченных строк
+- `grep -vE "^#|^$" /etc/apt-cacher-ng/acng.conf` - просмотр конфигов без закомментированных строк
 - `ss -nltup | column -t`  - `column -t` выстраивает данные в удобочитаемые таблицы. Еще пример: `mount | column -t`
 - `echo 1 > /sys/block/sda/device/rescan` - перечитать размер диска `/dev/sda`, выполняется от пользователя `root`
 - `growpart /dev/sda 3` - увеличить 3-тью область

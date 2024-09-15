@@ -16,7 +16,7 @@ image:
 
 ## Управление базами
 
-Переключаемся на пользователя Postgres
+Переключаемся на пользователя `postgres`
 
 ```sh
 $ sudo su - postgres
@@ -60,7 +60,7 @@ pg_ctl: server is running (PID: 1115345)
 $ pg_ctlcluster 15 portal reload
 ```
 
-Так же БД можно запустить через systemctl от пользователя с правами sudo
+Так же БД можно запустить через `systemctl` от пользователя с правами `sudo`
 
 ```sh
 $ sudo systemctl start postgresql@15-main.service
@@ -74,25 +74,25 @@ $ sudo systemctl start postgresql
 
 ## Создание, удаление базы
 
-Переключаемся на пользователя Postgres
+Переключаемся на пользователя `postgres`
 
 ```sh
 $ sudo su - postgres
 ```
 
-Создаем базу main (версия postgresql 15), не запуская БД
+Создаем базу `main` (версия PostgreSQL 15), не запуская БД
 
 ```sh
 $ pg_createcluster 15 main
 ```
 
-Создаем базу portal (версия postgresql 14) и запустить БД
+Создаем базу `portal` (версия PostgreSQL 14) и запустить БД
 
 ```sh
 $ pg_createcluster 14 --start portal
 ```
 
-Создаем базу main (версия postgresql 15), локализация ru\_RU, запустить БД
+Создаем базу `main` (версия PostgreSQL 15), локализация `ru_RU`, запустить БД
 
 ```sh
 $ pg_createcluster --locale ru_RU.UTF-8 --start 15 main
@@ -147,13 +147,13 @@ $ pg_dropcluster --stop 15 main
 
 ## Другие действия
 
-Переключаемся на пользователя Postgres
+Переключаемся на пользователя `postgres`
 
 ```sh
 $ sudo su - postgres
 ```
 
-Создаем файл pgpass, в котором хранятся пароли для подключения к БД
+Создаем файл `.pgpass`, в котором хранятся пароли для подключения к БД
 
 ```sh
 $ cat > ~/.pgpass <<EOS

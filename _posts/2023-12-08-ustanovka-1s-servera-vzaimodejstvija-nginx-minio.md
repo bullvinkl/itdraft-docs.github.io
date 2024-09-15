@@ -41,7 +41,7 @@ $ sudo ln -s /usr/lib/postgresql/15/bin/* /usr/sbin/
 
 Создаем пользователя, базу, подключаем расширение.
 
-Подключимся к консоли postgres
+Подключимся к консоли Postgres
 ```sh
 $ sudo -u postgres psql
 ```
@@ -105,7 +105,7 @@ $ sudo nano /etc/profile.d/ring.sh
 export PATH=$PATH:/opt/1C/1CE/components/1c-enterprise-ring-0.19.5+12-x86_64
 ```
 
-Команда `ring` работает корректно исключительно под пользователем root. Переключаемся на него, продолжаем установку
+Команда `ring` работает корректно исключительно под пользователем `root`. Переключаемся на него, продолжаем установку
 ```sh
 $ sudo su
 # source /etc/profile.d/java.sh
@@ -187,7 +187,7 @@ $ sudo su
 
 ## Установка web-сервера Nginx
 
-Выходим из пользователя root и добавляем ключ репозитория
+Выходим из пользователя `root` и добавляем ключ репозитория
 ```sh
 # exit
 $ wget --quiet -O - https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
@@ -209,9 +209,9 @@ $ sudo apt install -y nginx
 
 ## Настройка 1С:Сервера взаимодействия для работы по https
 
-В данном примере я использую готовый ssl-сертификат. Но можно установить и настроить утилиту certbot для получения бесплатного ssl-сертифииката от Let's Encrypt. В этом случае данный пункт придется выполнять при перевыпуске сертификата, т.е. раз в 3 месяца
+В данном примере я использую готовый ssl-сертификат. Но можно установить и настроить утилиту `certbot` для получения бесплатного ssl-сертификата от Let's Encrypt. В этом случае данный пункт придется выполнять при перевыпуске сертификата, т.е. раз в 3 месяца
 
-Переключаемся на полmзователя root и создаем каталог
+Переключаемся на пользователя root и создаем каталог
 ```sh
 $ sudo su
 # mkdir -p /var/cs/cs_instance/data/security
@@ -307,7 +307,7 @@ server {
 }
 ```
 
-Параметр VAPIDPublicKey уже был в файле
+Параметр `VAPIDPublicKey` уже был в файле
 
 Вносим изменения в параметр `public-url` сервера взаимодействия
 ```sh
@@ -364,7 +364,7 @@ $ sudo mkdir /opt/minio
 $ sudo chown minio_user:minio_user /opt/minio
 ```
 
-Создаем каталог для конфигурационных файлов, ssl-сертфиката для Minio
+Создаем каталог для конфигурационных файлов, ssl-сертификата для Minio
 ```sh
 $ sudo mkdir /etc/minio
 $ sudo chown minio_user:minio_user /etc/minio
@@ -383,7 +383,7 @@ MINIO_API_ROOT_ACCESS=on
 MINIO_SERVER_URL="https://1c-interaction.itdraft.ru:9000"
 ```
 
-Скачиваем файл для создания sustemd unid для Minio, редактируем его
+Скачиваем файл для создания Systemd Unit для Minio, редактируем его
 ```sh
 $ curl -O https://raw.githubusercontent.com/minio/minio-service/master/linux-systemd/minio.service
 $ sudo nano minio.service
@@ -393,12 +393,12 @@ Group=minio_user
 ...
 ```
 
-Переместим файл minio.service в каталог /etc/system/system
+Переместим файл `minio.service` в каталог `/etc/system/system`
 ```sh
 $ sudo mv minio.service /etc/systemd/system
 ```
 
-Перезагрузим все юниты systemd
+Перечитаем все Systemd Unit
 ```sh
 $ sudo systemctl daemon-reload
 ```
@@ -417,7 +417,7 @@ $ sudo cp /etc/nginx/ssl/server.crt /etc/minio/certs/public.crt
 $ sudo cp /etc/nginx/ssl/server.key /etc/minio/certs/private.key
 ```
 
-Меняем влалельца
+Меняем владельца
 ```sh
 $ sudo chown minio_user:minio_user /etc/minio/certs/public.crt
 $ sudo chown minio_user:minio_user /etc/minio/certs/private.key
@@ -433,7 +433,7 @@ $ sudo systemctl restart minio
 https://1c-interaction.itdraft.ru:9001
 ```
 
-Создаем контейнер cs-bucket
+Создаем контейнер `cs-bucket`
 ```
 Bucket > Create Bucket > Bucket Name: cs-bucket
 Access Policy: public
@@ -450,7 +450,7 @@ $ curl -Sf -X POST -H 'Content-Type: application/json' -d '{ "apiType": "AMAZON"
 - Обновить сертификат для minio (/etc/minio/certs/)
 - Обновить сертификат для сервера взаимодействия
 
-Сделаем резервную копию и объединим сертифиат и ключ в единый файл PKCS12
+Сделаем резервную копию и объединим сертификат и ключ в единый файл PKCS12
 ```sh
 # cd /var/cs/cs_instance/data/security/
 # mv pkcs.p12 pkcs.p12.2024
@@ -469,7 +469,7 @@ Re-enter new password: jkspass
 Enter source keystore password: pkcspass
 ```
 
-Перезапускаем сервис cs\_instance
+Перезапускаем сервис `cs_instance`
 ```sh
 # source /etc/profile.d/java.sh
 # source /etc/profile.d/ring.sh
@@ -477,4 +477,3 @@ Enter source keystore password: pkcspass
 # ring cs --instance cs_instance service start
 # ring cs --instance cs_instance service status
 ```
-

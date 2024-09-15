@@ -64,7 +64,7 @@ $ cd nginx-*/
 $ git clone https://github.com/stnoonan/spnego-http-auth-nginx-module.git
 ```
 
-Смотрим, с какими опциями собран установленный NGINX
+Смотрим, с какими опциями собран установленный Nginx
 
 ```sh
 $ nginx -V
@@ -166,13 +166,13 @@ itdraft.ru = ITDRAFT.RU
 
 В AD создаем стандартную учетку, в данном примере `zabbix_srv`
 
-Запускаем powershell, Создаем SPN запись
+Запускаем powershell, Создаем SPN-запись
 
 ```powershell
 > setspn -A HTTP/mon.itdraft.ru@ITDRAFT.RU zabbix_srv
 ```
 
-Создаем keytab-файл
+Создаем `keytab`-файл
 
 ```powershell
 > ktpass /princ HTTP/mon.itdraft.ru@ITDRAFT.RU /mapuser zabbix_srv@ITDRAFT.RU  /crypto ALL /ptype KRB5_NT_PRINCIPAL /out C:\zabbix_srv.keytab /pass *
@@ -184,9 +184,9 @@ itdraft.ru = ITDRAFT.RU
 - `zabbix_srv@ITDRAFT.RU` — учетная запись в AD;
 - `pass *` — пароль.
 
-Копируем keytab-файл на наш zabbix-сервер в каталог `/etc/nginx/`
+Копируем `keytab`-файл на наш zabbix-сервер в каталог `/etc/nginx/`
 
-Проверяем на zabbix-сервере
+Проверяем на Zabbix сервере
 
 ```sh
 $ kinit -V -k -t /etc/nginx/zabbix_srv.keytab HTTP/mon.itdraft.ru@ITDRAFT.RU
@@ -201,6 +201,7 @@ Authenticated to Kerberos v5
 Переходим в раздел: Администрирование - Аутентификация - Настройки HTTP
 
 ![](/assets/img/posts/2021/11/19/image.png){: w="300" }
+_Аутентификация - Настройки HTTP_
 
 Активируем HTTP аутентификацию
 

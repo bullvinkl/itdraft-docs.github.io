@@ -20,7 +20,7 @@ image:
 $ sudo wget https://nginx.org/keys/nginx_signing.key
 ```
 
-Устанавливаем утилиту gnupg2 что бы в дальнейшем добавить скаченный ключ
+Устанавливаем утилиту `gnupg2` что бы в дальнейшем добавить скаченный ключ
 
 ```sh
 $ sudo apt update

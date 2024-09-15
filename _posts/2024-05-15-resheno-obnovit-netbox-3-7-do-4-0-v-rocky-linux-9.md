@@ -45,7 +45,7 @@ $ sudo cp /opt/netbox-3.7.7/local_requirements.txt /opt/netbox-4.0.1/local_requi
 $ sudo -u netbox cp /opt/netbox-4.0.1/contrib/gunicorn.py /opt/netbox-4.0.1/gunicorn.py
 ```
 
-Пересоздаем симлинк
+Пересоздаем сим линк
 ```sh
 $ sudo rm netbox
 $ sudo ln -s netbox-4.0.1 netbox

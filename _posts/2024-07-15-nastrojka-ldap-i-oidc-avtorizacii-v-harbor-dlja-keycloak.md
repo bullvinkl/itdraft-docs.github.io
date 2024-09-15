@@ -138,7 +138,7 @@ Username Claim: preferred_username   # какое поле будет подст
 
 Как ограничить доступ к Harbor группой доступа из Keycloak я пока что не нашел
 
-Для получения токена авторизации в Harbor через Docker, авторизуемся в web-интерфейсе Harbor, usename > User Profile, копируем CLI secret
+Для получения токена авторизации в Harbor через Docker, авторизуемся в web-интерфейсе Harbor, username > User Profile, копируем CLI secret
 
 ![](/assets/img/posts/2024/07/15/image-9.png){: w="300" }
 _User Profile_
