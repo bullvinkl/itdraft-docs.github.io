@@ -38,7 +38,7 @@ $ sudo nano /etc/selinux/config
 SELINUX=disabled
 ```
 
-Добавляем правила в файерволл
+Добавляем правила в Firewall
 
 ```sh
 $ sudo firewall-cmd --permanent --add-service=http
@@ -46,7 +46,7 @@ $ sudo firewall-cmd --permanent --add-service=https
 $ sudo firewall-cmd --reload
 ```
 
-Скачиваем релизную версию GitLab и устанавливаем ее
+Скачиваем финальную версию GitLab и устанавливаем ее
 
 ```sh
 $ sudo cd /home

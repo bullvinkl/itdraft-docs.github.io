@@ -52,7 +52,7 @@ $ sudo mysql_secure_installation
 
 ## Создаем пользователя в базе
 
-Подключаемся к mysql-серверу
+Подключаемся к MySQL серверу
 
 ```sh
 $ mysql -u root -p

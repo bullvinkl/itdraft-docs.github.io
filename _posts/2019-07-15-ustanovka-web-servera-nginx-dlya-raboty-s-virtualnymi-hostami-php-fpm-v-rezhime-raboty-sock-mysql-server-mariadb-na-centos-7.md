@@ -162,7 +162,7 @@ SELINUX=disabled
 ...
 ```
 
-Перзагружаемся
+Перезагружаемся
 
 ```sh
 $ sudo reboot
@@ -176,13 +176,13 @@ $ sudo reboot
 $ sudo yum install -y yum-utils
 ```
 
-Включаем remi-репозиторий для установки `php 7.3`
+Включаем Remi репозиторий для установки PHP 7.3
 
 ```sh
 $ sudo yum-config-manager --enable remi-php73
 ```
 
-Устанавливаем `php 7.3` и некоторые компоненты
+Устанавливаем PHP 7.3 и некоторые компоненты
 
 ```sh
 $ sudo yum install php php-xml php-soap php-xmlrpc php-mbstring php-json php-gd php-mcrypt php-common php-fpm php-pdo php-mysqlnd php-imap php-embedded php-ldap php-odbc php-zip php-fileinfo php-process php-opcache
@@ -219,7 +219,7 @@ tcp        0      0 127.0.0.1:9000          0.0.0.0:*               LISTEN      
 $ sudo yum install net-tools
 ```
 
-Настраиваем php-fpm
+Настраиваем PHP-FPM
 
 ```sh
 $ sudo nano /etc/php.ini
@@ -232,7 +232,7 @@ $ sudo nano /etc/php.ini
 cgi.fix_pathinfo=0
 ```
 
-Также не забываем изменить временную зону, для этого раскомментируем строчку `date.timezone =` и пропишем необходимую временную зону
+Также не забываем изменить временную зону, для этого раскомментируем строчку `date.timezone` и пропишем необходимую временную зону
 
 ```
 [Date]
@@ -247,7 +247,7 @@ date.timezone = Europe/Moscow
 short_open_tag = On
 ```
 
-Изменим пользователя, от которого будет работать php-fpm. Вместо apache укажем nginx.
+Изменим пользователя, от которого будет работать PHP-FPM. Вместо apache укажем nginx.
 
 ```sh
 $ sudo nano /etc/php-fpm.d/www.conf
@@ -267,7 +267,7 @@ listen.group = nginx
 listen = /var/run/php-fpm/php-fpm.sock
 ```
 
-Перезапускаем php-fpm
+Перезапускаем PHP-FPM
 
 ```sh
 $ sudo systemctl restart php-fpm
@@ -277,7 +277,7 @@ $ sudo systemctl restart php-fpm
 
 UDS (unix domain socket), в отличии от коммуникации через стек TCP, имеют значительные преимущества:
 
-- не требуют переключение контекста, UDS используют netisr
+- не требуют переключение контекста, UDS используют `netisr`
 - датаграмма UDS записываться напрямую в сокет назначения
 - отправка дейтаграммы UDS требует меньше операций (нет контрольных сумм, нет TCP-заголвоков, не производиться маршрутизация)
 - у UDS задержка на ~66% меньше и пропускная способность в 7 раз больше TCP
@@ -323,7 +323,7 @@ $ sudo mkdir -p  /var/www/example.ru/public_html
 $ sudo mkdir /var/www/example.ru/logs
 ```
 
-В корне создадим html-файл
+В корне создадим HTML-файл
 
 ```sh
 $ sudo nano /var/www/example.ru/public_html/index.html
@@ -425,4 +425,4 @@ $ sudo nano /var/www/example.ru/public_html/info.php
 <?php phpinfo(); ?>
 ```
 
-В файле hosts на рабочем ПК прописываем соответствие ip и адреса сайта (как это сделать, можете спросить у меня в комментариях) и убеждаемся что nginx и php работают.
+В файле `hosts` на рабочем ПК прописываем соответствие IP и адреса сайта (как это сделать, можете спросить у меня в комментариях) и убеждаемся что Nginx и PHP работают.

@@ -40,7 +40,7 @@ $ rpm -ivh https://repo.zabbix.com/zabbix/4.2/rhel/7/x86_64/zabbix-release-4.2-1
 $ sudo yum update
 ```
 
-Веб-интерфейс Zabbix требует дополнительные пакеты, которые отсутствуют в базовой установке. Необходимо активировать репозиторий опциональных rpm пакетов в системе
+Web-интерфейс Zabbix требует дополнительные пакеты, которые отсутствуют в базовой установке. Необходимо активировать репозиторий опциональных `rpm` пакетов в системе
 
 ```sh
 $ sudo yum-config-manager --enable rhel-7-server-optional-rpms
@@ -55,7 +55,7 @@ $ rpm -ivh https://repo.percona.com/yum/percona-release-latest.noarch.rpm
 $ sudo percona-release setup ps80
 ```
 
-Устанавливаем Percona-server, запускаем его и добавляем в автозагрузку
+Устанавливаем Percona Server, запускаем его и добавляем в автозагрузку
 
 ```sh
 $ sudo yum -y install percona-server-server
@@ -133,7 +133,7 @@ $ sudo systemctl start zabbix-server
 $ sudo systemctl enable zabbix-server
 ```
 
-Конфигурация Apache для Zabbix веб-интерфейса располагается в /etc/httpd/conf.d/zabbix.conf. В ней надо раскоментировать и прописать наше значение date.timezone
+Конфигурация Apache для Zabbix Web-интерфейса располагается в `/etc/httpd/conf.d/zabbix.conf`. В ней надо раскомментировать и прописать наше значение `date.timezone`
 
 ```sh
 $ sudo nano /etc/httpd/conf.d/zabbix.conf
@@ -142,13 +142,13 @@ php_value date.timezone Europe/Moscow
 ...
 ```
 
-Перезапускаем web-сервер Apache
+Перезапускаем Web-сервер Apache
 
 ```sh
 $ sudo systemctl restart httpd
 ```
 
-Открываем в файерволле порты 80 и 443
+Открываем в Firewall порты 80 и 443
 
 ```sh
 $ sudo firewall-cmd --zone=public --permanent --add-port=443/tcp
@@ -156,11 +156,11 @@ $ sudo firewall-cmd --zone=public --permanent --add-port=80/tcp
 $ sudo firewall-cmd --reload
 ```
 
-Теперь можно завершать установку Zabbix через вэб-интерфейс. Для этого открываем браузер и переходим: `http://%ip-adress%/zabbix`
+Теперь можно завершать установку Zabbix через Web-интерфейс. Для этого открываем браузер и переходим: `http://%ip-adress%/zabbix`
 
 ## Настройка SELinux
 
-Если состояние SELinux в принудительном режиме, необходимо выполнить следующие команды, чтобы разрешить соединения между Zabbix веб-интерфейсом и сервером:
+Если состояние SELinux в принудительном режиме, необходимо выполнить следующие команды, чтобы разрешить соединения между Zabbix Web-интерфейсом и сервером:
 
 ```sh
 $ sudo setsebool -P httpd_can_connect_zabbix on
@@ -168,12 +168,12 @@ $ sudo setsebool -P httpd_can_network_connect_db on
 ```
 
 Возможные ошибки.  
-При запуске zabbix-сервера в логах выскакивает ошибка:
+При запуске Zabbix сервера в логах выскакивает ошибка:
 
 > cannot start alert manager service: Cannot bind socket to "/var/run/zabbix/zabbix_server_alerter.sock"
 {: .prompt-danger }
 
-Это связано с SELinix, отключаем его:
+Это связано с SELinux, отключаем его:
 
 ```sh
 $ sudo setenforce 0
@@ -189,7 +189,7 @@ $ sudo grep AVC /var/log/audit/audit.log* | audit2allow -M systemd-allow; semodu
 
 ## Установка Zabbix агента
 
-Устанавливаем Zabbix-агент, запускаем его и добавляем в автозагрузку
+Устанавливаем Zabbix агент, запускаем его и добавляем в автозагрузку
 
 ```sh
 $ sudo yum -y install zabbix-agent
@@ -197,7 +197,7 @@ $ sudo systemctl start zabbix-agent
 $ sudo systemctl enable zabbix-agent
 ```
 
-Админский доступ в Zabbix по-умолчанию:
+Административный доступ в Zabbix по-умолчанию:
 
 > Login: Admin  
 > Password: zabbix

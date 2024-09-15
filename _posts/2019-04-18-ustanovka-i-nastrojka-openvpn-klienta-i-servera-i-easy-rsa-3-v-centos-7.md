@@ -281,7 +281,7 @@ verb 3
 
 ## Настройка Firewalld
 
-Активируем модуль ядра port-forwarding
+Активируем модуль ядра `port-forwarding`
 
 ```sh
 $ echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
@@ -296,7 +296,7 @@ $ sudo firewall-cmd --permanent --add-service=openvpn
 $ sudo firewall-cmd --permanent --zone=trusted --add-interface=tun0
 ```
 
-Активируем `MASQUERADE` для доверенной зоны firewall
+Активируем `MASQUERADE` для доверенной зоны Firewall
 
 ```sh
 $ sudo firewall-cmd --permanent --zone=trusted --add-masquerade
@@ -309,7 +309,7 @@ $ sudo SERVERIP=$(ip route get 84.200.69.80 | awk 'NR==1 {print $(NF-2)}')
 $ sudo firewall-cmd --permanent --direct --passthrough ipv4 -t nat -A POSTROUTING -s  10.10.1.0/24 -o $SERVERIP -j MASQUERADE
 ```
 
-Перезапустим firewall
+Перезапустим Firewall
 
 ```sh
 $ sudo firewall-cmd --reload

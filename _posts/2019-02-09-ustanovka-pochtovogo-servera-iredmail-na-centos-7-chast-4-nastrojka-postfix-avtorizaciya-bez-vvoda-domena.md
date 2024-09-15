@@ -43,7 +43,7 @@ smtps     inet  n       - n       - - smtpd
 $ sudo systemctl restart postfix
 ```
 
-Добавляем правила в фаерволл
+Добавляем правила в Firewall
 
 ```sh
 $ sudo firewall-cmd --permanent --add-service=smtp
@@ -76,7 +76,7 @@ iredmail (active)
 
 ## Режем заголовки в Postfix
 
-Для того, что бы не светить свой локальный ip в исходнике письма, отредактируем файл header\_checks, добавив туда строки
+Для того, что бы не светить свой локальный IP в исходнике письма, отредактируем файл `header_checks`, добавив туда строки
 
 ```sh
 $ sudo nano /etc/postfix/header_checks
@@ -96,7 +96,7 @@ $ sudo systemctl restart postfix
 
 ## Авторизация в Dovecot без ввода домена
 
-Редактируем конфигурационный файл dovecot.conf, раскомментируем строку
+Редактируем конфигурационный файл `dovecot.conf`, раскомментируем строку
 
 ```sh
 $ sudo nano /etc/dovecot/dovecot.conf
@@ -135,4 +135,4 @@ SOGoMailDomain = "itdraft.ru";
 $ sudo systemctl restart sogod
 ```
 
-у меня данный метод в `sogo` не заработал, хотя мануал изучал на официальном сайте.
+У меня данный метод в `sogo` не заработал, хотя мануал изучал на официальном сайте.

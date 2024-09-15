@@ -24,7 +24,7 @@ $ sudo yum install epel-release -y
 $ sudo yum install htop nano mc zip unzip wget -y
 ```
 
-Смотрим какой у нас сейчас hostname
+Смотрим какой у нас сейчас `hostname`
 
 ```sh
 $ hostname -f
@@ -34,7 +34,7 @@ $ hostname -s
 srv-mail-01
 ```
 
-Меняем hostname на необходимый для почтового сервера
+Меняем `hostname` на необходимый для почтового сервера
 
 ```sh
 $ sudo hostnamectl set-hostname mail.itdraft.ru
@@ -45,7 +45,7 @@ $ hostname -s
 mail
 ```
 
-Приводим файл /etc/hosts к следующему виду
+Приводим файл `/etc/hosts` к следующему виду
 
 ```sh
 $ sudo nano /etc/hosts

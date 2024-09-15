@@ -27,14 +27,14 @@ $ sudo yum install gcc php-devel php-pear
 $ sudo yum install ImageMagick ImageMagick-devel
 ```
 
-Устанавливаем php-модуль для функционирования ImageMagick в php скриптах, и активируем его
+Устанавливаем PHP модуль для функционирования ImageMagick в PHP скриптах, и активируем его
 
 ```sh
 $ sudo pecl install imagick
 $ echo "extension=imagick.so" | sudo tee -a /etc/php.d/imagick.ini
 ```
 
-Теперь осталось перезапустить либо web-сервер apache, либо php-fpm если вы использует связку nginx + php-fpm
+Теперь осталось перезапустить либо Web-сервер Apache, либо PHP-FPM если вы использует связку Nginx + PHP-FPM
 
 ```sh
 $ sudo systemctl restart apache

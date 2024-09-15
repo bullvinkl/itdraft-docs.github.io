@@ -29,7 +29,7 @@ $ sudo apt -y upgrade
 $ sudo apt install adobe-flashplugin
 ```
 
-Устанавливаем пакет rowser-plugin-freshplayer-pepperflash
+Устанавливаем пакет `rowser-plugin-freshplayer-pepperflash`
 
 ```sh
 $ sudo apt-get install browser-plugin-freshplayer-pepperflash

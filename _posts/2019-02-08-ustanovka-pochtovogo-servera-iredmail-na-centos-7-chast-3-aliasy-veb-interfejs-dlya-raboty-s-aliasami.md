@@ -47,7 +47,7 @@ $ sudo systemctl restart iredapd
 
 ## Установка phpMyAdmin и настройка NGINX
 
-Устнавливаем phpMyAdmin:
+Устанавливаем phpMyAdmin:
 
 ```sh
 $ sudo yum install phpmyadmin

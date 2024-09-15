@@ -47,7 +47,7 @@ $ sudo systemctl start docker
 $ sudo systemctl enable docker
 ```
 
-Для проверки, запустим образ hello-world
+Для проверки, запустим образ `hello-world`
 
 ```sh
 $ sudo docker run hello-world

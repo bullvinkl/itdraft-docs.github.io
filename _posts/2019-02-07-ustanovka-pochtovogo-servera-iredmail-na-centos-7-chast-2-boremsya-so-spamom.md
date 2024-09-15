@@ -101,7 +101,7 @@ $ sudo nano /var/vmail/sieve/sa-learn-ham.sh
 exec /usr/bin/sa-learn -u ${1} --ham
 ```
 
-Меняем владельца файлов на vmail и делаем файлы исполняемые
+Меняем владельца файлов на `vmail` и делаем файлы исполняемые
 
 ```sh
 $ sudo chown vmail:vmail /var/vmail/sieve/report-*
@@ -134,9 +134,9 @@ bayes_sql_password %password%
 
 где:
 
--`%user%` - имя пользователя, который имеет доступ к базе `sa_bayes`
+- `%user%` - имя пользователя, который имеет доступ к базе `sa_bayes`
 
--`%password%` - пароль
+- `%password%` - пароль
 
 Эти данные мы заведем чуть позже
 

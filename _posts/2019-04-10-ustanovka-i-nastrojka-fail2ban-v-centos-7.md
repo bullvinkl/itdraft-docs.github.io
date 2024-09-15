@@ -32,7 +32,7 @@ image:
 
 ## Настройка Fail2Ban
 
-Fail2Ban хранит свои настройки в файле `/etc/fail2ban/jail.conf`, и при обновлении перезаписывает этот файл, по-этому скопируем файл jail.conf под именем jail.local
+Fail2Ban хранит свои настройки в файле `/etc/fail2ban/jail.conf`, и при обновлении перезаписывает этот файл, по-этому скопируем файл `jail.conf` под именем `jail.local`
 ```sh
 # cp -pf /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 ```

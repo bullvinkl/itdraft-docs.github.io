@@ -16,7 +16,7 @@ image:
 {: .prompt-tip }
 
 Для того, что бы сделать доступ по паролю в каталог вэб-сервера Nginx для начала необходимо сгенерировать файл с логином/паролем `.htpasswd`
-Это можно сделать с помощью утилиты от вэб-сервера Apache, либо про помощи php, либо с помощью bash.
+Это можно сделать с помощью утилиты от вэб-сервера Apache, либо про помощи PHP, либо с помощью Bash.
 
 Установим утилиту от вэб-сервера Apache:
 
@@ -43,7 +43,7 @@ $ sudo htpasswd -c /var/www/example.ru/public_html/.htpasswd username
 - `username` – имя пользователя, которое мы будем использовать для аутентификации
 
 
-Сгенерируем пароль для файла `.htpasswd` при помощи `php`:
+Сгенерируем пароль для файла `.htpasswd` при помощи PHP:
 
 ```sh
 $ php -r 'echo crypt("your_password", "salt");'
@@ -51,7 +51,7 @@ $ php -r 'echo crypt("your_password", "salt");'
 
 где:
 - `your_password` - ваш пароль
-- `salt` - соль для пароля, должна содержать минимум 2 символа из набора “0-9 A-Z a-z”
+- `salt` - соль для пароля, должна содержать минимум 2 символа из набора `0-9 A-Z a-z`
 
 Далее нам надо создать сам файл `.htpasswd` и вписать в него данные в формате:
 
@@ -64,7 +64,7 @@ username:password
 - `password` - наш сгенерированный пароль
 
 
-Сгенерируем файл `.htpasswd` при помощи bash:
+Сгенерируем файл `.htpasswd` при помощи Bash:
 
 ```sh
 $ printf "USER:$(openssl passwd -crypt PASSWORD)\n" | sudo tee -a /var/www/example.ru/public_html/.htpasswd
@@ -78,7 +78,7 @@ $ printf "USER:$(openssl passwd -crypt PASSWORD)\n" | sudo tee -a /var/www/examp
 
 Я использовал именно этот метод
 
-Редактируем файл конфигурации NGINX, в данном случае нашего виртуального хоста
+Редактируем файл конфигурации Nginx, в данном случае нашего виртуального хоста
 
 ```sh
 $ sudo nano /etc/nginx/sites-available/example.ru.conf
@@ -90,14 +90,14 @@ location /test {
 }
 ```
 
-Проверяем корректность настроек и перезапускаем иэб-сервер
+Проверяем корректность настроек и перезапускаем Web-сервер
 
 ```sh
 $ nginx -t
 $ sudo service nginx restart
 ```
 
-Например, что бы закрыть каталог wp-admin — в блоке server указываем
+Например, что бы закрыть каталог `wp-admin`, в блоке `server` указываем
 
 ```
 location = /wp-login.php {
