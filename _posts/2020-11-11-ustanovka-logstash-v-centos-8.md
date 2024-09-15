@@ -19,13 +19,13 @@ image:
 
 ## Установка Logstash из репозитория
 
-Импортируем PGP Key для дальнейшего добавления репозитория Elasticsearch
+Импортируем PGP Key для дальнейшего добавления репозитория ElasticSearch
 
 ```sh
 $ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
-Добавляем репозиторий Elasticsearch
+Добавляем репозиторий ElasticSearch
 
 ```sh
 $ sudo nano /etc/yum.repos.d/kibana.repo

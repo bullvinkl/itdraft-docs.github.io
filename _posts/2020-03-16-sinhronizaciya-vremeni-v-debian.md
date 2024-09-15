@@ -36,7 +36,7 @@ NTP synchronized: no
 $ sudo timedatectl set-ntp true
 ```
 
-Настроим systemd-timesyncd.  
+Настроим `systemd-timesyncd`.  
 Конфигурационный файл расположен тут: `/etc/systemd/timesyncd.conf`
 
 ```sh

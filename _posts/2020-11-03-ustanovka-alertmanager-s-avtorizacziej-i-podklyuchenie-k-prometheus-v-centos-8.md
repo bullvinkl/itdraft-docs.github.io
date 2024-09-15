@@ -34,7 +34,7 @@ $ sudo useradd -M -s /bin/false alertmanager
 $ sudo mkdir /etc/alertmanager /var/lib/prometheus/alertmanager
 ```
 
-Скачиваем alertmanager в каталог `/tmp`
+Скачиваем Alertmanager в каталог `/tmp`
 
 ```sh
 $ wget https://github.com/prometheus/alertmanager/releases/download/v0.21.0/alertmanager-0.21.0.linux-amd64.tar.gz -P /tmp
@@ -241,7 +241,7 @@ $ sudo semodule -i nginxlocalconf.pp
 $ sudo mkdir /etc/prometheus/rules.d/
 ```
 
-Создадим файлы с правилами оповещения для Promrtheus
+Создадим файлы с правилами оповещения для Prometheus
 
 ```sh
 $ sudo nano /etc/prometheus/rules.d/alert.rules.yml
@@ -324,7 +324,7 @@ groups:
  description: "{{ $labels.instance }} of job {{ $labels.job }} is down." 
 ```
 
-Добавляем список правил в prometheus
+Добавляем список правил в Prometheus
 
 ```sh
 $ sudo nano /etc/prometheus/prometheus.yml
@@ -363,7 +363,7 @@ Checking /etc/prometheus/alert.rules.yml
   SUCCESS: 1 rules found
 ```
 
-Перезапускаем prometheus
+Перезапускаем Prometheus
 
 ```sh
 $ sudo systemctl restart prometheus
@@ -414,7 +414,7 @@ $ sudo systemctl status alertmanager
 
 ## Продолжение настройки Node Exporter
 
-Что бы можно было мониторить запущенные сервисы, редактируем Systemd Unit node exporter
+Что бы можно было мониторить запущенные сервисы, редактируем Systemd Unit для Node Exporter
 
 ```sh
 $ sudo nano /etc/systemd/system/node_exporter.service

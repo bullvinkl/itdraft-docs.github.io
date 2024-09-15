@@ -372,7 +372,7 @@ protocol="org.apache.coyote.http11.Http11NioProtocol"
 scheme="https" proxyName="localhost" proxyPort="443"/>
 ```
 
-Если вы не будите использовать ssl, то последняя строка будет выглядеть:
+Если вы не будите использовать SSL, то последняя строка будет выглядеть:
 
 ```
 scheme="http" proxyName="localhost" proxyPort="80"/>

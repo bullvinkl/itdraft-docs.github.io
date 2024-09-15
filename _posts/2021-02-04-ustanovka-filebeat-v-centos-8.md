@@ -17,7 +17,7 @@ image:
 
 ## Установка Filebeat из репозитория
 
-Импортируем PGP Key для дальнейшего добавления репозитория Elasticsearch
+Импортируем PGP Key для дальнейшего добавления репозитория ElasticSearch
 
 ```sh
 $ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch

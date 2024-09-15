@@ -32,7 +32,7 @@ $ sudo dnf -y install epel-release
 $ sudo dnf -y install wget bzip2 traceroute net-tools nano bind-utils telnet htop atop iftop lsof git rsync policycoreutils-python-utils tar zip unzip
 ```
 
-Изменим hostname сервера
+Изменим `hostname` сервера
 
 ```sh
 $ sudo hostnamectl set-hostname server1c
@@ -41,7 +41,7 @@ $ sudo nano /etc/hosts
 192.168.11.235 server1c
 ```
 
-На клиентской машине сервер должен отвечать на ping по доменному имени
+На клиентской машине сервер должен отвечать на `ping` по доменному имени
 
 ## Установка Postgres PRO
 
@@ -52,7 +52,7 @@ $ sudo rpm -i http://repo.postgrespro.ru/pgpro-12/keys/centos.rpm
 $ sudo dnf makecache
 ```
 
-Устанавливаем PostgreSQL PRO std
+Устанавливаем Postgres PRO std
 
 ```sh
 $ sudo dnf -y install postgrespro-std-12
@@ -70,7 +70,7 @@ $ sudo systemctl status postgrespro-std-12
 $ sudo rm -rf /var/lib/pgpro/std-12/data
 ```
 
-Инициализируем БД, модифицируем настройки под работу с 1с и добавляем поддержку русского языка
+Инициализируем БД, модифицируем настройки под работу с 1С и добавляем поддержку русского языка
 
 ```sh
 $ sudo /opt/pgpro/std-12/bin/pg-setup initdb --tune=1c --locale=ru_RU.UTF-8
@@ -116,7 +116,7 @@ $ sudo systemctl restart postgrespro-std-12
 
 ## Установка сервера 1C
 
-Для начала необходимо скачать дистрибутив server 1c под linux в каталог /tmp  
+Для начала необходимо скачать дистрибутив Server 1C под Linux в каталог `/tmp` 
 Сделать это можно с официального сайта, либо поискать в интернете
 
 Распаковываем архив с дистрибутивом и устанавливаем
@@ -133,7 +133,7 @@ $ sudo dnf -y localinstall *.rpm
 $ sudo chown -R usr1cv8:grp1cv8 /opt/1C
 ```
 
-Добавляем сервис srv1cv83 в автозагрузку, запускаем его и проверяем статус
+Добавляем сервис `srv1cv83` в автозагрузку, запускаем его и проверяем статус
 
 ```sh
 $ sudo systemctl enable srv1cv83
@@ -143,7 +143,7 @@ $ sudo systemctl status srv1cv83
 
 ## Настройка сервера 1C
 
-Создаем каталог, в котором будут храниться конфигурации 1с для подключения к базе
+Создаем каталог, в котором будут храниться конфигурации 1С для подключения к базе
 
 ```sh
 $ sudo mkdir -p /mnt/1c/base
@@ -173,7 +173,7 @@ $ sudo systemctl status srv1cv83
 $ sudo dnf -y install glibc
 ```
 
-Скачиваем rpm-пакеты
+Скачиваем `rpm` пакеты
 
 ```sh
 $ cd /tmp
@@ -283,7 +283,7 @@ $ wget https://pkgs.dyn.su/el8/base/x86_64/cabextract-1.9-2.el8.x86_64.rpm
 $ sudo dnf -y localinstall cabextract-1.9-2.el8.x86_64.rpm
 ```
 
-Скачиваем файл спецификации для установки шрифтов microsoft
+Скачиваем файл спецификации для установки шрифтов Microsoft
 
 ```sh
 $ wget http://corefonts.sourceforge.net/msttcorefonts-2.5-1.spec
@@ -318,13 +318,13 @@ $ sudo systemctl enable --now httpd
 $ sudo systemctl status httpd
 ```
 
-Создадим каталог, он будет использован как путь публикации для web-сервера 1с
+Создадим каталог, он будет использован как путь публикации для Web-сервера 1С
 
 ```sh
 $ sudo mkdir -p /var/www/infobase
 ```
 
-Создадим пустой файл, он будет указан в качестве конфигурационного файла web-сервера 1с
+Создадим пустой файл, он будет указан в качестве конфигурационного файла Web-сервера 1С
 
 ```sh
 $ sudo touch /etc/httpd/conf.d/base.conf
@@ -338,13 +338,13 @@ $ sudo ./webinst -apache24 -wsdir base -dir /var/www/infobase/ -connStr "Srvr=se
 Publication successful
 ```
 
-где
-- `dir` — путь к папке веб сервера, ранее созданная директория
-- `connStr` — путь к расположению файловой базы 1С
-- `confPath` — путь к файлу конфигурации веб сервера, ранее созданный файл (должен быть быть пустым)
-- `publish` - указывает необходимое действие, в данном случае публикацию, может быть опущен, так как это действие по умолчанию
-- `wsdir` - имя публикации, по которому к базе следует обращаться из браузера, обратите внимание, что оно регистрозависимое
-- `connStr` - строка соединения, состоит из нескольких частей: `Srvr` - имя сервера, `Ref` - имя базы на сервере, каждая часть должна заканчиваться служебным символом `;`
+> - `dir` — путь к папке веб сервера, ранее созданная директория
+> - `connStr` — путь к расположению файловой базы 1С
+> - `confPath` — путь к файлу конфигурации веб сервера, ранее созданный файл (должен быть быть пустым)
+> - `publish` - указывает необходимое действие, в данном случае публикацию, может быть опущен, так как это действие по умолчанию
+> - `wsdir` - имя публикации, по которому к базе следует обращаться из браузера, обратите внимание, что оно регистрозависимое
+> - `connStr` - строка соединения, состоит из нескольких частей: `Srvr` - имя сервера, `Ref` - имя базы на сервере, каждая часть должна заканчиваться служебным символом `;`
+{: .prompt-info }
 
 Меняем владельца и группу созданного файла, перезапускаем Apache
 
@@ -355,7 +355,7 @@ $ sudo systemctl restart httpd
 
 ## Настройка SELinux
 
-Создаем файл с описанием политик web 1с для Selinux
+Создаем файл с описанием политик Web 1C для SElinux
 
 ```sh
 $ cd /tmp
@@ -438,7 +438,7 @@ $ sudo dnf -y install kernel-devel
 $ sudo dnf -y install jansson-devel libusb.i686 elfutils-libelf-devel
 ```
 
-Устанавливаем GIT
+Устанавливаем Git
 
 ```sh
 $ sudo dnf -y install git
@@ -523,13 +523,13 @@ $ sudo make -s
 $ sudo cp dist/Release/GNU-Linux/usbhasp /usr/local/sbin
 ```
 
-Создаем директорию для дампов usb-ключей
+Создаем директорию для дампов USB-ключей
 
 ```sh
 $ sudo mkdir /etc/usbhaspkey/
 ```
 
-Создаем системный unit `usbhaspemul.service`
+Создаем Systemd Unit файл `usbhaspemul.service`
 
 ```sh
 $ sudo nano /etc/systemd/system/usbhaspemul.service
@@ -552,7 +552,7 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl enable usbhaspemul
 ```
 
-Загружаем дампы usb-ключей в каталог `/etc/usbhaspkey/` (дампы искать в интернете)
+Загружаем дампы USB-ключей в каталог `/etc/usbhaspkey/` (дампы искать в интернете)
 
 ```sh
 $ sudo cp /tmp/Dumps/1c_server_x64.json /etc/usbhaspkey/

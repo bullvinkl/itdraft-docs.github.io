@@ -22,7 +22,7 @@ image:
 $ sudo dnf -y install gcc make readline-devel zlib-devel systemd-devel
 ```
 
-Создаем системного пользователя postgres
+Создаем системного пользователя `postgres`
 
 ```sh
 $ sudo useradd -M -s -d /var/lib/postgresql postgres
@@ -37,7 +37,7 @@ $ sudo chown -R postgres:postgres /var/log/postgresql
 
 ## Установка PostgreSQL 9.6 из исходников, запуск на порту 5433
 
-Скачиваем архив PostgreSQL 9.6 в каталог /tmp и разархивируем его
+Скачиваем архив PostgreSQL 9.6 в каталог `/tmp` и разархивируем его
 
 ```sh
 $ wget https://ftp.postgresql.org/pub/source/v9.6.19/postgresql-9.6.19.tar.gz -P /tmp
@@ -66,13 +66,13 @@ $ sudo mkdir -p /var/lib/postgresql/9.6/main
 $ sudo chown -R postgres:postgres /var/lib/postgresql
 ```
 
-Переключаемся на пользователя postgres
+Переключаемся на пользователя `postgres`
 
 ```sh
 $ sudo su - postgres
 ```
 
-Инициализируем базу и закрываем сессию пользователя postgres
+Инициализируем базу и закрываем сессию пользователя `postgres`
 
 ```sh
 $ /opt/postgresql/9.6/bin/initdb -D /var/lib/postgresql/9.6/main
@@ -175,7 +175,7 @@ $ sudo firewall-cmd --reload
 
 ## Установка PostgreSQL 11 из исходников, запуск на порту 5432
 
-Скачиваем архив PostgreSQL 11 в каталог /tmp и разархивируем его
+Скачиваем архив PostgreSQL 11 в каталог `/tmp` и разархивируем его
 
 ```sh
 $ wget https://ftp.postgresql.org/pub/source/v11.7/postgresql-11.7.tar.gz -P /tmp
@@ -204,13 +204,13 @@ $ sudo mkdir -p /var/lib/postgresql/11/main
 $ sudo chown -R postgres:postgres /var/lib/postgresql
 ```
 
-Переключаемся на пользователя postgres
+Переключаемся на пользователя `postgres`
 
 ```sh
 $ sudo su - postgres
 ```
 
-Инициализируем базу и закрываем сессию пользователя postgres
+Инициализируем базу и закрываем сессию пользователя `postgres`
 
 ```sh
 $ /opt/postgresql/11/bin/initdb -D /var/lib/postgresql/11/main

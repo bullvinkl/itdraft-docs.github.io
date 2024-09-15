@@ -119,7 +119,7 @@ server.host: "localhost"
 ...
 ```
 
-в данном примере мы говорим, что сервер должен слушать на интерфейсе 192.168.1.10
+в данном примере мы говорим, что сервер должен слушать на интерфейсе `192.168.1.10`
 
 ## Настройка Firewall (если не используем Nginx as reverse proxy)
 
@@ -132,7 +132,7 @@ $ sudo firewall-cmd --reload
 
 ## Установка Nginx
 
-Добавляем репозиторий NGINX
+Добавляем репозиторий Nginx
 
 ```sh
 $ sudo nano /etc/yum.repos.d/nginx.repo
@@ -153,19 +153,19 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 module_hotfixes=true
 ```
 
-По умолчанию будет использоваться стабильная версия. Если нужна основная версия(mainline), переключаемся
+По умолчанию будет использоваться стабильная версия. Если нужна основная версия (`mainline`), переключаемся
 
 ```sh
 $ sudo dnf config-manager --set-enabled nginx-mainline
 ```
 
-Устанавливаем NGINX и httpd-tools
+Устанавливаем Nginx и `httpd-tools`
 
 ```sh
 $ sudo dnf -y install nginx httpd-tools
 ```
 
-Добавляем службу NGINX в автозагрузку и запускаем ее
+Добавляем службу Nginx в автозагрузку и запускаем ее
 
 ```sh
 $ sudo systemctl enable --now nginx
@@ -241,7 +241,7 @@ $ sudo firewall-cmd --reload
 $ sudo firewall-cmd --list-all
 ```
 
-Закрываем порт 5601, если ранее его открыывали
+Закрываем порт 5601, если ранее его открывали
 
 ```sh
 $ sudo firewall-cmd --permanent --zone=public --remove-port=5601/tcp

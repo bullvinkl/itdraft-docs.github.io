@@ -38,14 +38,14 @@ $ sudo yum -y install nano wget net-tools
 $ sudo yum -y install yum-utils
 ```
 
-Включаем remi-репозиторий для установки php 7.4
+Включаем REMI репозиторий для установки PHP 7.4
 
 ```sh
 $ sudo rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 $ sudo yum-config-manager --enable remi-php74
 ```
 
-Устанавливаем php 7.4 и некоторые компоненты
+Устанавливаем PHP 7.4 и некоторые компоненты
 
 ```sh
 $ sudo yum -y install php php-xml php-soap php-xmlrpc php-mbstring php-json php-gd php-pecl-mcrypt php-common php-fpm php-pdo php-mysqlnd php-imap php-embedded php-ldap php-odbc php-zip php-fileinfo php-process php-opcache php-curl php-intl php-pear php-imagick php-memcache php-pspell php-gettext php-apcu php-pecl-recode php-tidy php-xsl php-pear-CAS
@@ -70,7 +70,7 @@ $ sudo sed -i 's/^listen.owner = .*/listen.owner = nginx/' /etc/php-fpm.d/www.co
 $ sudo sed -i 's/^listen.group = .*/listen.group = nginx/' /etc/php-fpm.d/www.conf
 ```
 
-Добавляем php-fpm в автозагрузку
+Добавляем PHP-FPM в автозагрузку
 
 ```sh
 $ sudo systemctl enable php-fpm
@@ -89,7 +89,7 @@ gpgcheck=0
 enabled=1
 ```
 
-Установка web-сервера Nginx
+Установка Web-сервера Nginx
 
 ```sh
 $ sudo yum -y install nginx
@@ -192,7 +192,7 @@ $ sudo systemctl enable nginx
 
 ## Firewall
 
-Настройка firewall, открываем порты
+Настройка Firewall, открываем порты
 
 ```sh
 $ sudo firewall-cmd --zone=public --add-service={http,https} --permanent
@@ -207,7 +207,7 @@ $ sudo firewall-cmd --reload
 $ sudo yum -y install https://repo.percona.com/yum/percona-release-latest.noarch.rpm
 ```
 
-Устанавливаем Percona-Server
+Устанавливаем Percona Server
 
 ```sh
 $ sudo yum -y install Percona-Server-server-57

@@ -177,7 +177,7 @@ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-Редактируем дефолтный конфиг web-сервера, включаем компрессию
+Редактируем дефолтный конфиг Web-сервера, включаем компрессию
 
 ```sh
 $ sudo nano /etc/nginx/conf.d/default.conf
@@ -212,7 +212,7 @@ $ sudo firewall-cmd --zone=public --add-service=http --permanent
 $ sudo firewall-cmd --reload
 ```
 
-Открываем в браузере ip-адрес сервера
+Открываем в браузере IP-адрес сервера
 
 ![](/assets/img/posts/2020/07/28/nginx_br.png){: w="300" }
 _Проверка_

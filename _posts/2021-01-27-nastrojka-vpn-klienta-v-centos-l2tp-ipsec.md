@@ -78,7 +78,7 @@ $ sudo nano /etc/ipsec.secrets
 : PSK "$VPN_IPSEC_PSK"
 ```
 
-Меняем права на файл ipsec.secrets
+Меняем права на файл `ipsec.secrets`
 
 ```sh
 $ sudo chmod 600 /etc/ipsec.secrets
@@ -123,7 +123,7 @@ name $VPN_USER
 password $VPN_PASSWORD
 ```
 
-Меняем права на файл options.l2tpd.client
+Меняем права на файл `options.l2tpd.client`
 
 ```sh
 $ sudo chmod 600 /etc/ppp/options.l2tpd.client
@@ -136,7 +136,7 @@ $ sudo mkdir -p /var/run/xl2tpd
 $ sudo touch /var/run/xl2tpd/l2tp-control
 ```
 
-Перезапускаем службы xl2tpd и strongswan
+Перезапускаем службы `xl2tpd` и `strongswan`
 
 ```sh
 $ sudo systemctl restart xl2tpd
@@ -163,7 +163,7 @@ $ sudo strongswan up vpn01
 $ echo "c vpn01" | sudo tee /var/run/xl2tpd/l2tp-control
 ```
 
-Проверяем, должен появиться сетевой интерфейс ppp
+Проверяем, должен появиться сетевой интерфейс `ppp`
 
 ```sh
 $ ip a

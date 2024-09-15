@@ -14,7 +14,7 @@ image:
 > **nmcli** (network manager command-line interface) - утилита для настройки сети, которая позволяет использовать Network Manager в консоли
 {: .prompt-tip }
 
-Запустим NetworkManager, проверяем статус
+Запустим Network Manager, проверяем статус
 
 ```sh
 $ sudo systemctl start NetworkManager
@@ -48,7 +48,7 @@ $ nmcli con show -a
 $ nmcli dev show
 ```
 
-Посмотреть полую информацию об интерфейсе ens192
+Посмотреть полую информацию об интерфейсе `ens192`
 
 ```sh
 $ nmcli dev show ens192
@@ -112,7 +112,7 @@ $ sudo nmcli con mod "System ens192" -ipv4.dns 1.1.1.1
 $ sudo nmcli con mod "System ens192" ipv4.addresses 192.168.1.89/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8,8.8.4.4
 ```
 
-Задать dns-search
+Задать `dns-search`
 
 ```sh
 $ sudo nmcli con mod "System ens192" ipv4.dns-search "domain1.local,domain2.local,domain3.local"

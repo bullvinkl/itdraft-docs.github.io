@@ -32,7 +32,7 @@ $ wget https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node
 $ cd /tmp
 ```
 
-Распаковываем, переносим в каталог /usr/local/bin, назначаем владельца
+Распаковываем, переносим в каталог `/usr/local/bin`, назначаем владельца
 
 ```sh
 $ tar -zxpvf node_exporter-1.0.1.linux-amd64.tar.gz
@@ -83,7 +83,7 @@ $ sudo firewall-cmd --reload
 
 ## Настройка авторизации
 
-Устанавливаем утилиту httpd-tools
+Устанавливаем утилиту `httpd-tools`
 
 ```sh
 $ sudo dnf -y install httpd-tools
@@ -97,7 +97,7 @@ New password: password
 Re-type new password: password
 ```
 
-Создаем каталог, где будет лежать конфиг node\_exporter
+Создаем каталог, где будет лежать конфиг Node Exporter
 
 ```sh
 $ sudo mkdir /opt/node_exporter

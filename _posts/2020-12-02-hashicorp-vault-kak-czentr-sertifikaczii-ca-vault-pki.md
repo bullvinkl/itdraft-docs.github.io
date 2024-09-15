@@ -19,7 +19,7 @@ image:
 
 ## Подготовка
 
-Устанавливаем в систему утилиту "jq"
+Устанавливаем в систему утилиту `jq`
 
 ```sh
 $ sudo dnf -y install jq
@@ -43,7 +43,7 @@ $ vault secrets enable \
     pki
 ```
 
-Создаем корневой центра сертификации (CA). 262800h = 30 лет
+Создаем корневой центра сертификации `(CA). 262800h = 30 лет`
 
 ```sh
 $ vault write -format=json pki_root_ca/root/generate/internal \
@@ -95,7 +95,7 @@ $ vault write -format=json pki_int_ca/intermediate/generate/internal \
    ttl="175200h" | jq -r '.data.csr' > pki_intermediate_ca.csr
 ```
 
-Отправляем полученный CSR-файл в корневой центр сертификации, получаем сертификат для промежуточного центра сертификации. 175200h = 20 лет
+Отправляем полученный CSR файл в корневой центр сертификации, получаем сертификат для промежуточного центра сертификации. `175200h = 20 лет`
 
 ```sh
 $ vault write -format=json pki_root_ca/root/sign-intermediate csr=@pki_intermediate_ca.csr \
@@ -179,7 +179,7 @@ $ vault write pki_int_ca/roles/example-dot-com-client \
     require_cn=true
 ```
 
-Создаем сертификат на 5 лет для домена vault.example.com
+Создаем сертификат на 5 лет для домена `vault.example.com`
 
 ```sh
 $ vault write -format=json pki_int_ca/issue/example-dot-com-server \
@@ -227,4 +227,4 @@ $ vault write pki_int_ca/tidy \
 
 ## Bash-скрипт
 
-Для удобства разворачивания PKI подготовил bash-скрипт в своем репозитории на [GitHub](https://github.com/bullvinkl/vault-pki)
+Для удобства разворачивания PKI подготовил Bash-скрипт в своем репозитории на [GitHub](https://github.com/bullvinkl/vault-pki)

@@ -71,7 +71,7 @@ $ sudo systemctl enable --now postgresql-13
 $ systemctl status postgresql-13
 ```
 
-Устанавливаем пароль для пользователя postgres
+Устанавливаем пароль для пользователя `postgres`
 
 ```sh
 $ sudo su - postgres 
@@ -82,7 +82,7 @@ $ exit
 
 ## Работа с базой / пользователями
 
-Переключаемся на пользователя postgres
+Переключаемся на пользователя `postgres`
 
 ```sh
 $ sudo su - postgres
@@ -116,7 +116,7 @@ $ exit
 
 ## Настройка PostgreSQL 13
 
-Настраиваем возможность подключения к БД из др. хоста. Для этого редактируем конфигурационный файл `/var/lib/pgsql/13/data/postgresql.conf` и устанавливаем в качестве параметра `Listen address` ip-адрес сервера, или `*` - для всех сетевых интерфейсов
+Настраиваем возможность подключения к БД из др. хоста. Для этого редактируем конфигурационный файл `/var/lib/pgsql/13/data/postgresql.conf` и устанавливаем в качестве параметра `Listen address` IP-адрес сервера, или `*` - для всех сетевых интерфейсов
 
 ```sh
 $ sudo nano /var/lib/pgsql/13/data/postgresql.conf

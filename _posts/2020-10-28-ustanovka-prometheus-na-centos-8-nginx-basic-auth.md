@@ -20,18 +20,18 @@ image:
 
 ## Установка Prometheus
 
-Добавляем системного пользователя prometheus
+Добавляем системного пользователя `prometheus`
 ```sh
 $ sudo useradd -M -s /bin/false prometheus
 ```
 
-Создаем необходимые каталоги для prometheus
+Создаем необходимые каталоги для Prometheus
 ```sh
 $ sudo mkdir /etc/prometheus /var/lib/prometheus
 $ sudo chown prometheus /var/lib/prometheus/
 ```
 
-Скачиваем последнюю версию prometheus в каталог /tmp
+Скачиваем последнюю версию Prometheus в каталог `/tmp`
 ```sh
 $ wget https://github.com/prometheus/prometheus/releases/download/v2.19.3/prometheus-2.19.3.linux-amd64.tar.gz -P /tmp
 $ cd /tmp
@@ -43,7 +43,7 @@ $ sudo dnf install tar
 $ tar xvzf prometheus-2.19.3.linux-amd64.tar.gz
 ```
 
-Устанавливаем prometheus
+Устанавливаем Prometheus
 ```sh
 $ cd prometheus-2.19.3.linux-amd64
 $ sudo cp prometheus  /usr/local/bin
@@ -51,7 +51,7 @@ $ sudo cp promtool  /usr/local/bin
 $ sudo cp prometheus.yml /etc/prometheus/
 ```
 
-Правим конфигурационный файл prometheus
+Правим конфигурационный файл `prometheus.yml`
 ```sh
 $ sudo nano /etc/prometheus/prometheus.yml
 # my global config
@@ -87,7 +87,7 @@ scrape_configs:
     - targets: ['localhost:9100'] 
 ```
 
-Открываем порт 19090. Мы используем не стандартный порт Prometheus, ч то бы в дальнейшем через NGINX добавить Basic auth
+Открываем порт 19090. Мы используем не стандартный порт Prometheus, ч то бы в дальнейшем через Nginx добавить Basic Auth
 ```sh
 $ sudo firewall-cmd --add-port=19090/tcp --permanent
 $ sudo firewall-cmd --reload

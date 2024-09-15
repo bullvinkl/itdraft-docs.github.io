@@ -22,7 +22,7 @@ image:
 
 ## Настройки PostgreSQL
 
-Создаем базу и пользователя. Для этого переключимся на пользователя postgres
+Создаем базу и пользователя. Для этого переключимся на пользователя `postgres`
 
 ```sh
 $ sudo su - postgres
@@ -54,7 +54,7 @@ ALTER ROLE
 CREATE DATABASE
 ```
 
-Переключаемся на базу vaultdb
+Переключаемся на базу `vaultdb`
 
 ```sh
 =# \c vaultdb

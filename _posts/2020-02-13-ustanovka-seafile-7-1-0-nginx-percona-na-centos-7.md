@@ -305,7 +305,7 @@ $ tar xzf seafile-server_7.1.0_x86-64.tar.gz
 $ mv seafile-server_7.1.0_x86-64.tar.gz installed
 ```
 
-Запускаем установку SeaFile
+Запускаем установку Seafile
 
 ```sh
 $ ./seafile-server-7.1.0/setup-seafile-mysql.sh

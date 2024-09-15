@@ -117,7 +117,7 @@ $ tar -xf apache-tomcat-9.0.31.tar.gz
 $ sudo mv apache-tomcat-9.0.31 /opt/tomcat/
 ```
 
-Создаем сим линк, меняем владельца директорий и делаем bash-скрипты исполняемыми
+Создаем сим линк, меняем владельца директорий и делаем Bash-скрипты исполняемыми
 
 ```sh
 $ sudo ln -s /opt/tomcat/apache-tomcat-9.0.31 /opt/tomcat/latest

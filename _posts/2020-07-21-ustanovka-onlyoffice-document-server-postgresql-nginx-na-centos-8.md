@@ -29,13 +29,13 @@ image:
 
 ## Подготовка
 
-Подключаем репозиторий Epel и устанавливаем утилиту nano
+Подключаем репозиторий Epel и устанавливаем утилиту `nano`
 
 ```sh
 $ sudo dnf -y install epel-release nano
 ```
 
-Отключаем SeLinux
+Отключаем SELinux
 
 ```sh
 $ sudo setenforce 0
@@ -47,7 +47,7 @@ $ sudo sed -i "s%SELINUX=enforcing%SELINUX=disabled%g" /etc/sysconfig/selinux
 ```sh
 $ sestatus
 [...]
-Current mode:                   permissive
+Current mode: permissive
 [...]
 ```
 
@@ -344,7 +344,7 @@ $ sudo firewall-cmd --reload
 $ sudo firewall-cmd --list-all
 ```
 
-Запускаем браузер и переходим по адресу: http://%ip%
+Запускаем браузер и переходим по адресу: `http://%ip%`
 
 ![OnlyOffice Document Server](/assets/img/posts/2020/07/21/onlyoffice.png "OnlyOffice Document Server"){: w="300" }
 _Проверка_

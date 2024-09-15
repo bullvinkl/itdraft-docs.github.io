@@ -46,13 +46,12 @@ $ cd /opt/letsencrypt
 $ ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/example.com/public_html -d example.com -d www.example.com
 ```
 
-где
-
-- `example.com, www.example.com` — наш домен
-- `webroot-path=/var/www/example.com/public_html` - директория, где расположен сайт
-
-> Запускаем приложение letsencrypt-auto без sudo
+> - `example.com, www.example.com` — наш домен
+> - `webroot-path=/var/www/example.com/public_html` - директория, где расположен сайт
 {: .prompt-info }
+
+> Запускаем приложение letsencrypt-auto без `sudo`
+{: .prompt-warning }
 
 Если скрипт отработал успешно, мы получим сообщение:
 
@@ -74,10 +73,11 @@ IMPORTANT NOTES:
 
 В результате в каталоге `/etc/letsencrypt/live/www.example.com/` мы получили следующие файлы
 
-- `cert.pem` - сертификат
-- `chain.pem` - цепь сертификатов Let’s Encrypt
-- `fullchain.pem` - объединенные сертификаты cert.pem и chain.pem
-- `privkey.pem` - приватный ключ
+> - `cert.pem` - сертификат
+> - `chain.pem` - цепь сертификатов Let’s Encrypt
+> - `fullchain.pem` - объединенные сертификаты cert.pem и chain.pem
+> - `privkey.pem` - приватный ключ
+{: .prompt-info }
 
 Сгенерируем ключ Диффи-Хеллмана и сохраним его в каталог `/etc/ssl/certs/`
 
@@ -149,7 +149,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 $ sudo systemctl reload nginx
 ```
 
-## Авто продление ssl-сертификата
+## Авто продление SSL-сертификата
 
 Для авто продления используется команда
 

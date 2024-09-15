@@ -40,7 +40,7 @@ $ sudo pg_dump -d "redmine" -h localhost -Fc -U redmine -w -f "/opt/redmine/$(da
 $ tar -czf /opt/redmine/$(date +%Y%m%d_%H%M%S)_redmine.tar.gz /opt/redmine-4.0.5
 ```
 
-Эти действия можно оформить скриптом и добавить скрипт в crontab
+Эти действия можно оформить скриптом и добавить скрипт в `crontab`
 
 ## Восстановление Redmine
 
@@ -83,7 +83,7 @@ $ sudo su - postgres
 -bash-4.2$ psql
 ```
 
-Если в PostgreSQL есть база redmine к примеру с тестовыми данными, удаляем ее и создаем чистую
+Если в PostgreSQL есть база `redmine` к примеру с тестовыми данными, удаляем ее и создаем чистую
 
 ```sh
 postgres=# DROP DATABASE redmine;

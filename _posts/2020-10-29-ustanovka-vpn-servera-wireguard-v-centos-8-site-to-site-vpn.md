@@ -109,7 +109,7 @@ PublicKey = vQyGpGrxCog0000h87mFHLt3Nkb4aJcTieq/yIJJ3Y=
 AllowedIPs = 172.16.30.2/32
 ```
 
-Команды для управления Wireguard
+Команды для управления WireGuard
 
 ```sh
 $ sudo wg-quick up wg0
@@ -173,7 +173,7 @@ Endpoint = 8.8.8.8:41321
 $ sudo systemctl enable --now wg-quick@wg0
 ```
 
-Либо можно воспользоваться командами управления wireguard
+Либо можно воспользоваться командами управления WireGuard
 
 ```sh
 $ sudo wg-quick up wg0
@@ -183,7 +183,7 @@ $ sudo wg show wg0
 
 ## UPD 2021.05.26
 
-Если команда: wg pubkey не отрабатывает (`wg: Trailing characters found after key`), генерить ключ можно так:
+Если команда: `wg pubkey` не отрабатывает (`wg: Trailing characters found after key`), генерить ключ можно так:
 
 ```sh
 $ openssl genpkey -algorithm X25519 -outform der | tail -c 32 | base64"

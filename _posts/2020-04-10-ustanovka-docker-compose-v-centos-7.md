@@ -23,19 +23,19 @@ image:
 $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
 
-Добавляем репозиторий docker-ce
+Добавляем репозиторий Docker CE
 
 ```sh
 $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-Устанавливаем Docker-CE
+Устанавливаем Docker CE
 
 ```sh
 $ sudo yum install -y docker-ce
 ```
 
-Добавляем нашего пользователя, под которым настраиваем ОС, в группу Docker
+Добавляем нашего пользователя, под которым настраиваем ОС, в группу `docker`
 
 ```sh
 $ sudo usermod -aG docker $(whoami)
@@ -74,13 +74,13 @@ $ sudo yum install -y python3-pip
 $ sudo pip3 install docker-compose
 ```
 
-Делаем симлинк на файл docker-compose
+Делаем сим линк на файл `docker-compose`
 
 ```sh
 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
-Обновляем утилиту pip
+Обновляем утилиту PIP
 
 ```sh
 $ sudo pip install --upgrade pip

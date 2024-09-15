@@ -90,7 +90,7 @@ Configuration summary
 $ sudo make modules
 ```
 
-Копируем его в директорию nginx
+Копируем его в директорию Nginx
 
 ```sh
 $ sudo cp objs/ngx_pagespeed.so /etc/nginx/modules
@@ -155,7 +155,7 @@ $ sudo systemctl restart nginx
 $ systemctl restart nginx
 ```
 
-Смотрим, отрабатывает ли pagespeed
+Смотрим, отрабатывает ли PageSpeed
 
 ```sh
 $ curl -I localhost
