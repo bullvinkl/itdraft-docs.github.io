@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Решено] Очистить кеш службы SSSD"
-date: "2024-09-12"
+date: "2024-09-17"
 categories:
   - Directory-Service
 tags:
@@ -39,7 +39,7 @@ $ sudo su
 
 ## Использование утилиты `sss_cache`
 
-Устанавливаем утилиту `sss_cache`, чистим локальный кеш службы SSSD, перезапускаем службу SSSD
+Устанавливаем утилиту `sss_cache`, чистим локальный кеш, перезапускаем службу SSSD
 
 ```sh
 $ sudo apt -y install sssd-tools     # Debian-like
