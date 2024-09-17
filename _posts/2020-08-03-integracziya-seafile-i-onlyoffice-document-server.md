@@ -1,5 +1,5 @@
 ---
-title: "Интеграция SeaFile и OnlyOffice Document Server"
+title: "Интеграция Seafile и OnlyOffice Document Server"
 date: "2020-08-03"
 categories: 
   - Storage-System
@@ -9,13 +9,13 @@ tags:
   - "seafile"
 image:
   path: /commons/1334578_287d_2.jpg
-  alt: "SeaFile и OnlyOffice"
+  alt: "Seafile и OnlyOffice"
 ---
 
 > **OnlyOffice** —  бесплатный офисный пакет и экосистема приложений для совместной работы. Он состоит из онлайн-редакторов текстовых документов, электронных таблиц, презентаций, форм и PDF-файлов, а также платформы для совместной работы в комнатах.
 {: .prompt-tip }
 
-Ранее на сайте рассматривались статьи по установке сервера хранения файлов [SeaFile]({% post_url 2020-02-13-ustanovka-seafile-7-1-0-nginx-percona-na-centos-7 %}) и установке сервера редактирования документов [OnlyOffice Document Server]({% post_url 2020-07-21-ustanovka-onlyoffice-document-server-postgresql-nginx-na-centos-8 %})
+Ранее на сайте рассматривались статьи по установке сервера хранения файлов [Seafile]({% post_url 2020-02-13-ustanovka-seafile-7-1-0-nginx-percona-na-centos-7 %}) и установке сервера редактирования документов [OnlyOffice Document Server]({% post_url 2020-07-21-ustanovka-onlyoffice-document-server-postgresql-nginx-na-centos-8 %})
 
 Рассмотрим вариант интеграции этих двух сервисов
 

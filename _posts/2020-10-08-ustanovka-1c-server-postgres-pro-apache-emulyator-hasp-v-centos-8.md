@@ -570,12 +570,11 @@ $ sudo systemctl status usbhaspemul
 
 Сервер разворачивался в VirtualBox, параметры:
 
-```
-OS: Centos 8.2 dvd iso
-сеть: сетевой мост
-$ cat /etc/hosts
-192.168.11.235 server1c
+> OS: Centos 8.2 dvd iso
+> сеть: сетевой мост
+> $ cat /etc/hosts
+> 192.168.11.235 server1c
 
-В винде в drivers/etc/hosts
-192.168.11.235 server1c
-```{: .prompt-info }```
+> В винде в drivers/etc/hosts
+> 192.168.11.235 server1c
+{: .prompt-info }

@@ -164,6 +164,7 @@ $ sudo firewall-cmd --reload
 Переходим в нужную область (`realm`). Создаем клиента для OAuth2 Proxy
 
 ![](/assets/img/posts/2023/04/11/image-24.png){: w="300" }
+_Создаем клиента_
 
 ```
 General Settings:
@@ -172,6 +173,7 @@ Client ID: oauth2proxy # Понадобится при настройке OAuth2
 ```
 
 ![](/assets/img/posts/2023/04/11/image-25.png){: w="300" }
+_Настройки_
 
 ```
 Capability config:
@@ -180,6 +182,7 @@ Authentication flow: Standard flow, Direct access grants, OAuth 2.0 Device Autho
 ```
 
 ![](/assets/img/posts/2023/04/11/image-26.png){: w="300" }
+_Настройки_
 
 ```
 Login settins:
@@ -193,22 +196,26 @@ Valid redirect URIs: http://prometheus.itdraft.ru/oauth2/callback
 Копируем `Client secret`, он нам понадобится при настройке OAuth2 Proxy
 
 ![](/assets/img/posts/2023/04/11/image-28.png){: w="300" }
+_Копируем Client secret_
 
 Создаем Mapper
 
 ![](/assets/img/posts/2023/04/11/image-27.png){: w="300" }
+_Создаем Mapper_
 
 ```
 Client scopes > oauth2proxy-dedicated
 ```
 
 ![](/assets/img/posts/2023/04/11/image-29.png){: w="300" }
+_Создаем Mapper_
 
 ```
 Add mapper > By Configuration > Audience
 ```
 
 ![](/assets/img/posts/2023/04/11/image-30.png){: w="300" }
+_Audience_
 
 ```sh
 Mapper type: Audience
@@ -484,9 +491,13 @@ $ sudo firewall-cmd --reload
 Настройка завершена. Переходим на наш сайт, авторизуемся, получаем доступ
 
 ![](/assets/img/posts/2023/04/11/image-31.png){: w="300" }
+_Авторизуемся_
 
 ![](/assets/img/posts/2023/04/11/image-32.png){: w="300" }
+_Авторизуемся_
 
 ![](/assets/img/posts/2023/04/11/image-33.png){: w="300" }
+_Получаем доступ_
 
 ![](/assets/img/posts/2023/04/11/image-34.png){: w="300" }
+_Получаем доступ_

@@ -29,13 +29,15 @@ image:
 Настроим клиента в Keycloak: переходим в раздел Clients и создаем нового клиента (Create client)
 
 ![](/assets/img/posts/2023/03/09/image-9.png){: w="300" }
+_Create client_
 
 ![](/assets/img/posts/2023/03/09/image-10.png){: w="300" }
+_Настройки_
 
 ```
 General Settings
 Client type: OpenID Connect
-Client ID: seafile #Понадобится для дальнейшей настройки SeaFile
+Client ID: seafile #Понадобится для дальнейшей настройки Seafile
 
 Capability config
 Client authentication: On
@@ -46,8 +48,10 @@ Authentication flow: Standard flow
 Сохраняем, переходим в настройки клиента Seafile
 
 ![](/assets/img/posts/2023/03/09/image-11.png){: w="300" }
+_Настройки клиента_
 
 ![](/assets/img/posts/2023/03/09/image-12.png){: w="300" }
+_Client secret_
 
 ```
 Вкладка Settings:
@@ -57,7 +61,7 @@ Valid redirect URIs: http://seafile.itdraft.ru/*
 
 Вкладка Credentials
 Client Authenticator: Client Id and Secret
-Client secret: ... #Понадобится для дальнейшей настройки SeaFile
+Client secret: ... #Понадобится для дальнейшей настройки Seafile
 ```
 
 Настройка Keycloak завершена
@@ -95,6 +99,7 @@ OAUTH_ATTRIBUTE_MAP = {
 $ sudo systemctl restart seafile seahub
 ```
 
-В web-интерфейсе должна появиться ссылка "Единая точка входа", при нажатии на которую нас перебросит в интерфейс авторизации Keycloak
+В Web-интерфейсе должна появиться ссылка "Единая точка входа", при нажатии на которую нас перебросит в интерфейс авторизации Keycloak
 
 ![](/assets/img/posts/2023/03/09/image-13.png){: w="300" }
+_Единая точка входа_

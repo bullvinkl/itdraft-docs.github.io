@@ -1,5 +1,5 @@
 ---
-title: "Установка SeaFile 7.1.0 + Nginx + Percona на Centos 7"
+title: "Установка Seafile 7.1.0 + Nginx + Percona на Centos 7"
 date: "2020-02-13"
 categories: 
   - Storage-System
@@ -13,7 +13,7 @@ image:
   alt: "Установка SeaFile"
 ---
 
-> **SeaFile** - это кроссплатформенная система программного обеспечения для размещения файлов с открытым исходным кодом. Файлы хранятся на центральном сервере и могут быть синхронизированы с персональными компьютерами и мобильными устройствами через приложения.
+> **Seafile** - это кроссплатформенная система программного обеспечения для размещения файлов с открытым исходным кодом. Файлы хранятся на центральном сервере и могут быть синхронизированы с персональными компьютерами и мобильными устройствами через приложения.
 {: .prompt-tip }
 
 ## Подготовка
@@ -200,7 +200,7 @@ $ sudo ln -s /etc/nginx/sites-available/seafile.conf /etc/nginx/sites-enabled/se
 $ sudo nginx -t
 ```
 
-Добавляем Nginx в автозагрузку и запускаем web-сервер
+Добавляем Nginx в автозагрузку и запускаем Web-сервер
 
 ```sh
 $ sudo systemctl enable --now nginx
@@ -208,7 +208,7 @@ $ sudo systemctl enable --now nginx
 
 ## Firewall
 
-Настройка firewall, открываем порты
+Настройка Firewall, открываем порты
 
 ```sh
 $ sudo firewall-cmd --zone=public --add-service={http,https} --permanent
@@ -223,7 +223,7 @@ $ sudo firewall-cmd --reload
 $ sudo yum -y install https://repo.percona.com/yum/percona-release-latest.noarch.rpm
 ```
 
-Устанавливаем Percona-Server
+Устанавливаем Percona Server
 
 ```sh
 $ sudo yum -y install Percona-Server-server-57
@@ -286,7 +286,7 @@ $ sudo su - seafile
 $ mkdir -p /opt/seafile/installed
 ```
 
-Переходим в директорию, где будет установлен SeaFile
+Переходим в директорию, где будет установлен Seafile
 
 ```sh
 $ cd
@@ -423,7 +423,7 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 ```
 
-Скрипт для перезапуска SeaFile
+Скрипт для перезапуска Seafile
 
 ```sh
 $ sudo nano /usr/local/sbin/seafile-server-restart
