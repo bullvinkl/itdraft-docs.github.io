@@ -2,7 +2,6 @@
 # the default layout is 'page'
 title: "Познавательно"
 icon: fa fa-coffee
-toc: true
 order: 4
 ---
 

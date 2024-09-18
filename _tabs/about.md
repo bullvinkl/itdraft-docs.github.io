@@ -2,7 +2,6 @@
 # the default layout is 'page'
 title: "О сайте"
 icon: fas fa-info-circle
-toc: true
 order: 5
 ---
 
