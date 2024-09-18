@@ -3,7 +3,7 @@
 title: "О сайте"
 icon: fas fa-info-circle
 toc: true
-order: 4
+order: 5
 ---
 
 ![](/commons/computer.jpg)
