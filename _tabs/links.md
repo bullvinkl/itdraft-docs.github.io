@@ -21,4 +21,7 @@ order: 4
 - Группа ВК [<i class="fa-brands fa-vk"></i> Blackbird Garage](https://vk.com/blackbird_garage) - мотомастерская, обслуживании японской мототехники.
 - Группа ВК [<i class="fa-brands fa-vk"></i> Типичный Сисадмин](https://vk.com/sysodmins) - паблик про весёлую жизнь сисадминов и всех айтишников.
 - Группа ВК [<i class="fa-brands fa-vk"></i> /dev/null](https://vk.com/tnull) - юмор о программировании и всём, что связано с разработкой.
-- Web-сайт [<i class="fa-solid fa-cloud"></i> FontAwesome](https://fontawesome.com/search) - набор инструментов для шрифтов и значков, основанный на CSS и Less.
+- Web-сайт [<i class="fa-solid fa-cart-shopping"></i> Геодезическое оборудование](https://alfa-consulting.ru/) - консалтинговые услуги и поставка геодезического оборудования
+- Web-сервис [<i class="fa-solid fa-wrench"></i> FontAwesome](https://fontawesome.com/search) - набор инструментов для шрифтов и значков, основанный на CSS и Less.
+- Web-сервис [<i class="fa-solid fa-wrench"></i> IPcalc](https://jodies.de/ipcalc) - сервис по подбору маски и ip адреса сети.
+- Web-сервис [<i class="fa-solid fa-wrench"></i> Regex101](https://regex101.com/) - сервис по составлению регулярных выражений.
