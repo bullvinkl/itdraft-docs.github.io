@@ -7,8 +7,16 @@ body {
 }
 
 h5, h4, h3, h2, h1 {
-    scroll-margin: 10px;
+    // scroll-margin: 10px;
 }
+
+h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -4rem;
+    height: 3.5rem;
+    visibility: hidden;
+  }
 
 #topbar-wrapper {
     position: sticky;
