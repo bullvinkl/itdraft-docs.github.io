@@ -6,15 +6,16 @@ body {
     font-family: PTRootUI-Regular, sans-serif;
 }
 
-#h5, h4, h3, h2, h1 {
-#    scroll-margin: 50px;
-#}
+h5, h4, h3, h2, h1 {
+    scroll-margin: 10px;
+}
 
 #topbar-wrapper {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--main-bg);
+    background-color: color-mix(in srgb, var(--main-bg), transparent 7%);
+    box-shadow: 0 0.3rem 1rem -0.6rem rgba(0, 0, 0, 0.05), inset 0 -0.1px 0 rgba(0, 0, 0, 0.15);
 }
 .access {
     top: 3rem;
