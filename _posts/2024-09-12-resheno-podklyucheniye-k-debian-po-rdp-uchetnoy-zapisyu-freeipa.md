@@ -36,3 +36,20 @@ _Службы HBAC_
 
 ![](/assets/img/posts/2024/09/12/freeipa-hbac3.png){: w="300" }
 _Правило HBAC_
+
+## UPD 23.09.2024
+
+При подключении по RDP появляется ошибка
+
+> Unable to contact settings server
+> Failed to execute child process “dbus-launch”
+{: .prompt-danger }
+
+Решение:
+
+```sh
+$ sudo apt install dbus-x11
+```
+
+![](/assets/img/posts/2024/09/12/unable-to-connect.png){: w="300" }
+_Failed to execute child process dbus-launch_
