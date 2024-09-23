@@ -184,5 +184,8 @@ _Сертификат_
 
 ## PG BootCamp 2024
 
-![PG BootCamp 2024](/assets/img/edu/pgbc-2024.png){: w="300" }
-_Конференция практических занятий сообщества PostgreSQL_
+![PG BootCamp Kazan 2024](/assets/img/edu/pgbc-kazan-2024.png){: w="300" }
+_PG BootCamp Russia 2024 в г.Казань_
+
+![PG BootCamp Minsk 2024](/assets/img/edu/pgbc-minsk-2024.png){: w="300" }
+_PG BootCamp Russia 2024 в г.Минск_
