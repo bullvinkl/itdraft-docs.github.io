@@ -2,7 +2,7 @@
 layout: post
 title: "[Решено] Netbox – backup, restore, upgrade"
 # description: ""
-date: 2023-08-20 21:36 +0300
+date: 2023-12-20 21:36 +0300
 categories:
   - Asset-Management
 tags:
