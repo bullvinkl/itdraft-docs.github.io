@@ -256,8 +256,8 @@ groups:
     labels:
       severity: critical
     annotations:
-      description: ' {{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
-    summary: 'Instance {{ $labels.instance }} down'
+      description: '{ {$labels.instance} } of job { {$labels.job} } has been down for more than 1 minute.'
+    summary: 'Instance { {$labels.instance} } down'
 
 - name: Endpoint.rules
   rules:
@@ -267,8 +267,11 @@ groups:
       labels:
         severity: critical
       annotations:
-        summary: 'Endpoint {{ $labels.instance }} down' 
+        summary: 'Endpoint { {$labels.instance} } down' 
 ```
+
+> Фигурные скобки `{ {` и `} }` следует писать без пробела между ними. Движок сайта некорректно обрабатывает двойные фмгурные скобки.
+{: .prompt-info }
 
 ```sh
 $ sudo nano /etc/prometheus/rules.d/system.rules.yml
@@ -284,9 +287,9 @@ groups:
       severity: "critical"
     annotations:
       title: "Disk Usage"
-      description: 'Partition : {{$labels.mountpoint}} '
-      summary: "Disk usage is {{humanize $value}}% "
-      host: " {{$labels.instance}} " 
+      description: 'Partition : { {$labels.mountpoint} }'
+      summary: "Disk usage is { {humanize $value} }% "
+      host: " { {$labels.instance} } " 
 
 # Память забита
 - name: Memory-usage
@@ -298,8 +301,8 @@ groups:
     annotations:
       title: "Memory Usage"
       description: 'Memory usage threshold set to 80%.'
-      summary: "Memory usage is {{humanize $value}}% "
-      host: " {{$labels.instance}} "
+      summary: "Memory usage is { {humanize $value} }%"
+      host: "{ {$labels.instance} }"
 
 # Процессор загружен
 - name: CPU-Hight-Load
@@ -311,9 +314,12 @@ groups:
       severity: "critical"
     annotations:
       title: "Memory Usage"
-      summary: "High system load: {{ $value | printf \"%.2f\" }}% "
-      host: " {{$labels.instance}} " 
+      summary: "High system load: { {$value | printf \"%.2f\"} }%"
+      host: "{ {$labels.instance} }" 
 ```
+
+> Фигурные скобки `{ {` и `} }` следует писать без пробела между ними. Движок сайта некорректно обрабатывает двойные фмгурные скобки.
+{: .prompt-info }
 
 ```sh
 $ sudo nano /etc/prometheus/rules.d/services.rules.yml
@@ -326,9 +332,12 @@ groups:
       expr: node_systemd_unit_state{state="active"} == 0
       for: 1s
       annotations:
-        summary: "Instance {{ $labels.instance }} is down"
- description: " {{ $labels.instance }} of job {{ $labels.job }} is down. " 
+        summary: "Instance { {$labels.instance} } is down"
+description: "{ {$labels.instance} } of job { {$labels.job} } is down." 
 ```
+
+> Фигурные скобки `{ {` и `} }` следует писать без пробела между ними. Движок сайта некорректно обрабатывает двойные фмгурные скобки.
+{: .prompt-info }
 
 Добавляем список правил в Prometheus
 

@@ -129,10 +129,13 @@ $ nano playbook.yml
     vault_url: https://192.168.11.200
     vault_token: s.7JjtwBWjKrtNsP2pYbwNv9er
     vault_secret: ansible/serverlab/production/db
-    serverlab_db: " {{ lookup('hashi_vault', 'secret= {{ vault_secret }} token= {{ vault_token }} url= {{ vault_url }}') }} "
+    serverlab_db: "{ {lookup('hashi_vault', 'secret={ {vault_secret} } token={ {vault_token} } url={ {vault_url} }')} }"
   roles:
     - wordpress
 ```
+
+> Фигурные скобки `{ {` и `} }` следует писать без пробела между ними. Движок сайта некорректно обрабатывает двойные фмгурные скобки.
+{: .prompt-info }
 
 ```sh
 $ mkdir -p roles/wordpress/{tasks,templates}
@@ -148,24 +151,30 @@ $ nano roles/wordpress/tasks/main.yml
     src: wp-config.php.j2
     dest: /tmp/wp-config.php
   with_items:
-    - "{{ serverlab_db }}"
+    - "{ {serverlab_db} }"
   tags:
     - update_wp_config
 
 - name: Return all secrets from a path
   debug:
-    msg: " {{ lookup('hashi_vault', 'secret= {{ vault_secret }} token= {{ vault_token }} url= {{ vault_url }} validate_certs=False') }} "
+    msg: "{ {lookup('hashi_vault', 'secret={ {vault_secret} } token={ {vault_token} } url={ {vault_url} } validate_certs=False')} }"
   tags:
     - test
 ```
 
+> Фигурные скобки `{ {` и `} }` следует писать без пробела между ними. Движок сайта некорректно обрабатывает двойные фмгурные скобки.
+{: .prompt-info }
+
 ```sh
 $ nano roles/wordpress/templates/wp-config.php.j2
-define('DB_NAME', ' {{ serverlab_db.dbname }} ');
-define('DB_USER', ' {{ serverlab_db.dbusername }} ');
-define('DB_PASSWORD', ' {{ serverlab_db.dbpassword }} ');
-define('DB_HOST', ' {{ serverlab_db.dbhost }} ');
+define('DB_NAME', '{ {serverlab_db.dbname} }');
+define('DB_USER', '{ {serverlab_db.dbusername} }');
+define('DB_PASSWORD', '{ {serverlab_db.dbpassword} }');
+define('DB_HOST', '{ {serverlab_db.dbhost} }');
 ```
+
+> Фигурные скобки `{ {` и `} }` следует писать без пробела между ними. Движок сайта некорректно обрабатывает двойные фмгурные скобки.
+{: .prompt-info }
 
 Запускаем плэйбук
 
