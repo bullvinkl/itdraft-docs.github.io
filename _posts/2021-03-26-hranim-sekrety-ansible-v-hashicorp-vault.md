@@ -120,6 +120,8 @@ vault.example.local ansible_ssh_host=127.0.0.1
 
 ```sh
 $ nano playbook.yml
+```
+```yaml
 ---
 - hosts: all
   connection: local
@@ -138,6 +140,8 @@ $ mkdir -p roles/wordpress/{tasks,templates}
 
 ```sh
 $ nano roles/wordpress/tasks/main.yml
+```
+```yaml
 ---
 - name: Configure WordPress
   template:

@@ -245,6 +245,8 @@ $ sudo mkdir /etc/prometheus/rules.d/
 
 ```sh
 $ sudo nano /etc/prometheus/rules.d/alert.rules.yml
+```
+```yaml
 groups:
 - name: Instance.rules
   rules:
@@ -270,6 +272,8 @@ groups:
 
 ```sh
 $ sudo nano /etc/prometheus/rules.d/system.rules.yml
+```
+```yaml
 groups:
 # Диск забит
 - name: Disk-usage
@@ -313,6 +317,8 @@ groups:
 
 ```sh
 $ sudo nano /etc/prometheus/rules.d/services.rules.yml
+```
+```yaml
 groups:
 - name: services.rules
   rules:
@@ -328,6 +334,8 @@ groups:
 
 ```sh
 $ sudo nano /etc/prometheus/prometheus.yml
+```
+```yaml
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
@@ -374,6 +382,8 @@ $ sudo systemctl status prometheus
 
 ```sh
 $ sudo nano /etc/alertmanager/alertmanager.yml
+```
+```yaml
 global:
   resolve_timeout: 5m
 #  smtp_smarthost: 'smtp.gmail.com:587'
