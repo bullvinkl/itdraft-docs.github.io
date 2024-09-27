@@ -129,7 +129,7 @@ $ nano playbook.yml
     vault_url: https://192.168.11.200
     vault_token: s.7JjtwBWjKrtNsP2pYbwNv9er
     vault_secret: ansible/serverlab/production/db
-    serverlab_db: "{{ lookup('hashi_vault', 'secret={{ vault_secret }} token={{ vault_token }} url={{ vault_url }}') }}"
+    serverlab_db: " {{ lookup('hashi_vault', 'secret= {{ vault_secret }} token= {{ vault_token }} url= {{ vault_url }}') }} "
   roles:
     - wordpress
 ```
@@ -154,17 +154,17 @@ $ nano roles/wordpress/tasks/main.yml
 
 - name: Return all secrets from a path
   debug:
-    msg: "{{ lookup('hashi_vault', 'secret={{ vault_secret }} token={{ vault_token }} url={{ vault_url }} validate_certs=False') }}"
+    msg: " {{ lookup('hashi_vault', 'secret= {{ vault_secret }} token= {{ vault_token }} url= {{ vault_url }} validate_certs=False') }} "
   tags:
     - test
 ```
 
 ```sh
 $ nano roles/wordpress/templates/wp-config.php.j2
-define('DB_NAME', '{{ serverlab_db.dbname }}');
-define('DB_USER', '{{ serverlab_db.dbusername }}');
-define('DB_PASSWORD', '{{ serverlab_db.dbpassword }}');
-define('DB_HOST', '{{ serverlab_db.dbhost }}');
+define('DB_NAME', ' {{ serverlab_db.dbname }} ');
+define('DB_USER', ' {{ serverlab_db.dbusername }} ');
+define('DB_PASSWORD', ' {{ serverlab_db.dbpassword }} ');
+define('DB_HOST', ' {{ serverlab_db.dbhost }} ');
 ```
 
 Запускаем плэйбук

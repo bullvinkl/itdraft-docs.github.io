@@ -256,7 +256,7 @@ groups:
     labels:
       severity: critical
     annotations:
-      description: '{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
+      description: ' {{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
     summary: 'Instance {{ $labels.instance }} down'
 
 - name: Endpoint.rules
@@ -284,9 +284,9 @@ groups:
       severity: "critical"
     annotations:
       title: "Disk Usage"
-      description: 'Partition : {{$labels.mountpoint}}'
-      summary: "Disk usage is {{humanize $value}}%"
-      host: "{{$labels.instance}}" 
+      description: 'Partition : {{$labels.mountpoint}} '
+      summary: "Disk usage is {{humanize $value}}% "
+      host: " {{$labels.instance}} " 
 
 # Память забита
 - name: Memory-usage
@@ -298,8 +298,8 @@ groups:
     annotations:
       title: "Memory Usage"
       description: 'Memory usage threshold set to 80%.'
-      summary: "Memory usage is {{humanize $value}}%"
-      host: "{{$labels.instance}}"
+      summary: "Memory usage is {{humanize $value}}% "
+      host: " {{$labels.instance}} "
 
 # Процессор загружен
 - name: CPU-Hight-Load
@@ -311,8 +311,8 @@ groups:
       severity: "critical"
     annotations:
       title: "Memory Usage"
-      summary: "High system load: {{ $value | printf \"%.2f\" }}%"
-      host: "{{$labels.instance}}" 
+      summary: "High system load: {{ $value | printf \"%.2f\" }}% "
+      host: " {{$labels.instance}} " 
 ```
 
 ```sh
@@ -327,7 +327,7 @@ groups:
       for: 1s
       annotations:
         summary: "Instance {{ $labels.instance }} is down"
- description: "{{ $labels.instance }} of job {{ $labels.job }} is down." 
+ description: " {{ $labels.instance }} of job {{ $labels.job }} is down. " 
 ```
 
 Добавляем список правил в Prometheus
