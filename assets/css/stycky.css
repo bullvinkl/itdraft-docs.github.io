@@ -28,3 +28,11 @@ h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before {
 .access {
     top: 3rem;
 }
+
+.fa-adjust:before, .fa-circle-half-stroke:before {
+    content: "\f186";
+}
+
+html[data-mode=dark] .fa-adjust:before, .fa-circle-half-stroke:before {
+    content: "\f185";
+}
