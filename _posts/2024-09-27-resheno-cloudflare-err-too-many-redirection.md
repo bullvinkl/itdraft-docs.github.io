@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Решено] Cloudflare - ERR_TOO_MANY_REDIRECTS"
+title: "[Решено] Cloudflare - TOO MANY REDIRECTS"
 date: "2024-09-27"
 categories:
   - Manuals
