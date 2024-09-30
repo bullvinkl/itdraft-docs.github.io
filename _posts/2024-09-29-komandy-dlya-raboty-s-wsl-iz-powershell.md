@@ -19,7 +19,7 @@ image:
 
 Смотрим список установленных дистрибутивов
 
-```powershell
+```sh
 PS> wsl --list --verbose
 
 или
@@ -31,13 +31,13 @@ PS> wsl -l -v
 
 Завершить работу всех запущенных дистрибутивов
 
-```powershell
+```sh
 PS> wsl --shutdown
 ```
 
 Завершить работу определенного дистрибутива
 
-```powershell
+```sh
 PS> wsl --terminate <Distribution Name>
 
 или
@@ -47,13 +47,13 @@ PS> wsl -t <Distribution Name>
 
 Проверка состояния WSL
 
-```powershell
+```sh
 PS> wsl --version
 ```
 
 Запустить определенный дистрибутив в WSL и подключиться к нему
 
-```powershell
+```sh
 PS> wsl --distribution <Distribution Name>
 
 или
@@ -63,32 +63,32 @@ PS> wsl -d <Distribution Name>
 
 Запуск определенного дистрибутива и подключиться определенным пользователем
 
-```powershell
+```sh
 PS> wsl --distribution <Distribution Name> --user <User Name>
 ```
 
 Определение IP-адреса
 
-```powershell
+```sh
 PS> wsl hostname -I
 ```
 
 Подключение диска или устройства
 
-```powershell
+```sh
 PS> wsl --mount <DiskPath>
 PS> wsl --mount -t <Filesystem>
 ```
 
 Отключение диска
 
-```powershell
+```sh
 PS> wsl --unmount <DiskPath>
 ```
 
 Смотреть список доступных дистрибутивов Linux в магазине MS Store
 
-```powershell
+```sh
 PS> wsl --list --online
 
 или
@@ -98,19 +98,19 @@ PS> wsl -l -o
 
 Установить дистрибутив Linux
 
-```powershell
+```sh
 PS> wsl --install -d <Distribution Name>
 ```
 
 Назначить дефолтный дистрибутив
 
-```powershell
+```sh
 PS> wsl --setdefault Ubuntu
 ```
 
 Не запускать дистрибутив после установки
 
-```powershell
+```sh
 PS> wsl --install -d <Distribution Name> --no-launch
 
 или
@@ -120,13 +120,13 @@ PS> wsl --install -d <Distribution Name> -n
 
 Удалить дистрибутив или отмена регистрации
 
-```powershell
+```sh
 PS> wsl --unregister <Distribution Name>
 ```
 
 Экспорт дистрибутива, т.е. моментальный снимок
 
-```powershell
+```sh
 PS> wsl --export <Distribution Name> <FileName>
 ```
 

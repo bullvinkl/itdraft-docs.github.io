@@ -24,7 +24,7 @@ image:
 
 Смотрим список доступных дистрибутивов
 
-```powershell
+```sh
 PS> wsl -l -o
 ...
 NAME                            FRIENDLY NAME
@@ -46,7 +46,7 @@ openSUSE-Tumbleweed             openSUSE Tumbleweed
 
 Устанавливаем дистрибутив Ubuntu 22.04 LTS
 
-```powershell
+```sh
 PS> wsl --install -d Ubuntu-22.04
 Запуск Ubuntu 22.04 LTS...
 Installing, this may take a few minutes...

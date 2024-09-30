@@ -20,7 +20,7 @@ image:
 
 Создаем проект, куда будет скачен образ, и куда будут установлены дистрибутивы
 
-```powershell
+```sh
 PS> cd
 PS> mkdir wsl
 PS> cd wsl
@@ -28,7 +28,7 @@ PS> cd wsl
 
 Скачиваем образ
 
-```powershell
+```sh
 PS> curl (("https://cloud-images.ubuntu.com",
 "releases/24.04/release/",
 "ubuntu-24.04-server-cloudimg-amd64-root.tar.xz") -join "/") `
@@ -37,7 +37,7 @@ PS> curl (("https://cloud-images.ubuntu.com",
 
 Для установки дистрибутивов, будем использовать следующую команду
 
-```powershell
+```sh
 PS> wsl --import <Distribution Name> <Installation Folder> <Ubuntu WSL2 Image Tarball path>
 ```
 
@@ -49,24 +49,24 @@ PS> wsl --import <Distribution Name> <Installation Folder> <Ubuntu WSL2 Image Ta
 
 Создаем каталоги, куда будем устанавливать дистрибутивы
 
-```powershell
+```sh
 PS> mkdir Ubuntu-1,Ubuntu-2
 ```
 
 Устанавливаем первый экземпляр Ubuntu 24.04 LTS
 
-```powershell
+```sh
 PS> wsl --import Ubuntu-24.04-1 .\Ubuntu-1 .\ubuntu-24.04-wsl-root-tar.gz
 ```
 
 Устанавливаем второй экземпляр Ubuntu 24.04 LTS
 
-```powershell
+```sh
 PS> wsl --import Ubuntu-24.04-2 .\Ubuntu-2 .\ubuntu-24.04-wsl-root-tar.gz
 ```
 
 Проверяем
-```powershell
+```sh
 PS> wsl -l -v
   NAME              STATE           VERSION
 * Ubuntu            Stopped         2
@@ -76,13 +76,13 @@ PS> wsl -l -v
 
 Подключаемся
 
-```powershell
+```sh
 PS> wsl -d Ubuntu-22.04-1
 ```
 
 Если какой-то дистрибутив не нужен, удаляем его
 
-```powershell
+```sh
 PS> wsl --unregister Ubuntu-24.04-1
 ```
 
@@ -90,7 +90,7 @@ PS> wsl --unregister Ubuntu-24.04-1
 
 Смотрим список доступных дистрибутивов
 
-```powershell
+```sh
 PS> wsl -l -o
 ...
 NAME                            FRIENDLY NAME
@@ -112,7 +112,7 @@ openSUSE-Tumbleweed             openSUSE Tumbleweed
 
 Устанавливаем дистрибутив Ubuntu 22.04 LTS
 
-```powershell
+```sh
 PS> wsl --install -d Ubuntu-22.04
 Запуск Ubuntu 22.04 LTS...
 Installing, this may take a few minutes...
@@ -134,7 +134,7 @@ $ exit
 
 Смотрим наши установленные дистрибутивы
 
-```powershell
+```sh
 PS> wsl -l -v
   NAME            STATE           VERSION
 * Ubuntu          Stopped         2
@@ -143,15 +143,15 @@ PS> wsl -l -v
 
 Создаем проект, куда будет скачен образ, и куда будут установлены дистрибутивы
 
-```powershell
-> cd
-> mkdir wsl
-> cd wsl
+```sh
+PS> cd
+PS> mkdir wsl
+PS> cd wsl
 ```
 
 Экспортируем установленный образ Ubuntu-22.04
 
-```powershell
+```sh
 PS> wsl --export Ubuntu-22.04 wsl-original-ubuntu
 ```
 
@@ -160,7 +160,7 @@ PS> wsl --export Ubuntu-22.04 wsl-original-ubuntu
 
 Создаем новые образы, на основе того, который мы только что экспортировали
 
-```powershell
+```sh
 PS> wsl --import Ubuntu01 Ubuntu01 .\wsl-original-ubuntu
 Выполняется импорт. Это может занять несколько минут.
 Операция успешно завершена.
@@ -172,7 +172,7 @@ PS> wsl --import Ubuntu02 Ubuntu02 .\wsl-original-ubuntu
 
 Проверяем
 
-```powershell
+```sh
 PS> wsl -l -v
   NAME            STATE           VERSION
 * Ubuntu          Stopped         2
@@ -183,6 +183,6 @@ PS> wsl -l -v
 
 Подключаемся под нашим пользователем `user`
 
-```powershell
+```sh
 PS> wsl -d Ubuntu01 --user user
 ```
