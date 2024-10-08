@@ -16,7 +16,7 @@ order: 4
 - Телеграм канал [<i class="fa-brands fa-telegram"></i> Мониторим ИТ](https://t.me/monitorim_it) - канал о мониторинге ИТ-инфраструктуры и приложениях.
 - Телеграм канал [<i class="fa-brands fa-telegram"></i> Elastic Stack recipes](https://t.me/elasticstack_ru) - канал о системах логирования ELK, OpenSearch.
 - Телеграм канал [<i class="fa-brands fa-telegram"></i> linkmeup](https://t.me/linkmeup_podcast) - что-то it-шное :)
-- Блог [<i class="fa-solid fa-cloud"></i> Олег Казанин](https://blog.oakazanin.ru/) - знания и опыт в сфере IT-технологий.
+- Блог [<i class="fa-solid fa-cloud"></i> Олег Казанин](https://oakazanin.ru/) - знания и опыт в сфере IT-технологий.
 - Группа ВК [<i class="fa-brands fa-vk"></i> Blackbird Garage](https://vk.com/blackbird_garage) - мотомастерская, обслуживании японской мототехники.
 - Группа ВК [<i class="fa-brands fa-vk"></i> Типичный Сисадмин](https://vk.com/sysodmins) - паблик про весёлую жизнь сисадминов и всех айтишников.
 - Группа ВК [<i class="fa-brands fa-vk"></i> /dev/null](https://vk.com/tnull) - юмор о программировании и всём, что связано с разработкой.
