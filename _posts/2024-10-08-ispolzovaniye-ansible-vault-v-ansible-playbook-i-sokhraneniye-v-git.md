@@ -72,7 +72,7 @@ $ ansible-vault edit user_passwords.yml
 Vault password: superpass
 ```
 
-Что бы сохранить изменения в репозитории, выполняем `git commit` и `git push` их
+Что бы сохранить изменения в репозитории, выполняем `git commit` и `git push`
 ```sh
 $ git add .
 $ git commit -m "add ansible-vault"
@@ -86,4 +86,12 @@ Vault password:
 ```
 
 В данном примере я добавил параметр `--ask-vault-pass`. В результате, при выполнении `ansible-playbook` запросился пароль.
-Ключ так же можно сохранить в отдельный файл и использовать параметр `--vault-password-file=<путь к файлу>`
+Ключ так же можно сохранить в отдельный файл (`$ echo "MySuperPass" > ~/.ansible_pass.txt`) и использовать параметр `--vault-password-file="~/.ansible_pass.txt"`
+
+## UPD 2024-10-08
+
+Полезные команды для работы с Ansible-vault:
+
+- `$ ansible-vault encrypt user_passwords.yml`  - зашифровать имеющийся файл
+- `$ ansible-vault decrypt user_passwords.yml`  - расшифровать файл, вернуть в plaintext
+- `$ ansible-vault rekey user_passwords.yml`  - поменять пароль шифрования
