@@ -49,7 +49,8 @@ $ sudo apt -y install docker-ce docker-ce-cli containerd.io docker-compose-plugi
 
 Добавляем нашего пользователя в группу `docker`
 ```sh
-$ sudo usermod -aG docker $(whoami)$ newgrp docker
+$ sudo usermod -aG docker $(whoami)
+$ newgrp docker
 ```
 
 ## Установка Docker Compose
