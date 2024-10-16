@@ -3,8 +3,7 @@ layout: post
 title: "Установка Wiki.js в Docker Compose и подключение Elasticsearch, Keycloak, Git"
 date: "2024-10-16"
 categories:
-  - DevOps
-  - Development
+  - Content-Management
 tags:
   - wiki.js
   - docker-compose
