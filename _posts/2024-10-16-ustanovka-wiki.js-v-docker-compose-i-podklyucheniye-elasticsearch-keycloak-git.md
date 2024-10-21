@@ -5,14 +5,14 @@ date: "2024-10-16"
 categories:
   - Content-Management
 tags:
-  - wiki.js
+  - wiki
   - docker-compose
   - elasticsearch
   - keycloak
   - git
 image:
   path: /commons/89df389c8b4e91e605d775dc0f7f85ea.jpg
-  alt: "Установка Wiki.js как Docker Compose и подключение Elasticsearch, Keycloak, Git"
+  alt: "Установка Wiki.js в Docker Compose и подключение Elasticsearch, Keycloak, Git"
 ---
 
 > **Wiki.js** - это вики-движок с открытым исходным кодом, написанный на языке JavaScript и использующий Node.js как основу. Он позволяет создавать и управлять веб-вики, использующими Markdown для форматирования текста.
@@ -21,8 +21,8 @@ image:
 
 ## Установка Docker и Docker Compose
 
-- [Устанавливаем Docker и Docker Compose в Debian]({% post_url 2022-11-15-svyazka-wordpress-v-docker-subd-lokalno-v-debian-11 %}) была рассмотрена в одной из предыдущих статей.
-- [Устанавливаем Docker и Docker Compose в RHEL-like дистрибутиве]({% post_url 2023-02-07-docker-private-registry-ssl-s-avtorizaciej-i-portainer-v-rocky-linux %}) так же была рассмотрена в одной из предыдущих статей.
+- [Установка Docker и Docker Compose в Debian]({% post_url 2022-11-15-svyazka-wordpress-v-docker-subd-lokalno-v-debian-11 %}) была рассмотрена в одной из предыдущих статей.
+- [Установка Docker и Docker Compose в RHEL-like дистрибутиве]({% post_url 2023-02-07-docker-private-registry-ssl-s-avtorizaciej-i-portainer-v-rocky-linux %}) так же была рассмотрена в одной из предыдущих статей.
 
 ## Установка Wiki.js
 
@@ -115,6 +115,9 @@ _Настройки Elasticsearch_
 Поиск Elasticsearch подключен, можно проверять
 
 ## Подключаем авторизацию Keycloak
+
+- [Установка Keycloak + PostgeSQL в Linux]({% post_url 2022-08-29-ustanovka-keycloak-i-postgesql-v-linux-centos-rocky-debian %}) была рассмотрена в одной из предыдущих статей.
+- Список статей из категории [Keycloak](/tags/keycloak/)
 
 На стороне Keycloak сервера создаем клиента со следующими параметрами
 
