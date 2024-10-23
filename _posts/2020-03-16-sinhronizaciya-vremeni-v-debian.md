@@ -82,3 +82,15 @@ Mon Mar 16 09:08:17 MSK 2020
 ```sh
 $ echo 'NTP=192.168.1.1 192.168.1.2' | sudo tee -a /etc/systemd/timesyncd.conf > /dev/null
 ```
+
+## UPD 23.10.2024
+
+При выполнении команды `sudo timedatectl set-ntp true` появляется ошибка:
+```
+Failed to set ntp: NTP not supported
+```
+
+Решение
+```bash
+$ sudo apt install systemd-timesyncd
+```
