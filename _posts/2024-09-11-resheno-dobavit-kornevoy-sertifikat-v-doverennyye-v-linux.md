@@ -30,7 +30,7 @@ $ sudo update-ca-certificates
 Копируем наш корневой сертификат в каталог `/etc/pki/ca-trust/source/anchors` и обновляем индекс сертификатов
 
 ```bash
-$ sudo mv ./ca-gge-ib.crt /etc/pki/ca-trust/source/anchors/
+$ sudo mv ./ca-itdraft.crt /etc/pki/ca-trust/source/anchors/
 $ sudo update-ca-trust
 ```
 
