@@ -21,8 +21,8 @@ image:
 
 ## Установка Docker и Docker Compose
 
-- [Установка Docker и Docker Compose в Debian]({% post_url 2022-11-15-svyazka-wordpress-v-docker-subd-lokalno-v-debian-11 %}) была рассмотрена в одной из предыдущих статей.
-- [Установка Docker и Docker Compose в RHEL-like дистрибутиве]({% post_url 2023-02-07-docker-private-registry-ssl-s-avtorizaciej-i-portainer-v-rocky-linux %}) так же была рассмотрена в одной из предыдущих статей.
+- [Установка Docker и Docker Compose в Debian]({% post_url 2022-11-15-svyazka-wordpress-v-docker-subd-lokalno-v-debian-11 %}){:target="_blank"} была рассмотрена в одной из предыдущих статей.
+- [Установка Docker и Docker Compose в RHEL-like дистрибутиве]({% post_url 2023-02-07-docker-private-registry-ssl-s-avtorizaciej-i-portainer-v-rocky-linux %}){:target="_blank"} так же была рассмотрена в одной из предыдущих статей.
 
 ## Установка Wiki.js
 

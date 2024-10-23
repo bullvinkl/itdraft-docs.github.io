@@ -16,13 +16,25 @@ image:
 > Корневой сертификат (CA) - это электронный документ, который подписывает центром сертификации SSL-сертификаты, выдаваемые для доменных имен. Корневой сертификат является частью ключа SSL и гарантирует, что выдавшая его организация верифицирована и легальна.
 {: .prompt-tip }
 
-На примере Ubuntu, копируем наш корневой сертификат в формате `PEM` (сертификат начинается на `----BEGIN CERTIFICATE----`) в каталог `/usr/local/share/ca-certificates` и меняем расширение на `.crt`.
+## Для Debian-like дистрибутивов
 
-Выполняем команду
+Копируем наш корневой сертификат в формате `PEM` (сертификат начинается на `----BEGIN CERTIFICATE----`) в каталог `/usr/local/share/ca-certificates` и обновляем индекс сертификатов
 
-```sh
+```bash
+$ sudo mv ./ca-itdraft.crt /usr/local/share/ca-certificates/
 $ sudo update-ca-certificates
 ```
+
+## Для RHEL-like дистрибутивов
+
+Копируем наш корневой сертификат в каталог `/etc/pki/ca-trust/source/anchors` и обновляем индекс сертификатов
+
+```bash
+$ sudo mv ./ca-gge-ib.crt /etc/pki/ca-trust/source/anchors/
+$ sudo update-ca-trust
+```
+
+## Проверка
 
 Вывод команды:
 ```

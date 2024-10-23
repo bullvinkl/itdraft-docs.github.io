@@ -24,8 +24,8 @@ image:
 
 ## Настройка Keycloak
 
-- [Установка Keycloak + PostgeSQL в Linux]({% post_url 2022-08-29-ustanovka-keycloak-i-postgesql-v-linux-centos-rocky-debian %}) была рассмотрена в одной из предыдущих статей.
-- Список статей из категории [Keycloak](/tags/keycloak/)
+- [Установка Keycloak + PostgeSQL в Linux]({% post_url 2022-08-29-ustanovka-keycloak-i-postgesql-v-linux-centos-rocky-debian %}){:target="_blank"} была рассмотрена в одной из предыдущих статей.
+- Список статей из категории [Keycloak](/tags/keycloak/){:target="_blank"}
 
 В Web интерфейсе Keycloak создаем нового клиента
 
@@ -175,7 +175,7 @@ OIDC_SCOPES=openid profile email
 
 В данном файле значения параметров `SECRET_KEY`, `UTILS_SECRET` и `POSTGRES_PASSWORD` получаем в результате выполнения команды `openssl rand -hex 32`. Значение параметра `OIDC_CLIENT_SECRET` мы берем после добавления клиента Keycloak
 
-> Пример файла настроек из [официального репозитория](https://github.com/outline/outline/blob/main/.env.sample)
+> Пример файла настроек из [официального репозитория](https://github.com/outline/outline/blob/main/.env.sample){:target="_blank"}
 {: .prompt-info }
 
 Настраиваем сетевую связанность Outline и Keycloak, что бы заработала авторизация
