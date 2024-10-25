@@ -24,11 +24,7 @@ Disallow: */?$
 Disallow: */?*$
 Disallow: */?pdf=*$
 Disallow: */?PageSpeed=*$
-Disallow: /2*/*/*/$
 Disallow: /lscontentblock/*
 Disallow: */?unapproved=*$
-
-User-agent: Yandex
-Clean-param: amp&noamp&s&pdf&unapproved&PageSpeed&page&tag&tags&category&categories&embed&feed
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
