@@ -1,0 +1,34 @@
+---
+permalink: /robots.txt
+# The robots rules
+---
+
+User-agent: *
+Disallow: /norobots/
+Disallow: */?amp$
+Disallow: */amp/$
+Disallow: */?noamp=*$
+Disallow: */feed/$
+Disallow: */embed/$
+Disallow: /tag/*
+Disallow: /tags/*
+Disallow: /archives/$
+Disallow: /categories/*
+Disallow: /category/*
+Disallow: /page/*
+Disallow: /page*/$
+Disallow: */page/*/$
+Disallow: /?s=*$
+Disallow: */?s=*$
+Disallow: */?$
+Disallow: */?*$
+Disallow: */?pdf=*$
+Disallow: */?PageSpeed=*$
+Disallow: /2*/*/*/$
+Disallow: /lscontentblock/*
+Disallow: */?unapproved=*$
+
+User-agent: Yandex
+Clean-param: amp&noamp&s&pdf&unapproved&PageSpeed&page&tag&tags&category&categories&embed&feed
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
