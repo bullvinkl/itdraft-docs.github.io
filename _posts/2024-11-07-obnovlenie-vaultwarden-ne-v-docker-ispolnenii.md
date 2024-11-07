@@ -18,7 +18,7 @@ image:
 > Vaultwarden позволяет хранить пароли в защищенной среде, обеспечивая безопасность данных пользователей. Он поддерживает форматы KeePass и Password Safe, что позволяет использовать его совместно с другими менеджерами паролей.
 {: .prompt-tip }
 
-- [Установка Vaultwarden]({% post_url 2021-10-14-ustanovka-vaultwarden-bitwarden_rs-i-postgresql-ne-v-docker-ispolnenii-v-centos-8-rocky-linux %}){:target="_blank"} была рассмотрена в одной из предыдущих статей.
+- [Установка Vaultwarden и PostgreSQL в Debian]({% post_url 2024-11-06-ustanovka-vaultwarden-i-postgresql-v-debian-no-docker %}){:target="_blank"} была рассмотрена в одной из предыдущих статей.
 - Список статей из категории [Vaultwarden](/tags/vaultwarden/){:target="_blank"}.
 
 Исходные данные:
