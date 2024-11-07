@@ -19,15 +19,15 @@ image:
 {: .prompt-tip }
 
 - [Установка Vaultwarden]({% post_url 2021-10-14-ustanovka-vaultwarden-bitwarden_rs-i-postgresql-ne-v-docker-ispolnenii-v-centos-8-rocky-linux %}){:target="_blank"} была рассмотрена в одной из предыдущих статей.
-- Список статей из категории [Vaultwarden](/tags/vaultwarden/){:target="_blank"}
+- Список статей из категории [Vaultwarden](/tags/vaultwarden/){:target="_blank"}.
 
 Исходные данные:
-- OS: Dibian 12
-- NodeJS: v20.18.0
-- Rust: rustc 1.75.0 (82e1608df 2023-12-21)
-- PostgreSQL: 16
-- Домашний каталог пользователя vaultwarden: /opt/vaultwarden (chmod 750)
-- WEB интерфейс установлен в каталог: /opt/web-vault 
+- OS: `Dibian 12`
+- NodeJS: `v20.18.0`
+- Rust: `rustc 1.75.0 (82e1608df 2023-12-21)`
+- PostgreSQL: `16`
+- Домашний каталог пользователя `vaultwarden`: `/opt/vaultwarden` (`chmod 750`)
+- WEB интерфейс установлен в каталог: `/opt/web-vault`
 
 ## Обновление Vaultwarden до релиза (1.30.2 > 1.32.3)
 
