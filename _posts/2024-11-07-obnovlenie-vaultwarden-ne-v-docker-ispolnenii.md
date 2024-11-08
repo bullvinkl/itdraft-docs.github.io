@@ -283,7 +283,7 @@ $ wget https://github.com/dani-garcia/bw_web_builds/releases/download/v2024.6.2c
 $ tar xzf bw_web_v2024.6.2c.tar.gz
 ```
 
-Переключаемся на пользователя с правами sudo и перезапускаем сервис `nginx`
+Переключаемся на пользователя с правами `sudo` и перезапускаем сервис `nginx`
 ```bash
 $ exit
 $ sudo systemctl restart nginx
