@@ -5,30 +5,30 @@ a, h5, h4, h3, h2, h1 {
 body {
     font-family: PTRootUI-Regular, sans-serif;
 }
-
+/*
 h5, h4, h3, h2, h1 {
-    // scroll-margin: 10px;
+     scroll-margin: 10px;
 }
 
 h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before {
-   // display: block;
-   // content: " ";
-   // margin-top: -4rem;
-   // height: 3.5rem;
-   // visibility: hidden;
+    display: block;
+    content: " ";
+    margin-top: -4rem;
+    height: 3.5rem;
+    visibility: hidden; 
   }
 
 #topbar-wrapper {
-   // position: sticky;
-   // top: 0;
-   // z-index: 100;
-   // background-color: color-mix(in srgb, var(--main-bg), transparent 7%);
-   // box-shadow: 0 0.3rem 1rem -0.6rem rgba(0, 0, 0, 0.05), inset 0 -0.1px 0 rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: color-mix(in srgb, var(--main-bg), transparent 7%);
+    box-shadow: 0 0.3rem 1rem -0.6rem rgba(0, 0, 0, 0.05), inset 0 -0.1px 0 rgba(0, 0, 0, 0.15);
 }
 .access {
-   // top: 3rem;
+    top: 3rem;
 }
-
+*/
 .fa-adjust:before, .fa-circle-half-stroke:before {
     content: "\f186";
 }
