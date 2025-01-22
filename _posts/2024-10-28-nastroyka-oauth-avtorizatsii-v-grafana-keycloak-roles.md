@@ -122,7 +122,7 @@ name_attribute_path = full_name
 auth_url = https://keycloak.itdraft.ru/realms/itdraft/protocol/openid-connect/auth
 token_url = https://keycloak.itdraft.ru/realms/itdraft/protocol/openid-connect/token
 api_url = https://keycloak.itdraft.ru/realms/itdraft/protocol/openid-connect/userinfo
-role_attribute_path = contains(resource_access.grafana.roles[*], 'admin') && 'Admin' || contains(resource_access.grafana.roles[*], 'editor') && 'Editor' || 'Viewer'
+role_attribute_path = contains(resource_access.grafana.roles[*], 'grafana-admin') && 'Admin' || contains(resource_access.grafana.roles[*], 'grafana-editor') && 'Editor' || 'Viewer'
 ```
 
 Перезапускаем Grafana
