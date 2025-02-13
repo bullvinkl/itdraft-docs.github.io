@@ -24,7 +24,7 @@ image:
 
 Отключаем swap
 
-```sh
+```bash
 $ sudo swapoff -a
 $ sudo nano /etc/fstab
 ...
@@ -33,7 +33,7 @@ $ sudo nano /etc/fstab
 
 Удаляем swap область, для этого удаляем раздел `/dev/astra-vg/swap_1` и расширяем корневой раздел `/dev/astra-vg/root` (файловая система `ext4`)
 
-```sh
+```bash
 $ sudo lvdisplay
 $ sudo lvremove /dev/astra-vg/swap_1
 $ sudo lvextend -l +100%FREE /dev/astra-vg/root
@@ -41,7 +41,7 @@ $ sudo resize2fs /dev/astra-vg/root
 ```
 
 Вносим изменения в файл `resume`
-```sh
+```bash
 $ sudo nano /etc/initramfs-tools/conf.d/resume
 #RESUME=/dev/mapper/astra--vg-swap_1
 RESUME=none
@@ -49,17 +49,28 @@ RESUME=none
 
 Обновляем параметры загрузчика и обновляем `initramfs` после внесения изменений
 
-```sh
+```bash
 $ sudo update-grub
 $ sudo update-initramfs -u
 ```
 
 Создаем swap файл и монтируем его
 
-```sh
+```bash
 $ sudo fallocate -l 12G /swapfile
 $ sudo chmod 600 /swapfile
 $ sudo mkswap /swapfile
 $ sudo swapon /swapfile
 $ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab > /dev/null 2>&1
+```
+
+## UPD 2025-02-13
+
+В Centos 7 во время выделения области появилась ошибка
+> swapon: /swapfile: swapon failed: Invalid argument
+{: .prompt-warning }
+
+Решение: вместо `fallocate` использовать `dd`
+```bash
+$ sudo dd if=/dev/zero of=/swapfile bs=1MiB count=4000
 ```
