@@ -180,6 +180,7 @@ $ cat /etc/docker/daemon.json
 ```
 
 - `docker exec -it %id% /bin/bash`  - подключиться к контейнеру
+- `truncate -s 0 /var/lib/docker/containers/**/*-json.log`  - очистить логи контейнеров (выполнять от рута)
 
 ## GIT
 
