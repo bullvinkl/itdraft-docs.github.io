@@ -8,7 +8,7 @@ tags:
   - nginx
 image:
   path: /commons/DC79MkJWAAA1qod.jpg
-  alt: "[Решено] Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg)"
+  alt: "Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg)"
 ---
 > **trusted.gpg** — это файл, содержащий доверенные ключи GPG (GNU Privacy Guard). GPG — это инструмент для шифрования и электронного подписывания, использующий ассиметричное шифрование, основанное на двух ключах: приватном и публичном. Файл trusted.gpg хранит публичные ключи, которым вы доверяете, и которые вы можете использовать для проверки подписей и шифрования сообщений.
 {: .prompt-tip }
