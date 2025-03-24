@@ -64,8 +64,6 @@ image:
 - `echo 1 > /sys/block/sda/device/rescan` - перечитать размер диска `/dev/sda`, выполняется от пользователя `root`
 - `growpart /dev/sda 3` - увеличить 3-тью область
 - `openssl pkcs12 -export -in certca.pem -inkey privateky.key -out output.pfx`  - создать `PFX`-сертификат
-- `curl https://itdraft.ru -H 'User-Agent: GPTBot' -I` - меняем User-Agent в CURL запросе
-- `curl --connect-to "":":192.168.1.100:" https://example.com`  - Запрос будет отправлен на `https://192.168.1.100:443`, но URL останется `https://example.com`. Можно использовать что б к примеру не править файл `hosts`
 - `nohup ./script.sh > /dev/null &`  - запуск программы или скрипт а в фоне
 - `ps -aux | grep  script` или `pgrep -a script`  - узнать id фоновой программы или скрипта, что бы потом завершить ее (`kill 21536`)
 
@@ -79,13 +77,19 @@ Acquire {
 EOF
 ```
 
+Что бы дописать в строки в файл, включая спецсимволы, не открывая текстовый редактор: используем в команде выше `tee -a`
+
 - `echo "proxy=http://mirror.itdraft.ru:3142" | sudo tee /etc/yum.conf > /dev/null 2>&1` - перезаписать `/etc/yum.conf`
-
 - `echo "proxy=http://mirror.itdraft.ru:3142" | sudo tee -a /etc/yum.conf > /dev/null 2>&1` - добавить строку в `/etc/yum.conf`
-
 - `> /dev/null 2>&1` - не выводить результат
 
-## Сочетания клавиш в редакторе Nano
+## Полезное для cURL
+
+- `curl https://itdraft.ru -H 'User-Agent: GPTBot' -I` - меняем User-Agent в CURL запросе
+- `curl --connect-to "":":192.168.1.100:" https://example.com`  - Запрос будет отправлен на `https://192.168.1.100:443`, но URL останется `https://example.com`. Можно использовать что б к примеру не править файл `hosts`
+- `curl -x "http://mirror.itdraft.ru:3142" https://www.google.com -I`  - Запрос будет отправлен через proxy
+
+## Сочетания клавиш в Nano
 
 - `CTRL + S`  - сохранить
 - `ALT + T`  - очистить все дальше каретки
