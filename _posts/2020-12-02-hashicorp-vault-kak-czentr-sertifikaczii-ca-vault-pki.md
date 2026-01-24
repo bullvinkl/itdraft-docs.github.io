@@ -48,7 +48,7 @@ $ vault secrets enable \
 ```sh
 $ vault write -format=json pki_root_ca/root/generate/internal \
     common_name="Root Certificate Authority" \
-    country="Russian Federation" \
+    country="RU" \
     locality="Moscow" \
     street_address="Red Square 1" \
     postal_code="101000" \
@@ -86,7 +86,7 @@ $ vault secrets enable \
 ```sh
 $ vault write -format=json pki_int_ca/intermediate/generate/internal \
    common_name="Intermediate CA" \
-   country="Russian Federation" \
+   country="RU" \
    locality="Moscow" \
    street_address="Red Square 1" \
    postal_code="101000" \
@@ -99,7 +99,7 @@ $ vault write -format=json pki_int_ca/intermediate/generate/internal \
 
 ```sh
 $ vault write -format=json pki_root_ca/root/sign-intermediate csr=@pki_intermediate_ca.csr \
-   country="Russia Federation" \
+   country="RU" \
    locality="Moscow" \
    street_address="Red Square 1" \
    postal_code="101000" \
@@ -128,7 +128,7 @@ $ vault write pki_int_ca/config/urls \
 
 ```sh
 $ vault write pki_int_ca/roles/example-dot-com-server \
-    country="Russia Federation" \
+    country="RU" \
     locality="Moscow" \
     street_address="Red Square 1" \
     postal_code="101000" \
@@ -156,7 +156,7 @@ $ vault write pki_int_ca/roles/example-dot-com-server \
 
 ```sh
 $ vault write pki_int_ca/roles/example-dot-com-client \
-    country="Russia Federation" \
+    country="RU" \
     locality="Moscow" \
     street_address="Red Square 1" \
     postal_code="101000" \
