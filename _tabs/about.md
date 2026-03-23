@@ -241,10 +241,15 @@ _Сертификат_
 
 # Конференции:
 
+## PG BootCamp 2026
+
+![PG BootCamp Russia 2026 Moscow](/assets/img/edu/pgbc-moscow-2026.png){: w="300" }
+_PG BootCamp Russia 2026 в г.Москва_
+
 ## PG BootCamp 2024
 
-![PG BootCamp Kazan 2024](/assets/img/edu/pgbc-kazan-2024.png){: w="300" }
+![PG BootCamp Russia 2024 Kazan](/assets/img/edu/pgbc-kazan-2024.png){: w="300" }
 _PG BootCamp Russia 2024 в г.Казань_
 
-![PG BootCamp Minsk 2024](/assets/img/edu/pgbc-minsk-2024.png){: w="300" }
-_PG BootCamp Russia 2024 в г.Минск_
+![PG BootCamp 2024 Minsk](/assets/img/edu/pgbc-minsk-2024.png){: w="300" }
+_PG BootCamp 2024 в г.Минск_
