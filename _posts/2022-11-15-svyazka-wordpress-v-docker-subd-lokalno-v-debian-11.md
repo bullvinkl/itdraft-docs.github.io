@@ -25,61 +25,57 @@ image:
 
 ## Установка Docker из репозитория
 
-Устанавливаем необходимые пакеты, создаем директорию и скачиваем цифровую подпись
-```sh
-$ sudo apt -y install ca-certificates curl gnupg lsb-release
-$ sudo mkdir -p /etc/apt/keyrings
-$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+Устанавливаем необходимые пакеты и скачиваем цифровую подпись
+```bash
+sudo apt -y install ca-certificates curl gnupg lsb-release
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
 Добавляем репозиторий в систему
-```sh
-$  echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```bash
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-$ sudo chmod a+r /etc/apt/keyrings/docker.gpg
-$ sudo apt update
+sudo apt update
 ```
 
 Устанавливаем дистрибутив
-```sh
-$ sudo apt -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```bash
+sudo apt -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
 Добавляем нашего пользователя в группу `docker`
-```sh
-$ sudo usermod -aG docker $(whoami)
-$ newgrp docker
+```bash
+sudo usermod -aG docker $(whoami)
+newgrp docker
 ```
 
 ## Установка Docker Compose
 
 Скачиваем дистрибутив, файл исполняемым и создаем сим линк
-```sh
-$ sudo curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 
-$ sudo chmod +x /usr/local/bin/docker-compose
-$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
 Проверяем
-```
-$ docker-compose -v
+```bash
+docker-compose -v
 ```
 
 ## Установка MariaDB
 
 Устанавливаем дистрибутив, запускаем первоначальную настройку MariaDB
-```sh
-$ sudo apt update
-$ sudo apt -y install mariadb-server mariadb-client
-$ sudo mysql_secure_installation
+```bash
+sudo apt update
+sudo apt -y install mariadb-server mariadb-client
+sudo mysql_secure_installation
 ```
 
 Создаем пользователя и базу
-```sh
-$ sudo mariadb
+```bash
+sudo mariadb
 > CREATE DATABASE wp_mydatabase;
 > CREATE USER 'wp_myuser'@'%' IDENTIFIED BY 'sercretpasswd';
 > GRANT ALL PRIVILEGES ON wp_mydatabase.* to wp_myuser@'%';
@@ -88,8 +84,8 @@ $ sudo mariadb
 ```
 
 Проверяем
-```sh
-$ sudo mariadb
+```bash
+sudo mariadb
 > SELECT User, Host FROM mysql.user;
 +-------------+-----------+
 | User        | Host      |
@@ -102,19 +98,20 @@ $ sudo mariadb
 ```
 
 Настраиваем MySQL, иначе контейнер не сможет подключиться к БД
-```sh
-$ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+```bash
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 ...
 #bind-address            = 127.0.0.1
 bind-address            = 172.17.0.1
 
-$ sudo systemctl restart mysql
+sudo systemctl restart mysql
 ```
 
 ## Пример проекта
 
-```sh
-$ cat ~/proj/docker-compose.yml
+```bash
+cat ~/proj/docker-compose.yml
+
 version: '3'
 
 services:
@@ -148,8 +145,9 @@ services:
     restart: unless-stopped
 ```
 
-```sh
-$ cat ~/proj/php/wordpress.ini
+```bash
+cat ~/proj/php/wordpress.ini
+
 file_uploads = On
 memory_limit = 256M
 upload_max_filesize = 64M
@@ -159,8 +157,9 @@ max_input_time = 1000
 max_input_vars = 3000
 ```
 
-```sh
-$ cat ~/proj/nginx/wp.conf
+```bash
+cat ~/proj/nginx/wp.conf
+
 server {
     listen 80 default_server;
     server_name _;
@@ -215,8 +214,9 @@ server {
 }
 ```
 
-```sh
-$ cat ~/proj/.env
+```bash
+cat ~/proj/.env
+
 # Root password for your database
 MYSQL_ROOT_PASSWORD=myrootpasswd
 
