@@ -22,8 +22,8 @@ image:
 NAME: Zabbix Бот    # Имя бота
 APP_ID: zabbix_bot   # Идентификатор
 URL: http://localhost/api/v1/zabbix_bot	   # Вставляем любой URL, т.к. поле обязательное
-BOT_ID:	87016cb2-a373-543b-9336-237fc08873be      # Получаем ID
-Секретный ключ:	968fd2a04ac500fb11f7b9a5986903f9
+BOT_ID:	8111b2-a373-541-9116-211111e      # Получаем ID
+Секретный ключ:	9111111111115986903f9
 ```
 
 ![](/assets/img/posts/2022/12/06/image-2.png){: w="300" }
